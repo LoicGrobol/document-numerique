@@ -4,11 +4,16 @@ name: CI-CD
 
 jobs:
   CI-CD:
-    runs-on: ${{ matrix.os }}
+    runs-on: ${{ matrix.config.os }}
 
-    name: ${{ matrix.os }} (${{ matrix.python-version }})
+    name: ${{ matrix.config.os }} (${{ matrix.config.r }})
 
-   
+    strategy:
+      # we keep a matrix for convenience, but we would always want to run on one
+      # single OS and R version
+      matrix:
+        config:
+          - {os: ubuntu-20.04, r: 'release', rspm: "https://packagemanager.rstudio.com/cran/__linux__/focal/latest"}
     env:
       JEKYLL_DEBUG: "true"
 
