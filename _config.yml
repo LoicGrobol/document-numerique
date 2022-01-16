@@ -1,7 +1,7 @@
 theme: minimal-mistakes-jekyll
 
 title: Décrire et manipuler un document numérique
-description: Contenus pour le cours « Décrire et manipuler un document numérique  », L2 SDL parcours LCN, université Paris Nanterre 
+description: Contenus pour le cours « Décrire et manipuler un document numérique  », L2 SDL parcours LCN, université Paris Nanterre
 name: Loïc Grobol
 
 baseurl: "/document-numerique"

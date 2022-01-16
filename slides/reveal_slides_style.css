@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans:wght@100;300;400;500;700;900&display=swap');
+
+.reveal{
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+.reveal h1 h2 h3 h4 h5 h6{
+  font-family: "Fira Sans", "Atkinson Hyperlegible", sans-serif;
+}
+
+.reveal p {
+    text-align: left;
+  }
+.reveal ul {
+display: block;
+}
+.reveal ol {
+display: block;
+}
+
+.reveal blockquote {
+  width: 90%;
+}
+
+.csl-entry {
+  text-align: left;
+}
