@@ -8,15 +8,11 @@ jobs:
 
     name: ${{ matrix.os }} (${{ matrix.python-version }})
 
-    strategy:
-      matrix:
-        python-version: [3.9]
-        os: [ubuntu-20.04]
-    
+   
     env:
       JEKYLL_DEBUG: "true"
 
-      strategy:
+    strategy:
       # we keep a matrix for convenience, but we would always want to run on one
       # single OS and R version
       matrix:
