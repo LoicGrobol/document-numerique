@@ -1,5 +1,5 @@
 ---
-title: "Humanités Numériques"
+title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 1 : Informatique"
 author: Loïc Grobol
 date: 2022-01-17
