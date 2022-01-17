@@ -68,3 +68,151 @@ Compétences :
 
 - Exercices en temps libre pendant le semestre
 - Examen final
+
+# Documents numérique
+
+- Qu'est-ce qu'un document ?
+
+## Précédemment, en *Humanités Numériques*
+
+> Un document est une **trace** permettant d’**interpréter** un **événement passé** à partir d’un
+> **contrat de lecture**. (Jean-Michel Salün (2012), « Vu, lu, su. Les architectes de l'information
+> face au monopole du web »)
+
+. . .
+
+À partir de ces éléments, qu'est-ce qui caractérise un document numérique ?
+
+## Documents et supports numériques
+
+:::incremental
+
+- Ce qui différencie un document numérique, c'est d'abord le type de **trace** concerné.
+- Ce qui a évidemment des conséquences sur ce qu'on peut représenter.
+- Dans ce cours, c'est donc sur cette *trace*, ce *support* qu'on va se concentrer.
+
+:::
+
+---
+
+La question principale pour nous sera en général : « Étant donné un document, comment le représenter
+sous forme numérique ? »
+
+# Fichiers
+
+Le support d'un document numérique est en général un **fichier** (informatique).
+
+. . .
+
+:::incremental
+
+- Ou plusieurs.
+- Ou pas.
+
+:::
+
+## Abstractions
+
+La mémoire d'un ordinateur peut se concevoir à plusieurs échelles
+
+:::incremental
+
+- Une suite de *bits*, des élements d'information élémentaire à deux états, 0 ou 1.
+- Une série de *multiplets* (ou *byte*), chacun composés d'un nombre de fixe de bits (en général 8 : des *octets*).
+  - Possèdents une *adresse*, c'est-à-dire un identifiant permettant de les
+  localiser.
+  - Plus petites petites unités *adressables*.
+- Une série de *mots*, chacun composé d'un nombre fixe de bytes (de nos jours, 32 ou 64 bits)
+  - Plus petites unités traitables par un processeur.
+
+:::
+
+---
+
+Un fichier informatique :
+
+- Une série de bytes représentant un information.
+- Un *format de fichier* : le code permettant de passer de l'information à sa représenation et vice
+  versa.
+
+---
+
+En pratique, un fichier a en général d'autres propriétés :
+
+- Une *adresse* (inode pour les systèmes Unix par exemple).
+- Un *nom*.
+- Un *chemin* d'accès dans un système de fichiers (parfois plusieurs).
+- Des *métadonnées* qui peuvent être stockées directement dans fichier ou par le système hôte.
+
+---
+
+Selon les *permissions*, un⋅e utilisateurice peut y effectuer des opérations : création,
+destruction, lecture, écriture, exécution.
+
+---
+
+Vous connaissez déjà des formats de fichier, listez-en autant que possible et dites quel(s) type(s)
+d'informations ils permettent de représenter.
+
+# Types et formats
+
+## Documents textuels
+
+- Au niveau le plus basique `txt` : une suite de caractères.
+  - Comment représenter des caractères avec des *bytes* ?
+- Structure : HTML
+- Structure, format et mise en page :
+  - OpenDocument (odt, ods, odp…)
+  - Office Open XML (docx, xslx, ppts…)
+
+On peut en fait représenter énormément de choses avec des suites de caractères.
+
+## Documents visuels
+
+- Le plus basique : *bitmap* (pix-map) représente une image comme un tableau rectangulaire de points
+  de couleurs (pixel)
+- Extensions : GIF et PNG pour la compression non-destructive et l'animation.
+- Plus sophistiqué : JPEG, WEBP, AVIF, HEIF/HEVC pour la compression destructive.
+  - Exploitent le fait que les perceptions humaines sont limités et non-homogènes.
+
+## Documents sonores
+
+- Non-compressé : WAV, BMF
+- Compression sans pertes : FLAC
+- Compression avec pertes : Opus, MP3, Vorbis…
+  - Mêmes idées que pour les images.
+
+## Vidéo et multimedia
+
+- Combinent en général plusieurs flux images et son (et texte/métadonnées)
+- Partagent les formats pour le son et les images (en ajoutant la compasante temporelle dans le mix
+  pour la compression)
+- Beaucoup de formats modernes pour les images et les sons viennent de travaux pour la vidéo.
+- Quelques noms : Theora, MPEG-*, AV1, H.26{3,4,5,6}, VP{8,9}, Dirac…
+
+## Conteneurs
+
+Pour la vidéo ou d'autres applications, on a souvent besoin de *conteneurs* : des fichiers qui
+regroupent et enrichissent un ou plusieurs fichiers, en y ajoutant parfois de la compression.
+
+- Multimédia : Matroska (mkv), MPEG-4 (mp4), AVI, Ogg…
+- Générique : tar, zip, 7z…
+
+## Données textuelles structurées
+
+On peut en fait représenter énormément de choses avec des suites de caractères.
+
+- Génériques : XML, JSON, YAML…
+- Spécifique au TAL : CoNLL-*, PTB…
+
+## Exécutables
+
+Représentent non pas des données mais des *instructions* pour une machine :
+
+- Formats textuels : scripts
+  - Lisibles pour les humain⋅es *et* les machines.
+  - En général interprétés à la volée : peu optimal.
+- Formats « binaires » : exécutables en langage machine, 
+  - Conçus pour être optimisés pour les machines : minimum de place, exécution rapide.
+  - Très difficilement lisibles et écrivable directement par des humain⋅es : quasi-systématiquement
+  générés (**compilés**) à partir de **code source** textuel.
