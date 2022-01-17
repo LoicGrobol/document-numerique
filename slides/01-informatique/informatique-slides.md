@@ -16,10 +16,72 @@ output:
     latex_engine: "lualatex"
 ---
 
-# Bonjour
+# Qu'est ce que l'informatique ?
 
-- Loïc Grobol (il/iel) [<loic.grobol@parisnanterre.fr>](mailto:loic.grobol@parisnanterre.fr)
-- PHILLIA / MoDyCo (Bâtiment Rémond, 4ème, bureau 404C)
-- *Office hours* le mardi après-midi, n'hésitez pas à passer y compris sans rendez-vous (mais je
-  préfère si vous m'envoyez un mail pour me prévenir)
-- De manière générale, n'hésitez pas à m'écrire
+Le mot « **informatique** » est inventé par Philippe Dreyfus en 1962 par contraction des mots
+information et automatique.
+
+- L’informatique serait doncle traitement automatique d'informations.
+- *Automatique* au sens de *automate*, c'est-à-dire **machine**, pas de « se faire sans intervention
+  humaine ».
+- **Information** au sens large ou mathématique : il s'agit pas (ou pas seulement) des nouvelles.
+
+---
+
+Est-ce que c'est une très bonne définition ?
+
+. . .
+
+Pas vraiment.
+
+# Une brève histoire
+
+Qui sont ces gens:
+
+- Joseph-Marie Jacquard
+- Ada Lovelace et Charles Babbage
+- Alan Turin
+- Tommy Flowers
+- Jean Bartik
+- Grace Hopper
+- Douglas Englebart
+- Steve Wozniak
+
+## Antiquité
+
+- Bouliers
+- Astrolabes
+- Machines mécaniques ([mécanisem
+  d'Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism))
+
+## Machines à calculer mécaniques
+
+- Règle à calcul (années 1620)
+- Machines à calculer mécaniques de Schickard (1623), Pascal (1642), Thomas (1820)
+- Fonctions plus générales, mais restent limités : il ne s'agit que de machines à calculs.
+
+## Débuts du stockage et du traitemetn de l'information
+
+- Métier Jacquard (1804) : cartes perforées pour représenter des motifs de tissage.
+- Étendu au stockage d'instructions (orgue de barbarie).
+- Puis d'information : cartes perforées d'Hollerith exploitables par des calculateurs
+  électromécaniques (1880s).
+
+## Appareils de traitements générique
+
+- Milieu du 19ème siècle : machine a différence et machine analytique (non-concrétisée) de Babbage
+  et Lovelace
+  - Augusta Ada King née Byron, comtesse de Lovelace décrit le premier [programme
+    informatique](https://en.wikipedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg)
+- Tout au long du 19éme et du début du 20ème, plusieurs propositions d'ordinateurs analogiques
+
+---
+
+Premiers ordinateurs numériques :
+
+- Théorisés par les mathématiciens Alan Turing, Kurt Gödel et John von Neumann
+- Premières réalisations sous formes électromécaniques (relais) pendant la deuxième guerre mondiale.
+- Premiers ordinateurs complètement électroniques (tubes à vide) pendant (Colossus) et peu après
+  (ENIAC).
+- ???
+- Premiers ordinateurs personnels vraiment grand public en 1977 : Apple II, Commodore PET, TRS-80

@@ -118,9 +118,9 @@ La mémoire d'un ordinateur peut se concevoir à plusieurs échelles
 :::incremental
 
 - Une suite de *bits*, des élements d'information élémentaire à deux états, 0 ou 1.
-- Une série de *multiplets* (ou *byte*), chacun composés d'un nombre de fixe de bits (en général 8 : des *octets*).
-  - Possèdents une *adresse*, c'est-à-dire un identifiant permettant de les
-  localiser.
+- Une série de *multiplets* (ou *byte*), chacun composés d'un nombre de fixe de bits (en général 8 :
+  des *octets*).
+  - Possèdents une *adresse*, c'est-à-dire un identifiant permettant de les localiser.
   - Plus petites petites unités *adressables*.
 - Une série de *mots*, chacun composé d'un nombre fixe de bytes (de nos jours, 32 ou 64 bits)
   - Plus petites unités traitables par un processeur.
@@ -142,7 +142,7 @@ En pratique, un fichier a en général d'autres propriétés :
 - Une *adresse* (inode pour les systèmes Unix par exemple).
 - Un *nom*.
 - Un *chemin* d'accès dans un système de fichiers (parfois plusieurs).
-- Des *métadonnées* qui peuvent être stockées directement dans fichier ou par le système hôte.
+- Des *métadonnées* qui peuvent être stockées directement dans le fichier ou par le système hôte.
 
 ---
 
@@ -160,12 +160,11 @@ d'informations ils permettent de représenter.
 
 - Au niveau le plus basique `txt` : une suite de caractères.
   - Comment représenter des caractères avec des *bytes* ?
-- Structure : HTML
+- Structure et sémantique : HTML, Markdown…
 - Structure, format et mise en page :
   - OpenDocument (odt, ods, odp…)
   - Office Open XML (docx, xslx, ppts…)
-
-On peut en fait représenter énormément de choses avec des suites de caractères.
+  - Portable Document Format
 
 ## Documents visuels
 
