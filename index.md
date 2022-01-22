@@ -18,7 +18,7 @@ toc: true
 
 ## Séances
 
-### 2021-01-17 : Introduction, documents et fichiers.
+### 2021-01-17 : Introduction, documents et fichiers
 
 - [Slides Introduction](slides/00-introduction/introduction-slides.html)
 - [Slides Informatique](slides/01-informatique/informatique-slides.html)

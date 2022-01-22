@@ -40,7 +40,7 @@ Qui sont ces gens:
 
 - Joseph-Marie Jacquard
 - Ada Lovelace et Charles Babbage
-- Alan Turin
+- Alan Turing
 - Tommy Flowers
 - Jean Bartik
 - Grace Hopper
