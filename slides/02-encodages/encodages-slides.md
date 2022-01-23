@@ -58,10 +58,11 @@ Est-ce que « a » est un caractère ?
 - et «   » ?
 - et « ¨ » ?
 - et « 話 » ?
+- et « 한 » ?
 - et « 🧐 » ?
 - et « 🤷🏻 » ?
 - et « 🏳‍⚧ » ?
-- et un bip dordinateur ?
+- et un bip d'ordinateur ?
 
 :::
 
@@ -75,7 +76,7 @@ illisible](images/506px-A-small_glyphs.svg.png)](https://en.wikipedia.org/wiki/F
 
 ---
 
-« A » et « a », est-ce le même caractèré ?
+« A » et « a », est-ce le même caractère ?
 
 :::incremental
 
@@ -177,7 +178,7 @@ Principes :
   - Les lettres de l'alphabet latin sans diacritiques en majuscules et minuscules
   - Les chiffres de 0 à 9
   - Les symboles ```!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~```
-  - Des caractères dits « de contrôle » correspondant à des actions
+  - Des caractères dits « de contrôle » : fin de ligne, beep…
 
 ---
 
@@ -213,11 +214,13 @@ Et est-ce que vous voyez une solution ?
 ---
 
 La solution qui a été retenue au problème « je peux pas écrire dans ma langue ! » c'est en général
-d'utiliser le 8ème bit. Ce qui fait passer à combien de caractères ?
+d'utiliser le 8ème bit tout en gardant les mêmes caractères pour les nombres de 0 à 127.
+
+Ce qui fait combien de caractères en plus ?
 
 ---
 
-256 caractères ça laisse de la place pour pas mal de trucs. Comme des lignes pour dessiner des
+128 caractères de plus ça laisse de la place pour pas mal de trucs. Comme des lignes pour dessiner des
 tableaux ou un soleil ☼.
 
 Évidemment ça n'est pas assez pour utiliser des systèmes d'ériture logographique ou même simplement
@@ -229,9 +232,76 @@ La solution historique c'est donc encore un fois que chaque constructeur défini
 extensions, évidemment incompatibles.
 
 La norme ISO 8859 est une tentative de définir des jeux de caractères standardisés par région
-géographique. En particulier, ISO 8859-1, qui permet d'écrire la plupart des alphabets d'Europe de
-l'Ouest a connu un succès assez durable pour des raisons qu'on imagine aisément.
+géographique. En particulier, [ISO
+8859-1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout), qui permet d'écrire la
+plupart des alphabets d'Europe de l'Ouest a connu un succès assez durable pour des raisons qu'on
+imagine aisément.
+
+En particulier la version légèrement différente utilisée par Microsoft sous le nom de
+[CP-1252](https://en.wikipedia.org/wiki/Windows-1252) est encore utilisée par beaucoup de systèmes.
+
+---
+
+Il reste que la standardisation est difficile : en particulier il est nécessaire de transmettre
+l'encodage d'un document sous forme de métadonnée, ce qui :
+
+- N'est pas très pratique.
+- Déplace le problème : il faut des métadonnées standardisées
+
+En conséquence, surtout avec la démocratisation du Web, les confusions sont nombreuses et mènent
+souvent à des mojibake. Par exemple pour un certain nombre de sites web, je m'appelle LoÃ¯c.
+
+---
+
+Et ça ne résoud pas le problème des systèmes d'écriture logographiques pour lesquels des encodages
+différents sont nécessaires.
 
 # Unicode
 
+Unicode est une norme créée dans le but de résoudre ces problèmes : un système d'encodage unique
+pour tous les systèmes d'écritures.
+
+:::incremental
+
+- Initialement prévu sur 16 bits (UTF-16), puis sur 32 bits (UTF-32).
+- Finalement représentation de **taille variable** : UTF-8
+  - Les caractères ASCII sont codés sur un octet.
+  - Les autres caractères sur plus, avec une organisation plus ou moins arbitraire.
+- En évolution (croissance) constante depuis : à l'automne 2021, on en est à la version 14
+
+:::
+
+<https://unicode-table.com> présente de façon agréable la liste des caractères Unicode.
+
+## Détails techniques
+
+On ajoute un niveau de représentation : le **point de code**, un nombre, souvent noté en hexadécimal
+qui correspond à la position d'un caractère dans la table Unicode mais n'est pas nécessairement sa
+représentation concrète sur la machine.
+
+Ainsi le caractère « Я », « *CYRILLIC CAPITAL LETTER YA* » correspond au point de code U+042F
+(1 071) et est représenté en UTF-8 par le nombre 208 175 (D0 AF).
+
+---
+
+Unicode contient beaucoup de caractères, pour des raisons plus ou moins bonnes. Et entre autre il
+contient à la fois des caractères combinants (par exemple des accents qui s'ajoutent au caractère
+précédent), mais parfois aussi des caractères déjà combinés. Ainsi « ñ » peut se représenter comme
+U+0068 (n) suivi de U+0303 (le tilde) ou directement comme U+00F1. La normalisation n'est pas un
+procédé simple…
+
+À votre avis, en plus des diacritiques, quels autres caractères sont combinants ?
+
+---
+
+Pour compliquer encore les choses, certains caractères servent à marquer une combinaison de
+caractères non-combinants. Ainsi l'emoji « 🏳️‍⚧️ » est représenté comme la suite des caractères
+🏳️, ZWJ et ⚧️, ZWJ (_**Z**ero **W**idth **J**oiner_) marquant une combinaison entre ces deux emojis.
+
 # 👀 Exercice 👀
+
+À faire par exemple à l'aide de <https://unicode-table.com>
+
+1. Donner la représentation de votre nom complet sous forme d'une suite de points de code Unicode.
+2. Donner la représentation en UTF-8 des cinq (au plus) premiers caractères de votre prénom.
+3. À quoi correspond la suite de points de code U+5317, U+4EAC, U+5E02 ?
