@@ -18,10 +18,16 @@ toc: true
 
 ## Séances
 
-### 2021-01-17 : Introduction, documents et fichiers
+### 2022-01-17 : Introduction, documents et fichiers
 
 - [Slides Introduction](slides/00-introduction/introduction-slides.html)
+
+
+### 2022-01-23 : Histoire de l'informatique et encodages de caractères
+
 - [Slides Informatique](slides/01-informatique/informatique-slides.html)
+- [Slides Encodages](slides/02-encodages/encodages-slides.html)
+
 
 ## Licences
 

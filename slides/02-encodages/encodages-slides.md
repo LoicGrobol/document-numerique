@@ -171,13 +171,13 @@ conventions d'encodages à être devenue une norme (*de facto* et *de jure*) à 
 Principes :
 
 - Les caractères sont codés sur 7 bits, soit donne 128 caractères possibles
-  - Sur des machines utilisant des mots de 8 bits, le dernier bits peut par exemple servir pour la
+  - Sur des machines utilisant des mots de 8 bits, le dernier peut par exemple servir pour la
     détection d'erreurs.
 - Les caractères disponibles sont :
   - L'espace
-  - Les lettres de l'alphabet latin sans diacritiques en majuscules et minuscules
+  - Les lettres de l'alphabet latin, sans diacritiques, majuscules et minuscules
   - Les chiffres de 0 à 9
-  - Les symboles ```!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~```
+  - ```!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~```
   - Des caractères dits « de contrôle » : fin de ligne, beep…
 
 ---
@@ -200,7 +200,7 @@ Principes :
 
 ## Exercice
 
-1. À quelle série de nombres correspond la chaîne de carctères `Vive le TAL!` ?
+1. À quelle série de nombres correspond la chaîne de caractères `Vive le TAL!` ?
 2. À quelle chaîne de caractère correspond la suite de nombre `085, 080, 088, 060, 051` ?
 
 ## Les extensions d'ASCII
@@ -271,6 +271,8 @@ pour tous les systèmes d'écritures.
 
 :::
 
+---
+
 <https://unicode-table.com> présente de façon agréable la liste des caractères Unicode.
 
 ## Détails techniques
@@ -279,7 +281,7 @@ On ajoute un niveau de représentation : le **point de code**, un nombre, souv
 qui correspond à la position d'un caractère dans la table Unicode mais n'est pas nécessairement sa
 représentation concrète sur la machine.
 
-Ainsi le caractère « Я », « *CYRILLIC CAPITAL LETTER YA* » correspond au point de code U+042F
+Ainsi le caractère « Я », « *CYRILLIC CAPITAL LETTER YA* » correspond au point de code U+042F
 (1 071) et est représenté en UTF-8 par le nombre 208 175 (D0 AF).
 
 ---
