@@ -7,7 +7,7 @@ toc: true
 
 ## Infos pratiques
 
-- **Quoi** « Décrire et manipuler un document numérique  »
+- **Quoi** « Décrire et manipuler un document numérique » 4L4SC02P
 - **Où** Salle M114, bâtiment Éphémère 1, Université Paris Nanterre, 200 avenue de la République,
   Nanterre
 - **Quand** 12 séances, les lundis de 13:20 à 15:20, du 17/01 au 11/04
