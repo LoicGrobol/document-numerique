@@ -30,8 +30,6 @@ information et automatique.
 
 Est-ce que c'est une très bonne définition ?
 
-. . .
-
 Pas vraiment.
 
 # Une brève histoire
@@ -47,11 +45,23 @@ Qui sont ces gens:
 - Douglas Englebart
 - Steve Wozniak
 
+---
+
+- [Joseph-Marie Jacquard](https://en.wikipedia.org/wiki/Joseph_Marie_Jacquard)
+- [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace) et [Charles
+  Babbage](https://en.wikipedia.org/wiki/Charles_Babbage)
+- [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing)
+- [Tommy Flowers](https://en.wikipedia.org/wiki/Tommy_Flowers)
+- [Jean Bartik](https://en.wikipedia.org/wiki/Jean_Bartik)
+- [Grace Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)
+- [Douglas Englebart](https://en.wikipedia.org/wiki/Douglas_Engelbart)
+- [Steve Wozniak](https://en.wikipedia.org/wiki/Steve_Wozniak)
+
 ## Antiquité
 
 - Bouliers
 - Astrolabes
-- Machines mécaniques ([mécanisem
+- Machines mécaniques ([mécanisme
   d'Antikythera](https://en.wikipedia.org/wiki/Antikythera_mechanism))
 
 ## Machines à calculer mécaniques
