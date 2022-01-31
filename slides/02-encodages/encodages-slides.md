@@ -298,7 +298,8 @@ procédé simple…
 
 Pour compliquer encore les choses, certains caractères servent à marquer une combinaison de
 caractères non-combinants. Ainsi l'emoji « 🏳️‍⚧️ » est représenté comme la suite des caractères
-🏳️, ZWJ et ⚧️, ZWJ (_**Z**ero **W**idth **J**oiner_) marquant une combinaison entre ces deux emojis.
+🏳️, ZWJ et ⚧️, ZWJ (_**Z**ero **W**idth **J**oiner_) marquant une combinaison entre ces deux
+emojis.
 
 # 👀 Exercice 👀
 

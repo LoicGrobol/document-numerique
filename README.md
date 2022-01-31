@@ -6,7 +6,8 @@ Décrire et manipuler un document numérique
 
 [![Licence : CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
 
-Contenus pour le cours « Décrire et manipuler un document numérique » de la L2 SDL, parcours LCN, Université Paris Nanterre.
+Contenus pour le cours « Décrire et manipuler un document numérique » de la L2 SDL, parcours LCN,
+Université Paris Nanterre.
 
 
 - [Site du cours](https://loicgrobol.github.io/document-numerique/)
@@ -14,33 +15,9 @@ Contenus pour le cours « Décrire et manipuler un document numérique » de
 
 Contact : [<loic.grobol@parisnanterre.fr>](mailto:loic.grobol@parisnanterre.fr)
 
-## Développement
+## Compiler les slides
 
-Pour travailler au développement de ce cours :
-
-1. Créer un environnement virtuel et l'activer
-2. Installer les dépendances
-
-   ```console
-   pip install -U -r requirements.txt
-   ```
-
-3. Démarrer jupyter
-
-   ```console
-   jupyter notebook
-   ```
-
-   Idéalement ça devrait aussi marcher avec jupyterlab [mais ce n'est pas encore le cas pour les slides](https://github.com/damianavila/RISE/pull/381)
-4. On peut alors modifier les fichiers markdown dans jupyter comme si c'étaient des notebooks grâce
-   à la magie de [jupytext](https://github.com/mwouts/jupytext)
-
-Autres éléments magiques :
-
-- On peut ouvrir les notebooks en md sur Binder grâce au [postBuild](postBuild) qui dit de compiler
-  l'extension jupytext. Par contre, le build initial de l'image est assez lent. (même avec
-  `--minimize=False` qui [accélère un
-  peu](https://github.com/jupyterlab/jupyterlab/issues/4824#issuecomment-697188390))
+RMarkdown/Knitr utilisés comme wrapper de pandoc.
 
 ## Générer le site
 

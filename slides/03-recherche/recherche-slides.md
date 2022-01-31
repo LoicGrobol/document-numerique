@@ -121,7 +121,7 @@ Pour tester :
 - Règle générale : chaque caractère se reconnaît (*match*) lui-même
   - `madeleine` reconnaît `madeleine` mais pas `Madeleine`
   - `France 2` reconnaît `France 2` mais pas `France2` ni `France 3`
-- Cas particuliers : les **métacarctères**
+- Cas particuliers : les **métacaractères**
   - Quantificateurs
   - Opérateurs
   - Caractères spéciaux
@@ -136,6 +136,7 @@ Ils portent sur l’élément qui précède et indiquent une répétition
 | **Signification**  | « 0 ou 1 fois »  | « 0 ou plusieurs fois »  | « 1 ou plusieurs fois »  |
 
 - `jolie?` matche `joli` et `jolie`
+- `coup?s` matche `cous` et `coups`, mais pas `coupa`
 - `jolie*` matche `joli`, `jolie`, `joliee`, `jolieee`…
 - `jolie+` matche `jolie`, `joliee`, `jolieee`…
 
@@ -159,7 +160,7 @@ Les accolades indiquent un intervalle de répétitions :
 - `lo{3,}` reconnaît looong, loooong, etc.
 - `lo{3}ng` ne reconnaît que looong
 
-Exercice : écrire une expression régulière qui reconnaît exclusibement`lool`, `loool` et `looool`.
+Exercice : écrire une expression régulière qui reconnaît exclusivement  `lool`, `loool` et `looool`.
 
 # Les opérateurs
 
