@@ -106,8 +106,8 @@ Ces nombres sont-ils des caractères ?
 
 ## Définitions
 
-La terminologie n'est pas standardisée, la notion de *caractère* est ambigüe et on distingue les
-notions de :
+La terminologie n'est pas standardisée, le concept de *caractère* est ambigüe et on distingue ces
+concepts :
 
 - Un **graphème** est une unité élémentaire dans un système d'écriture : les lettres, les
   diacritiques (accents et autres), les logogrames simples…
@@ -120,7 +120,7 @@ notions de :
 ---
 
 - Un **caractère** est en général défini comme un graphème ou une série de graphème, perçue comme
-format une unité.
+  formant une unité.
 - Un **encodage** est une représentation numérique d'un caractère dans un système informatique.
   - Elle peut ne pas être unique. Ainsi, en UTF-8, il y a deux représentations possibles pour « à ».
 
@@ -170,7 +170,7 @@ conventions d'encodages à être devenue une norme (*de facto* et *de jure*) à 
 
 Principes :
 
-- Les caractères sont codés sur 7 bits, soit donne 128 caractères possibles
+- Les caractères sont codés sur 7 bits, soit 128 caractères possibles
   - Sur des machines utilisant des mots de 8 bits, le dernier peut par exemple servir pour la
     détection d'erreurs.
 - Les caractères disponibles sont :
@@ -220,8 +220,8 @@ Ce qui fait combien de caractères en plus ?
 
 ---
 
-128 caractères de plus ça laisse de la place pour pas mal de trucs. Comme des lignes pour dessiner des
-tableaux ou un soleil ☼.
+128 caractères de plus ça laisse de la place pour pas mal de trucs. Comme des lignes pour dessiner
+des tableaux ou un soleil ☼.
 
 Évidemment ça n'est pas assez pour utiliser des systèmes d'ériture logographique ou même simplement
 pour tous les alphabets d'Europe.
@@ -277,16 +277,16 @@ pour tous les systèmes d'écritures.
 
 ## Détails techniques
 
-On ajoute un niveau de représentation : le **point de code**, un nombre, souvent noté en hexadécimal
-qui correspond à la position d'un caractère dans la table Unicode mais n'est pas nécessairement sa
-représentation concrète sur la machine.
+On ajoute un niveau de représentation : le **point de code**, un nombre, souvent noté en
+hexadécimal, qui correspond à la position d'un caractère dans la table Unicode mais n'est pas
+nécessairement sa représentation concrète sur la machine.
 
 Ainsi le caractère « Я », « *CYRILLIC CAPITAL LETTER YA* » correspond au point de code U+042F
 (1 071) et est représenté en UTF-8 par le nombre 208 175 (D0 AF).
 
 ---
 
-Unicode contient beaucoup de caractères, pour des raisons plus ou moins bonnes. Et entre autre il
+Unicode contient beaucoup de caractères, pour des raisons plus ou moins bonnes. Entre autre il
 contient à la fois des caractères combinants (par exemple des accents qui s'ajoutent au caractère
 précédent), mais parfois aussi des caractères déjà combinés. Ainsi « ñ » peut se représenter comme
 U+0068 (n) suivi de U+0303 (le tilde) ou directement comme U+00F1. La normalisation n'est pas un

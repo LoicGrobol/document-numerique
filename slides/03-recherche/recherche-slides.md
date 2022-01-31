@@ -1,0 +1,337 @@
+---
+title: "Décrire et manipuler un document numérique"
+subtitle: "Cours 3 : Techniques de recherche avancées"
+author: Loïc Grobol
+date: 2022-01-31
+lang: fr-FR
+output:
+  revealjs::revealjs_presentation:
+    css: "../reveal_slides_style.css"
+    theme: white
+    highlight: pygments
+    reveal_options:
+      slideNumber: true
+      progress: true
+  pdf_document:
+    latex_engine: "lualatex"
+---
+
+# Google NGram
+
+Permet de faire des requêtes dans Google Books :
+
+- n-grammes de mots
+- n-grammes de catégories grammaticales (parties du discours)
+
+Exemple : [« vélocipède » vs « vélo » vs
+« bicyclette »](https://books.google.com/ngrams/graph?content=v%C3%A9locip%C3%A8de%2Cv%C3%A9lo%2Cbicyclette&year_start=1800&year_end=2019&corpus=30&smoothing=3)
+
+→ L'évolution des fréquences relatives des n-grammes dans le corpus
+
+## Questions d'usage
+
+[Dit-on « autant pour moi » ou « au temps pour
+moi » ?](https://books.google.com/ngrams/graph?content=autant+pour+moi%2Cau+temps+pour+moi&year_start=1800&year_end=2019&corpus=30&smoothing=3&direct_url=t1%3B%2Cautant%20pour%20moi%3B%2Cc0%3B.t1%3B%2Cau%20temps%20pour%20moi%3B%2Cc0)
+
+---
+
+[« par contre » ou « en
+revanche »](https://books.google.com/ngrams/graph?content=par+contre%2Cen+revanche&year_start=1800&year_end=2019&corpus=30&smoothing=3&direct_url=t1%3B%2Cpar%20contre%3B%2Cc0%3B.t1%3B%2Cen%20revanche%3B%2Cc0)
+
+---
+
+« *the United States are* » ou « *the United States is* »
+
+- [Anglais
+  Américain](https://books.google.com/ngrams/graph?content=the+United+States+are%2Cthe+United+States+is&year_start=1800&year_end=2019&corpus=29&smoothing=3)
+- [Anglais
+  Britannique](https://books.google.com/ngrams/graph?content=the+United+States+are%2Cthe+United+States+is&year_start=1800&year_end=2019&corpus=28&smoothing=3)
+
+## Évolution des nominations
+
+[Ouvriers, travailleurs ou
+salariés](https://books.google.com/ngrams/graph?content=ouvrier%2Ctravailleur%2Csalari%C3%A9%2Cemploy%C3%A9%2Ccollaborateur&year_start=1800&year_end=2019&corpus=30&smoothing=3&direct_url=t1%3B%2Couvrier%3B%2Cc0%3B.t1%3B%2Ctravailleur%3B%2Cc0%3B.t1%3B%2Csalari%C3%A9%3B%2Cc0%3B.t1%3B%2Cemploy%C3%A9%3B%2Cc0%3B.t1%3B%2Ccollaborateur%3B%2Cc0)
+
+[Et au
+pluriel](https://books.google.com/ngrams/graph?content=ouvriers%2Ctravailleurs%2Cemploy%C3%A9s%2Csalari%C3%A9s%2Ccollaborateurs&year_start=1800&year_end=2019&corpus=30&smoothing=3&direct_url=t1%3B%2Couvriers%3B%2Cc0%3B.t1%3B%2Ctravailleurs%3B%2Cc0%3B.t1%3B%2Cemploy%C3%A9s%3B%2Cc0%3B.t1%3B%2Csalari%C3%A9s%3B%2Cc0%3B.t1%3B%2Ccollaborateurs%3B%2Cc0)
+
+---
+
+[Féminisation des noms de
+métiers](https://books.google.com/ngrams/graph?content=une+auteur%2Cune+auteure%2Cune+autrice&year_start=1800&year_end=2019&corpus=30&smoothing=3&direct_url=t1%3B%2Cune%20auteur%3B%2Cc0%3B.t1%3B%2Cune%20auteure%3B%2Cc0%3B.t1%3B%2Cune%20autrice%3B%2Cc0)
+
+[et des
+fonctions](https://books.google.com/ngrams/graph?content=%2Cmadame+la+s%C3%A9natrice%2Cmadame+le+s%C3%A9nateur&year_start=1800&year_end=2019&corpus=30&smoothing=3&direct_url=t1%3B%2Cmadame%20la%20s%C3%A9natrice%3B%2Cc0%3B.t1%3B%2Cmadame%20le%20s%C3%A9nateur%3B%2Cc0)
+
+## Le joker `*`
+
+Le token `*` : remplace n'import quel mot.
+
+Exemple : [`une colère
+*`](https://books.google.com/ngrams/graph?content=une+col%C3%A8re+%2A&year_start=1800&year_end=2019&corpus=30&smoothing=3&direct_url=t2%3B%2Cune%20col%C3%A8re%20%2A%3B%2Cc0%3B%2Cs0%3B%3Bune%20col%C3%A8re%20qui%3B%2Cc0%3B%3Bune%20col%C3%A8re%20noire%3B%2Cc0%3B%3Bune%20col%C3%A8re%20terrible%3B%2Cc0%3B%3Bune%20col%C3%A8re%20de%3B%2Cc0%3B%3Bune%20col%C3%A8re%20%C3%A9pouvantable%3B%2Cc0%3B%3Bune%20col%C3%A8re%20sourde%3B%2Cc0%3B%3Bune%20col%C3%A8re%20violente%3B%2Cc0%3B%3Bune%20col%C3%A8re%20froide%3B%2Cc0%3B%3Bune%20col%C3%A8re%20et%3B%2Cc0%3B%3Bune%20col%C3%A8re%20concentr%C3%A9e%3B%2Cc0)
+donne les fréquences de trigrammes dont les deux premiers mots sont « une » et « colère »
+
+# Google
+
+# Expressions régulières
+
+Expressions régulières = ER = Regex
+
+- Outil de recherche dans des textes
+- Permet de trouver des séquences correspondant à un motif (patron). Ex :
+  - Même préfixe / suffixe / contexte
+  - Dates
+  - Adresses
+  - Urls
+
+Définition de critères de recherche pour des chaînes de caractères
+
+---
+
+Outils :
+
+- Éditeur de texte brut : Notepad++ (Windows), Kate/Gedit (Linux), CotEditor (Mac)…
+- Traitement de texte : Word, Writer, Pages…
+- Test en ligne : <https://regex101.com/>
+- Langage de programmation : java, perl, python, PHP...
+
+## Dans un éditeur de texte
+
+On va avoir besoin d’un bon éditeur de texte brut, par exemple :
+
+- [Notepad++](https://notepad-plus-plus.or) (Windows)
+- Kate (Linux KDE)
+- Gedit (Linux GNOME)
+- [CotEditor](https://coteditor.com/) (macOS)
+- Quickedit (Android)
+- Regex Knife (iOS)
+
+Ou dans <https://regex101.com>
+
+---
+
+Pour tester :
+
+1. Récupérez le fichier [`Duchn-utf8.txt`](./Duchn-utf8.txt)
+2. Ouvrez-le avec l'éditeur de votre choix (Clic-droit sur le fichier + ouvrir avec)
+3. Ctrl+f pour accéder à la fonction de recherche/remplacement
+   - Cochez « expression régulière »
+
+## Principe général
+
+- Règle générale : chaque caractère se reconnaît (*match*) lui-même
+  - `madeleine` reconnaît `madeleine` mais pas `Madeleine`
+  - `France 2` reconnaît `France 2` mais pas `France2` ni `France 3`
+- Cas particuliers : les **métacarctères**
+  - Quantifieurs
+  - Opérateurs
+  - Caractères spéciaux
+  - Classes de caractères
+
+# Les quantificateurs
+
+Ils portent sur l’élément qui précède et indiquent une répétition
+
+| **Quantificateur** |       `?`       |           `*`           |           `+`           |
+| :----------------: | :-------------: | :---------------------: | :---------------------: |
+| **Signification**  | « 0 ou 1 fois »  | « 0 ou plusieurs fois »  | « 1 ou plusieurs fois »  |
+
+- `jolie?` matche `joli` et `jolie`
+- `jolie*` matche `joli`, `jolie`, `joliee`, `jolieee`…
+- `jolie+` matche `jolie`, `joliee`, `jolieee`…
+
+---
+
+**Exercice** : que reconnaissent les expressions suivantes ?
+
+1. `pommes?`
+2. `a?typique`
+3. `lo*l`
+4. `loo*l`
+5. `lo+l`
+
+(Tester vos réponses dans un éditeur)
+
+## Accolades
+
+Les accolades indiquent un intervalle de répétitions :
+
+- `lo{1,3}ng` reconnaît long, loong et looong
+- `lo{3,}` reconnaît looong, loooong, etc.
+- `lo{3}ng` ne reconnaît que looong
+
+Exercice : écrire une expression régulière qui reconnaît exclusibement`lool`, `loool` et `looool`.
+
+# Les opérateurs
+
+## Ensembles de caractères
+
+Les crochets indiquent un ensemble de caractères à reconnaître :
+
+- `[ab]` reconnaît une lettre : `a` ou `b`
+- Avec un tiret : `[a-c]` reconnaît les lettres de `a` à `c`
+- `[a-z]` reconnaît les lettres de l’alphabet en minuscules
+- `[a-zA-Z]` reconnaît aussi les majuscules*
+
+---
+
+**Exercice** :
+
+Que reconnaît :
+
+1. `[ab][ab]`
+2. `[MmRr]aison`
+
+Écrire une expression régulière qui reconnaît exclusivement :
+
+1. `moi`, `toi` et `soi` .
+2. `ci`, `si`, `ce` et `se`.
+3. Les nombres à deux chiffres.
+
+(Tester vos réponses dans un éditeur)
+
+---
+
+Avec un circonflexe au début : négation de l'ensemble
+
+- [^0-9] reconnaît tout sauf des chiffres
+- [^A-Z] reconnaît tout sauf des majuscules sans diacritiques
+
+---
+
+On peut les combiner avec les quantificateurs : 
+
+- `[aeiouy]+` reconnaît une suite de voyelles : `a`, `aa`, `ae`, `iey`…
+- `[^<]*` reconnaît une suite de caractères différents de `<`
+
+## Groupes
+
+Les parenthèses permettent de construire des groupes
+
+- `(ab)+` reconnaît une suite de `ab` : `ab`, `abab`, `ababab`…
+- `([ab]c)+` reconnaît `ac`, `bc`, `acac`, `acbc`, `bcac`…
+- `([aeiouy][^aeiouy])+` reconnait une suite de couples voyelle-consonne.
+
+## Alternatives
+
+Le *pipe* indique une alternative :
+
+- `machin|truc` reconnaît `machin` et `truc`.
+- `je|tu|nous` reconnaît `je`, `tu` et `nous`.
+- `je|tu|[nv]ous` reconnaît `je`, `tu`, `nous` et `vous`.
+
+---
+
+On les utilise le plus souvent avec des parenthèses
+
+- `(m|r)aison` est équivalent à `[mr]aison`.
+- `(il|elle|iel)s?` reconnaît `il`, `elle`, `iel` et leurs versions plurielles.
+
+---
+
+**Exercice** : que reconnaissent les expressions suivantes ?
+
+1. vert(es)?
+2. (anti|pro)nucléaire
+3. Wiki[a-z]+
+4. Wiki[a-z]*
+
+# Caractères spéciaux
+
+| **Caractère** |                **Sens**                |              **Exemple**               |
+| :-----------: | :------------------------------------: | :------------------------------------: |
+|      `.`      |        n'importe quel caractère        |    `p.re` : `pare`, `pire`, `père`…    |
+|      `^`      |             début de ligne             |         `^Je` (début de ligne)         |
+|      `$`      |              fin de ligne              |     `informatique$` (fin de ligne)     |
+|     `\b`      | frontière de mot (début ou fin de mot) | `\bjour` : `journée` mais pas `ajouré` |
+|     `\n`      |             saut de ligne              |     `a\n` : `a` puis saut de ligne     |
+|     `\t`      |               tabulation               |      `a\t` : `a` puis tabulation       |
+
+---
+
+**Exercices** : à quoi correspondent ces expressions ?
+
+1. `Nom\tPrénom`
+2. `\bcap\b`
+3. `\bcap`
+4. `premier paragraphe\ndeuxième paragraphe`
+
+## Déspécialisation
+
+On a vu un certain nombre de métacaractères (les caractères avec une signification spéciale).
+
+Pour les reconnaître littéralement (les déspécialiser), il faut les faire précéder d'un anti-slash
+`\` :
+
+- `\^machin` : reconnaît `^machin`
+- `3\.0` reconnaît `3.0` mais pas `310`
+- Pareil pour `$`, `[`, `]`, `(`, `)`, `*`, `+`, `?`, `{`, `}`
+
+Et pour représenter un anti-slash ? Pareil
+
+- `machin\\bidule` reconnaît `machin\bidule`
+
+# Exercices
+
+Dans le fichier Père Duchesne :
+
+1. Recherchez `^.évolution`
+2. Recherchez `r?évolution`
+3. Combien y a-t-il de mots…
+   1. de 3 lettres finissant par `r` ?
+   2. de 4 lettres au plus commençant par `r` ?
+   3. commençant par `a` et finissant par `er` ?
+   4. contenant la séquence `er` en fin de ligne ?
+
+# Classes de caractères
+
+| **Classe** |               **Signification**               |      **Équivalent**       |
+| :--------: | :-------------------------------------------: | :-----------------------: |
+|    `\d`    |                  un chiffre                   |          `[0-9]`          |
+|    `\D`    |             tout sauf un chiffre              |         `[^0-9]`          |
+|    `\w`    |      les caractères alphanumériques et _      | `[a-zA-Z0-9âàéèêëôûüù_]`  |
+|    `\W`    | tout sauf les caractères alphanumériques et _ | `[^a-zA-Z0-9âàéèêëôûüù_]` |
+|    `\s`    |                  une espace                   |   espace + `\t` + `\n`…   |
+|    `\S`    |             tout sauf une espace              |             …             |
+
+**Notes** :
+
+- En général `\X` reconnaît le contraire de `\x`
+- Le sens de `\w` et `\s` peut varier suivant les moteurs de regex
+
+# Exercices
+
+Faire les quatre premiers niveaux sur : <https://alf.nu/RegexGolf>
+
+1. Warmup
+2. Anchors
+3. It never ends
+4. Ranges
+
+# Pour s’entraîner
+
+- Tester ses regex en ligne : <https://regex101.com>
+- Exercices : <https://alf.nu/RegexGolf>
+- Mots croisés de regex : <https://regexcrossword.com>
+
+# Compléments
+
+## Stratégie de reconnaissance
+
+- Par principe, un quantifieur est **glouton** (*greedy*) : il reconnaît le maximum de caractères possibles.
+- En ajoutant ? après un quantifieur, on le rend *lazy* : il reconnait le minimum de caractères.
+
+Par exemple, si l'entrée est `AHHHHHHHHH` :
+
+- `AH+` reconnaît la plus longue suite de caractères : `AHHHHHHHHH`
+- `AH+?` reconnaît la plus petite suite de caractères : `AH`7
+
+## Références
+
+On peut utiliser des références numérotées pour rappeller le contenu d'un groupe :
+
+`(spam|egg), sausage and \1` reconnaît :
+
+- `spam, sausage and spam`
+- `egg, sausage and egg`
+- Mais pas `egg, sausage and spam`

@@ -22,11 +22,15 @@ toc: true
 
 - [Slides Introduction](slides/00-introduction/introduction-slides.html)
 
-
-### 2022-01-23 : Histoire de l'informatique et encodages de caractères
+### 2022-01-24 : Histoire de l'informatique et encodages de caractères
 
 - [Slides Informatique](slides/01-informatique/informatique-slides.html)
 - [Slides Encodages](slides/02-encodages/encodages-slides.html)
+
+### 2022-01-31 : Recherche avancée et expressions régulières
+
+- [Slides Recherche avancée](slides/03-recherche/recherche-slides.html)
+  - Fichier de test [`Duchn-utf8.txt`](slides/03-recherche/Duchn-utf8.txt)
 
 
 ## Licences
