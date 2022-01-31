@@ -32,6 +32,7 @@ toc: true
 - [Slides Recherche avancée](slides/03-recherche/recherche-slides.html)
   - Fichier de test [`Duchn-utf8.txt`](slides/03-recherche/Duchn-utf8.txt)
 
+À faire pour la prochaine fois : exercices « Regex Golf » et « Père Duchesne » du slide.
 
 ## Licences
 
