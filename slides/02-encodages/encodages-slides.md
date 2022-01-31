@@ -307,3 +307,10 @@ caractères non-combinants. Ainsi l'emoji « 🏳️‍⚧️ » est représ
 1. Donner la représentation de votre nom complet sous forme d'une suite de points de code Unicode.
 2. Donner la représentation en UTF-8 des cinq (au plus) premiers caractères de votre prénom.
 3. À quoi correspond la suite de points de code U+5317, U+4EAC, U+5E02 ?
+
+---
+
+1. Loïc Grobol : `U+004c`, `U+006f`, `U+00ef`, `U+0063`, `U+0020`, `U+0047`, `U+0072`, `U+006f`,
+   `U+0062`, `U+006f`, `U+006c`.
+2. `4c`, `6f`, `c3af`, `63`, ou `76`, `111`, `195`, `175`, `99`.
+3. 北京, « capitale du nord », le nom de la ville de Pékin ; suivi de l'idéogramme 市, « ville ».

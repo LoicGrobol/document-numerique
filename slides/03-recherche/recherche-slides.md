@@ -71,7 +71,6 @@ Exemple : [`une colère
 *`](https://books.google.com/ngrams/graph?content=une+col%C3%A8re+%2A&year_start=1800&year_end=2019&corpus=30&smoothing=3&direct_url=t2%3B%2Cune%20col%C3%A8re%20%2A%3B%2Cc0%3B%2Cs0%3B%3Bune%20col%C3%A8re%20qui%3B%2Cc0%3B%3Bune%20col%C3%A8re%20noire%3B%2Cc0%3B%3Bune%20col%C3%A8re%20terrible%3B%2Cc0%3B%3Bune%20col%C3%A8re%20de%3B%2Cc0%3B%3Bune%20col%C3%A8re%20%C3%A9pouvantable%3B%2Cc0%3B%3Bune%20col%C3%A8re%20sourde%3B%2Cc0%3B%3Bune%20col%C3%A8re%20violente%3B%2Cc0%3B%3Bune%20col%C3%A8re%20froide%3B%2Cc0%3B%3Bune%20col%C3%A8re%20et%3B%2Cc0%3B%3Bune%20col%C3%A8re%20concentr%C3%A9e%3B%2Cc0)
 donne les fréquences de trigrammes dont les deux premiers mots sont « une » et « colère »
 
-# Google
 
 # Expressions régulières
 
@@ -91,7 +90,7 @@ Définition de critères de recherche pour des chaînes de caractères
 Outils :
 
 - Éditeur de texte brut : Notepad++ (Windows), Kate/Gedit (Linux), CotEditor (Mac)…
-- Traitement de texte : Word, Writer, Pages…
+- Traitement de texte : Google Drive, Word, Writer, Pages…
 - Test en ligne : <https://regex101.com/>
 - Langage de programmation : java, perl, python, PHP...
 
@@ -106,7 +105,7 @@ On va avoir besoin d’un bon éditeur de texte brut, par exemple :
 - Quickedit (Android)
 - Regex Knife (iOS)
 
-Ou dans <https://regex101.com>
+Ou dans <https://regex101.com> ou Google drive en désespoir de cause.
 
 ---
 
@@ -123,7 +122,7 @@ Pour tester :
   - `madeleine` reconnaît `madeleine` mais pas `Madeleine`
   - `France 2` reconnaît `France 2` mais pas `France2` ni `France 3`
 - Cas particuliers : les **métacarctères**
-  - Quantifieurs
+  - Quantificateurs
   - Opérateurs
   - Caractères spéciaux
   - Classes de caractères
