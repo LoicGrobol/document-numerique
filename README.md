@@ -44,3 +44,10 @@ Un résumé simplifié de cette licence est disponible à <https://creativecommo
 
 Le texte intégral de cette licence est disponible à
 <https://creativecommons.org/licenses/by/4.0/legalcode>
+
+### Exceptions
+
+- Les images `internet-schema-*.png` et `simple-client-server.png` du dossier
+  [`slides/04-internet/pics`](slides/04-internet/pics) sont issues [de la documentation web
+  MDN](https://github.com/mdn/content) et sont soumises à la licence [CC-BY-SA
+  2.5](https://creativecommons.org/licenses/by-sa/2.5/).

@@ -34,6 +34,17 @@ toc: true
 
 À faire pour la prochaine fois : exercices « Regex Golf » et « Père Duchesne » du slide.
 
+### 2022-02-06 : Internet et web
+
+- [Slides Internet](slides/04-internet/internet-slides.html)
+
+À **rendre** pour la prochaine fois : [exercices expressions régulières](slides/03-recherche/exercices.md)
+
+## Ressources
+
+- [Le dépôt Github du cours](https://github.com/LoicGrobol/apprendre-programmer/) contient toutes
+  les sources permettant de générer le matériel du cours.
+  
 ## Licences
 
 [![CC BY Licence badge](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
