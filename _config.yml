@@ -12,10 +12,12 @@ atom_feed:
 
 
 exclude:
+  - "*-slides.md"
   - "*.py.md"
   - "**/local"
 
 keep_files:
+  - "*-slides.html"
   - "*.py.html"
   - "pdf_slides/*"
 
