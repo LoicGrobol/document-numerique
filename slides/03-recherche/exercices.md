@@ -1,3 +1,14 @@
+---
+title: "Décrire et manipuler un document numérique"
+subtitle: "Exercice expressions régulières"
+author: Loïc Grobol
+date: 2022-02-07
+lang: fr-FR
+output:
+  pdf_document:
+    latex_engine: "lualatex"
+---
+
 <!-- LTeX: language=fr -->
 
 Exercices expressions régulières

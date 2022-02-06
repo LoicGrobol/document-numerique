@@ -5,6 +5,13 @@ toc: true
 
 [comment]: <> "LTeX: language=fr"
 
+## Nouvelles
+
+- **2022-02-06** un [espace sur Cours en
+  Ligne](https://coursenligne.parisnanterre.fr/course/view.php?id=8022) a été créé. **Il ne
+  contiendra rien de plus qu'un lien vers la page où vous vous trouvez** et un espace de dépôt pour
+  les devoirs. La clé d'accès est `lovelace`.
+
 ## Infos pratiques
 
 - **Quoi** « Décrire et manipuler un document numérique » 4L4SC02P
