@@ -45,7 +45,8 @@ toc: true
 
 - [Slides Internet](slides/04-internet/internet-slides.html)
 
-À **rendre** pour la prochaine fois : [exercices expressions régulières](slides/03-recherche/exercices.md)
+À **rendre** pour la prochaine fois : [exercices expressions
+régulières](slides/03-recherche/exercices.html)
 
 ## Ressources
 
@@ -63,6 +64,8 @@ la licence [Creative Commons Attribution 4.0
 International](https://creativecommons.org/licenses/by/4.0/). Voir [le README](README.md#Licences)
 pour plus de détails.
 
- Un résumé simplifié de cette licence est disponible à <https://creativecommons.org/licenses/by/4.0/>.
+ Un résumé simplifié de cette licence est disponible à
+ <https://creativecommons.org/licenses/by/4.0/>.
 
- Le texte intégral de cette licence est disponible à <https://creativecommons.org/licenses/by/4.0/legalcode>
+ Le texte intégral de cette licence est disponible à
+ <https://creativecommons.org/licenses/by/4.0/legalcode>
