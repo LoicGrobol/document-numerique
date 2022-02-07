@@ -221,9 +221,13 @@ deuxième paragraphe
 
 `fu\b`
 
+---
+
 > 4\. Ranges
 
 `^[a-f]+$`
+
+---
 
 > 5\. Backref
 
