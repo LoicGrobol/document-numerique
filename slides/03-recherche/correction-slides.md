@@ -191,7 +191,7 @@ deuxième paragraphe
 
 > 3.3 commençant par `a` et finissant par `er` ?
 
-`\ba\w*r\b` : 751 matchs
+`\ba\w*er\b` : 348 matchs
 
 ---
 
