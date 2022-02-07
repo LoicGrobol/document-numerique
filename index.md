@@ -43,6 +43,8 @@ toc: true
 
 ### 2022-02-06 : Internet et web
 
+- [Correction des exercices du slide « Recherche
+  avancée »](slides/03-recherche/correction-slides.html)
 - [Slides Internet](slides/04-internet/internet-slides.html)
 
 À **rendre** pour la prochaine fois : [exercices expressions
