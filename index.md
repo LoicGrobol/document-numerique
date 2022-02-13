@@ -48,14 +48,13 @@ toc: true
 - [Slides Internet](slides/04-internet/internet-slides.html)
 
 À **rendre** pour la prochaine fois : [exercices expressions
-régulières](slides/03-recherche/exercices.html)
+régulières](slides/03-recherche/exercices.html).
 
 ### 2022-02-14 : HTML
 
 - [Slides HTML](slides/05-html/html-slides.html)
 
-À **rendre** pour la prochaine fois : [exercice lettre sur
-MDN](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter)
+À **rendre** pour la prochaine fois : [exercice lettre](slides/05-html/exercice-lettre.html).
 
 ## Ressources
 
