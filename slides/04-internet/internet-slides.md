@@ -2,7 +2,7 @@
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 4 : Internet et le Web"
 author: Loïc Grobol
-date: 2022-01-31
+date: 2022-02-07
 lang: fr-FR
 output:
   revealjs::revealjs_presentation:

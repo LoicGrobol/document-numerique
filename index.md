@@ -41,11 +41,20 @@ toc: true
 
 À faire pour la prochaine fois : exercices « Regex Golf » et « Père Duchesne » du slide.
 
-### 2022-02-06 : Internet et web
+### 2022-02-07 : Internet et web
 
 - [Correction des exercices du slide « Recherche
   avancée »](slides/03-recherche/correction-slides.html)
 - [Slides Internet](slides/04-internet/internet-slides.html)
+
+À **rendre** pour la prochaine fois : [exercices expressions
+régulières](slides/03-recherche/exercices.html)
+
+### 2022-02-14 : HTML
+
+- [Correction des exercices à rendre « Recherche
+  avancée »](slides/03-recherche/correction-exercices.html)
+- [Slides HTML](slides/05-html/html-slides.html)
 
 À **rendre** pour la prochaine fois : [exercices expressions
 régulières](slides/03-recherche/exercices.html)
