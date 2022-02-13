@@ -16,7 +16,7 @@ Exercice lettre HTML
 
 Consignes pour le rendu :
 
-- Exercices individuels à rendre au plus tard le 14/02/2022 à 19h.
+- Exercices individuels à rendre au plus tard le 20/02/2022 à 19h.
 - Vos réponses sont à rendre en HTML uniquement.
 - Le nom de fichier doit être de la forme `<Prénom>_<Nom>-lettre-4L4SC02P.html`, par exemple
   pour William Labov, le nom du fichier sera `William_Labov-lettre-4L4SC02P.html`.
