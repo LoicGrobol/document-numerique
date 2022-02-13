@@ -98,11 +98,17 @@ C'est une convention historique d'annotation, recyclée
 - Sert de parenthèse qui permet d’isoler une portion de texte en l’isolant de la
   situation de communication.
 
-## TODO
+# TODO
 
-Tutoriels sur MDN :
+Suivre les tutoriels suivants sur MDN :
 
 - [Les bases de
   HTML](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/HTML_basics)
 - [Introduction à HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML)
-  (interactif)
+  (partiellement interactif)
+  - Les parties « Déboguer en HTML », « Structurer une page de contenu » et « Structure de site web
+    et de document » sont facultatives, mais recommandées.
+  - En particulier, n'hésitez pas à revenir sur « Déboguer en HTML » qui peut vous être utile pour
+    le devoir à rendre de la semain.
+  - Si vous traitez l'exercice « Structurer une page de contenu », vous pouvez le rendre comme
+    bonus.
