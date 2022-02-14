@@ -109,6 +109,6 @@ Suivre les tutoriels suivants sur MDN :
   - Les parties « Déboguer en HTML », « Structurer une page de contenu » et « Structure de site web
     et de document » sont facultatives, mais recommandées.
   - En particulier, n'hésitez pas à revenir sur « Déboguer en HTML » qui peut vous être utile pour
-    le devoir à rendre de la semain.
+    le devoir à rendre de la semaine.
   - Si vous traitez l'exercice « Structurer une page de contenu », vous pouvez le rendre comme
     bonus.
