@@ -96,7 +96,8 @@ Dans l'en-tête du document :
 
 - Le jeu de caractères sera précisé comme étant utf-8 avec la balise `meta` appropriée.
 - L'auteur de la lettre sera indiqué dans une balise `meta` adéquate.
-- Les CSS fournies seront incorporées avec le marquage approprié.
+- Les CSS fournies seront incorporées avec le marquage approprié, c'est-à-dire dans une balise
+  `<style>`.
 
 ## Conseils et astuces
 
