@@ -58,7 +58,7 @@ régulières](slides/03-recherche/exercices.html).
 
 ## Ressources
 
-- [Le dépôt Github du cours](https://github.com/LoicGrobol/apprendre-programmer/) contient toutes
+- [Le dépôt Github du cours](https://github.com/LoicGrobol/document-numerique/) contient toutes
   les sources permettant de générer le matériel du cours.
   
 ## Licences
