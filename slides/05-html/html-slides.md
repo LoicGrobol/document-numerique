@@ -16,6 +16,7 @@ output:
     latex_engine: "lualatex"
 ---
 
+<!-- LTeX: language=fr -->
 
 # HTML
 
