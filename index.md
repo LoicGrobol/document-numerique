@@ -56,6 +56,10 @@ régulières](slides/03-recherche/exercices.html).
 
 À **rendre** pour la prochaine fois : [exercice lettre](slides/05-html/exercice-lettre.html).
 
+### 2022-02-21 : CSS
+
+- [Correction exercices expressions régulières](slides/03-recherche/correction-exercices.md)
+
 ## Ressources
 
 - [Le dépôt Github du cours](https://github.com/LoicGrobol/document-numerique/) contient toutes
