@@ -63,7 +63,7 @@ régulières](slides/03-recherche/exercices.html).
 - [Slides CSS](slides/06-css/css-slides.html)
 
 À **rendre** pour la prochaine fois : [exercice collège
-communautaire](slides/06-css/exercice-lettre.html).
+communautaire](slides/06-css/exercice-college.html).
 
 ## Ressources
 
