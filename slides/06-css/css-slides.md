@@ -28,10 +28,14 @@ _**C**ascading **S**tyle **S**heets_
   - Idée générale : on doit être capable en changeant uniquement le style CSS appliqué à un document
     HTML de modifier totalement son apparence sans jamais toucher au HTML.
   - Démo : <http://www.csszengarden.com>
-- L'idée de **cascade** décrivait à l'origine une structure modulaire, où on pourrait avoir par
+
+---
+
+L'idée de **cascade** décrivait à l'origine une structure modulaire, où on pourrait avoir par
   exemple un fichier CSS global pour tout un site web, complémenté par des styles individuels par
   page.
-  - On ne fait plus trop ça aujourd'hui, et le sens de « cascade » a évolué.
+
+On ne fait plus trop ça aujourd'hui, et le sens de « cascade » a évolué.
 
 ---
 
@@ -64,6 +68,8 @@ p,ul,ol,dl,address {
 Un fichier CSS est composé de **blocs**, qui décrivent des règles de formatage et les éléments
 qu'elles concernent. Leur structure est la suivante :
 
+---
+
 ### Sélecteurs
 
 Un bloc commence par un ou plusieurs **sélecteurs** séparés par des virgules, qui décrivent les
@@ -85,6 +91,8 @@ ou de leur attribut `id` :
 ```css
 #head-div
 ```
+
+---
 
 ### Règles
 
