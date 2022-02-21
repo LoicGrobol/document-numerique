@@ -1,0 +1,149 @@
+---
+title: "Décrire et manipuler un document numérique"
+subtitle: "Cours 6 : CSS"
+author: Loïc Grobol
+date: 2022-02-21
+lang: fr-FR
+output:
+  revealjs::revealjs_presentation:
+    css: "../reveal_slides_style.css"
+    theme: white
+    highlight: pygments
+    reveal_options:
+      slideNumber: true
+      progress: true
+  pdf_document:
+    latex_engine: "lualatex"
+---
+
+<!-- LTeX: language=fr -->
+
+# CSS
+
+_**C**ascading **S**tyle **S**heets_
+
+- Créé en 2014 par Håkon Wium Lie, dans la même équipe que Tim Berners-Lee
+- Un complément à HTML qui permet de cibler des éléments dans un document en HTML et de spécifier
+  leur apparence.
+  - Idée générale : on doit être capable en changeant uniquement le style CSS appliqué à un document
+    HTML de modifier totalement son apparence sans jamais toucher au HTML.
+  - Démo : <http://www.csszengarden.com>
+- L'idée de **cascade** décrivait à l'origine une structure modulaire, où on pourrait avoir par
+  exemple un fichier CSS global pour tout un site web, complémenté par des styles individuels par
+  page.
+  - On ne fait plus trop ça aujourd'hui, et le sens de « cascade » a évolué.
+
+---
+
+```css
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sender-column {
+  text-align: right;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+p,ul,ol,dl,address {
+  font-size: 1.1em;
+  line-spacing: 20px;
+}
+
+#head-div {
+  color: red;
+}
+```
+
+## Blocs
+
+Un fichier CSS est composé de **blocs**, qui décrivent des règles de formatage et les éléments
+qu'elles concernent. Leur structure est la suivante :
+
+### Sélecteurs
+
+Un bloc commence par un ou plusieurs **sélecteurs** séparés par des virgules, qui décrivent les
+éléments auxquels la règle s'appliquent : ici tous les éléments `<p>` :
+
+```css
+p
+```
+
+En plus de cibler certains types d'éléments, on peut également cibler les éléments à partir de la
+valeur de leur attribut `class` :
+
+```css
+.sender-column
+```
+
+ou de leur attribut `id` :
+
+```css
+#head-div
+```
+
+### Règles
+
+Le reste du bloc, qui est compris entre deux accolades `{` et `}` se composent de règles, chacune
+sous la forme suivante
+
+```css
+propriété: valeur;
+```
+
+Les deux points séparent le nom de la propriété et la valeur qu'on lui donne et le point-virgule
+`;` indique la fin de la règle.
+
+<small>Les accolades et les points virgules sont hérités du langage C</small>
+
+Un bloc peut contenir autant de règles que vous le voulez.
+
+---
+
+Les propriétés disponibles et leurs valeurs possibles sont fixées par le **navigateur** qui lit le
+CSS pour formater un document HTML. Comme d'habitude en web, la règle est l'indulgence : si le
+navigateur voit une propriété ou une valeur qu'il ne sait pas interpréter, il l'ignore simplement.
+
+Pour des listes exhaustives :
+
+- [Le standard proposé par le W3C](https://www.w3.org/Style/CSS/current-work), plus formel.
+- [La référence MDN sur CSS](https://developer.mozilla.org/fr/docs/Web/CSS), plus complète.
+
+---
+
+La convention est d'**indenter** les lignes contenant les règles en les précédant d'un alinéa de
+deux espaces et de ne mettre qu'une règle par ligne, mais le langage ne tient pas compte des espaces
+en général, ainsi
+
+```css
+h1 {font-size: 1.1em;line-spacing: 20px;}
+```
+
+et
+
+```css
+h1 {
+  font-size: 1.1em;
+  line-spacing: 20px;
+}
+```
+
+sont équivalents, mais on préfère la deuxième solution, par souci de lisibilité.
+
+# TODO
+
+Suivre les tutoriels suivants sur [MDN](https://developer.mozilla.org/fr/docs/Learn/CSS) :
+
+- [Introduction aux CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps) (partiellement
+  interactif)
+  - La partie « CSS, comment ça marche ? » est facultative.
+- [Introduction au style de texte](https://developer.mozilla.org/fr/docs/Learn/CSS/Styling_text)
+- Les tutoriels [Blocs de base en
+  CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks) et [La mise en page avec
+  CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout) sont facultatifs (car un peu
+  long), mais sont tout à fait à votre portée, n'hésitez pas à aller y fouiller pour améliorer votre
+  rendu pour la prochaine séance.

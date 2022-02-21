@@ -28,6 +28,7 @@ _**H**yper**t**ext **M**arkup **L**anguage_
     ressources multimédia et **liés** entre eux.
 - À l'origine un cas particulier de SGML, s'en éloigne avec le temps
 - Toujours en évolution pour s'adapter aux usages
+  - La spécification évolutive : <https://html.spec.whatwg.org>
 
 ---
 

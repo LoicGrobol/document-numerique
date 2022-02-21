@@ -25,23 +25,23 @@ toc: true
 
 ## Séances
 
-### 2022-01-17 : Introduction, documents et fichiers
+### 2022-01-17 : Introduction, documents et fichiers
 
 - [Slides Introduction](slides/00-introduction/introduction-slides.html)
 
-### 2022-01-24 : Histoire de l'informatique et encodages de caractères
+### 2022-01-24 : Histoire de l'informatique et encodages de caractères
 
 - [Slides Informatique](slides/01-informatique/informatique-slides.html)
 - [Slides Encodages](slides/02-encodages/encodages-slides.html)
 
-### 2022-01-31 : Recherche avancée et expressions régulières
+### 2022-01-31 : Recherche avancée et expressions régulières
 
 - [Slides Recherche avancée](slides/03-recherche/recherche-slides.html)
   - Fichier de test [`Duchn-utf8.txt`](slides/03-recherche/Duchn-utf8.txt)
 
 À faire pour la prochaine fois : exercices « Regex Golf » et « Père Duchesne » du slide.
 
-### 2022-02-07 : Internet et web
+### 2022-02-07 : Internet et web
 
 - [Correction des exercices du slide « Recherche
   avancée »](slides/03-recherche/correction-slides.html)
@@ -50,15 +50,20 @@ toc: true
 À **rendre** pour la prochaine fois : [exercices expressions
 régulières](slides/03-recherche/exercices.html).
 
-### 2022-02-14 : HTML
+### 2022-02-14 : HTML
 
 - [Slides HTML](slides/05-html/html-slides.html)
 
-À **rendre** pour la prochaine fois : [exercice lettre](slides/05-html/exercice-lettre.html).
+À **rendre** pour la prochaine fois : [exercice lettre](slides/05-html/exercice-lettre.html).
 
-### 2022-02-21 : CSS
+### 2022-02-21 : CSS
 
 - [Correction exercices expressions régulières](slides/03-recherche/correction-exercices.md)
+- [Correction exercice lettre HTML](slides/05-html/correction-lettre.md)
+- [Slides CSS](slides/06-css/css-slides.html)
+
+À **rendre** pour la prochaine fois : [exercice collège
+communautaire](slides/06-css/exercice-lettre.md).
 
 ## Ressources
 
