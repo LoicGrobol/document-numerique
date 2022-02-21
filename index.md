@@ -58,12 +58,12 @@ régulières](slides/03-recherche/exercices.html).
 
 ### 2022-02-21 : CSS
 
-- [Correction exercices expressions régulières](slides/03-recherche/correction-exercices.md)
-- [Correction exercice lettre HTML](slides/05-html/correction-lettre.md)
+- [Correction exercices expressions régulières](slides/03-recherche/correction-exercices.html)
+- [Correction exercice lettre HTML](slides/05-html/correction-lettre.html)
 - [Slides CSS](slides/06-css/css-slides.html)
 
 À **rendre** pour la prochaine fois : [exercice collège
-communautaire](slides/06-css/exercice-lettre.md).
+communautaire](slides/06-css/exercice-lettre.html).
 
 ## Ressources
 
