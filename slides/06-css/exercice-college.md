@@ -35,7 +35,8 @@ Pour débuter cette évaluation, vous devez :
 
 - Récupérer les fichiers [HTML](assets-exercice/index.html) et
   [CSS](https://github.com/mdn/learning-area/blob/master/css/styling-text/typesetting-a-homepage-start/style.css)
-  de l'exercice ainsi que [l'icône « lien externe »](https://github.com/mdn/learning-area/blob/master/css/styling-text/typesetting-a-homepage-start/external-link-52.png).
+  de l'exercice ainsi que [l'icône « lien
+  externe »](https://github.com/mdn/learning-area/blob/master/css/styling-text/typesetting-a-homepage-start/external-link-52.png).
 - En faire une copie sur votre ordinateur.
 
 **Note :** Autrement, il reste possible d'utiliser un site comme [CodePen](https://codepen.io/),
@@ -71,7 +72,7 @@ Style général du texte :
 - Donnez aux titres et autres types d'éléments des tailles de polices appropriées définies avec une
   unité relative adéquate.
 - Donnez au corps du texte une propriété `line-height` appropriée.
-- Centrez le titre d'en-tête sue la page.
+- Centrez le titre d'en-tête sur la page.
 - Augmentez légèrement la valeur de la propriété `letter-spacing` des titres pour qu'ils ne
   paraissent pas trop écrasés en donnant un peu d'air aux lettres.
 - Donnez au corps du texte une valeur de propriété `letter-spacing` et `word-spacing` appropriée.
