@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Contacts [
+<!ENTITY tokyo SYSTEM "tokyo.xml">
+<!ENTITY NY  "newyork.xml">
+<!ENTITY mail "jsmith@ibm.com">
+]>
+
+<Contacts>
+	<Person>
+		<Firstname>John</Firstname>
+		<Lastname>Smith</Lastname>
+		<Birthday>19650302</Birthday>
+		<Company>IBM</Company>
+		<Position>CEO</Position>
+		<Email>mail</Email>
+		<Email>jsmith@yahoo.com</Email>
+		<Address type="home">
+		  &tokyo
+		</Address>
+		<Address type="work">
+		  &NY;
+		</Address>
+	</Person>
+	<Person>
+		<Firstname>Tom</Firstname>
+		<Lastname>Dunne</Lastname>
+		<Company>Today FM</Company>
+    	<Position/>
+		<Email>tom.dunne@todayfm.com</Email>
+	</Person>
+</Contacts>
