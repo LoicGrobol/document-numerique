@@ -65,6 +65,11 @@ régulières](slides/03-recherche/exercices.html).
 À **rendre** pour la prochaine fois : [exercice collège
 communautaire](slides/06-css/exercice-college.html).
 
+### 2022-03-07 : XMl
+
+- [Correction exercice collège communautaire](slides/06-css/correction-college.html)
+- [Slides XML](slides/07-xml/xml-slides.html)
+
 ## Ressources
 
 - [Le dépôt Github du cours](https://github.com/LoicGrobol/document-numerique/) contient toutes
