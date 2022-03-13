@@ -16,7 +16,7 @@ output:
       progress: true
   pdf_document:
     latex_engine: "lualatex"
-lang: fr
+lang: "fr"
 ---
 
 # Qu'est ce que l'informatique ?

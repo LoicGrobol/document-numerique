@@ -3,7 +3,7 @@ title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 4 : Correction des exercices du slide"
 author: Loïc Grobol
 date: 2022-01-31
-lang: fr-FR
+lang: "fr"
 output:
   revealjs::revealjs_presentation:
     css: "../reveal_slides_style.css"

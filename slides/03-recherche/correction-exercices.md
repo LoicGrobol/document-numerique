@@ -3,7 +3,7 @@ title: "Décrire et manipuler un document numérique"
 subtitle: "Correction : Exercice expressions régulières"
 author: Loïc Grobol
 date: 2022-02-21
-lang: fr-FR
+lang: "fr"
 output:
   pdf_document:
     latex_engine: "lualatex"

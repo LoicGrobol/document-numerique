@@ -3,7 +3,7 @@ title: "Décrire et manipuler un document numérique"
 subtitle: "Exercice collège communautaire CSS"
 author: Loïc Grobol
 date: 2022-02-14
-lang: fr-FR
+lang: "fr"
 output:
   pdf_document:
     latex_engine: "lualatex"
