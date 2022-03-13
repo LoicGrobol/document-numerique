@@ -80,6 +80,8 @@ Un bloc commence par un ou plusieurs **sélecteurs** séparés par des virgules,
 p
 ```
 
+---
+
 En plus de cibler certains types d'éléments, on peut également cibler les éléments à partir de la
 valeur de leur attribut `class` :
 
@@ -124,9 +126,8 @@ Pour des listes exhaustives :
 
 ---
 
-La convention est d'**indenter** les lignes contenant les règles en les précédant d'un alinéa de
-deux espaces et de ne mettre qu'une règle par ligne, mais le langage ne tient pas compte des espaces
-en général, ainsi
+La convention est d'**indenter** les lignes de règles avec un alinéa de deux espaces et de ne mettre
+qu'une règle par ligne, mais le langage ne tient pas compte des espaces en général, ainsi
 
 ```css
 h1 {font-size: 1.1em;line-spacing: 20px;}

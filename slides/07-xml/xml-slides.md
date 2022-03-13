@@ -337,16 +337,14 @@ traitement, des directives pour l’analyseur XML.
 
 Par exemple :
 
-- Une ** (DTD) qui permet de valider le contenu du document. C’est l’objet du prochain cours.
-- Une feuille de style, voir cours 4.
+- Une *Document Type Definitions* (DTD) qui permet de valider le contenu du document. C’est l’objet
+  du prochain cours.
+- Une feuille de style.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE personne SYSTEM "personne.dtd">
 <?xml-stylesheet href="personne.css" type="text/css"?>
-<personne>
-...
-</personne>
 ```
 
 # Éléments XML
