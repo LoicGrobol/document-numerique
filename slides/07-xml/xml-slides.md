@@ -1,26 +1,27 @@
 ---
 title: "Décrire et manipuler un document numérique"
-subtitle: "Cours 7 : CSS"
-author: Loïc Grobol
-date: 2022-03-06
-lang: fr-FR
+subtitle: "Cours 7 : XML"
+author:
+  - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
+institute: Université Paris Nanterre
+date: 2022-03-07
 output:
   revealjs::revealjs_presentation:
     css: "../reveal_slides_style.css"
     theme: white
     highlight: pygments
+    center: true
     reveal_options:
       slideNumber: true
       progress: true
   pdf_document:
     latex_engine: "lualatex"
+lang: fr
 ---
-
-<!-- LTeX: language=fr -->
 
 # Introduction
 
-On a vu que HTML permettait de représenter des **documents** web
+On a vu que HTML permettait de décrire des **documents** web
 
 - Structurés
 - Marqués sémantiquement

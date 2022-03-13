@@ -1,22 +1,23 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 6 : CSS"
-author: Loïc Grobol
+author:
+  - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
+institute: Université Paris Nanterre
 date: 2022-02-21
-lang: fr-FR
 output:
   revealjs::revealjs_presentation:
     css: "../reveal_slides_style.css"
     theme: white
     highlight: pygments
+    center: true
     reveal_options:
       slideNumber: true
       progress: true
   pdf_document:
     latex_engine: "lualatex"
+lang: fr
 ---
-
-<!-- LTeX: language=fr -->
 
 # CSS
 

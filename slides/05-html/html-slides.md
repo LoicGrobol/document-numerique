@@ -1,22 +1,23 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 5 : HTML"
-author: Loïc Grobol
 date: 2022-02-14
-lang: fr-FR
+author:
+  - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
+institute: Université Paris Nanterre
 output:
   revealjs::revealjs_presentation:
     css: "../reveal_slides_style.css"
     theme: white
     highlight: pygments
+    center: true
     reveal_options:
       slideNumber: true
       progress: true
   pdf_document:
     latex_engine: "lualatex"
+lang: fr
 ---
-
-<!-- LTeX: language=fr -->
 
 # HTML
 
