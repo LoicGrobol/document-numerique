@@ -8,6 +8,13 @@ jobs:
 
     name: ${{ matrix.config.os }}
 
+    strategy:
+      # we keep a matrix for convenience, but we would always want to run on one
+      # single OS and R version
+      matrix:
+        config:
+          - os: ubuntu-20.04
+
     env:
       JEKYLL_DEBUG: "true"
 
