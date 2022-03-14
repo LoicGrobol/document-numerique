@@ -133,7 +133,7 @@ Une DTD peut être
 
 - **Interne**, intégrée au document, entre `[ ]` :
 
-  ```xml
+  ```dtd
   <!DOCTYPE itineraire [
   ...
   ]>
@@ -141,7 +141,7 @@ Une DTD peut être
 
 - **Externe**, dans un autre fichier, signalé par `SYSTEM` suivi de l’URL du fichier :
 
-   ```xml
+   ```dtd
    <!DOCTYPE itineraire SYSTEM "itineraire.dtd">
    ```
 
@@ -149,7 +149,7 @@ Une DTD peut être
 
 - **Mixte**, il y a à la fois un fichier et des définitions locales :
 
-   ```xml
+   ```dtd
    <!DOCTYPE itineraire SYSTEM "itineraire.dtd" [
    ...
    ]>
@@ -182,7 +182,7 @@ cours, on peut se contenter d'un validateur simple comme <https://www.truugo.com
 
 Une DTD contient des règles comme celles-ci :
 
-```xml
+```dtd
 <!ELEMENT itineraire (etape+)>
 <!ATTLIST itineraire nom CDATA #IMPLIED>
 <!ELEMENT etape (#PCDATA)>
@@ -333,8 +333,10 @@ Il y a plusieurs types possibles, voici les plus utiles :
 - `CDATA` l’attribut peut prendre n’importe quelle valeur texte. Ne pas confondre avec `#PCDATA`.
 - `(mot1|mot2|...)` Cela force l’attribut à avoir l’une des valeurs de
   l’énumération.
-- `ID` l’attribut est un identifiant XML, sa valeur doit être une chaîne (pas un nombre) unique
-  parmi tous les autres attributs de type ID du document.
+- `ID` l’attribut est un **identifiant** XML
+  - Sa valeur doit être une chaîne (pas un nombre) unique parmi tous les autres attributs de type ID
+  du document.
+  - Il ne peut y avoir qu'un seul attribut de type `ID` par élément.
 - `IDREF` l’attribut doit être égal, dans le document XML, à l’identifiant d’un autre élément.
 
 ## Entités
