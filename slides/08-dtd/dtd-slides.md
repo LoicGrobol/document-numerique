@@ -374,6 +374,7 @@ XML ou des textes.
 </itineraire>
 ```
 
-# Exos
+<!-- # Exos
 
-https://pageperso.lis-lab.fr/~pierre-alain.reynier/XML/ctp1/ctp1.html https://fabien-torre.fr/Enseignement/tp/XML/Modelisation/ https://pageperso.lis-lab.fr/~pierre-alain.reynier/XML/tp1/tp1.html
+- https://fabien-torre.fr/Enseignement/tp/XML/Modelisation/
+- https://pageperso.lis-lab.fr/~pierre-alain.reynier/XML/tp1/tp1.html -->
