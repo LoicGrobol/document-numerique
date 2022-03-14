@@ -176,7 +176,8 @@ quand il y a une DTD interne.
 ## Validateurs
 
 De nombreux outils de validation existent, souvent associés à des éditeurs XML. Dans le cadre de ce
-cours, on peut se contenter d'un validateur simple comme <https://www.truugo.com/xml_validator>.
+cours, on peut se contenter d'un validateur simple comme
+<https://www.w3schools.com/xml/xml_validator.asp>.
 
 # Structure d'une DTD
 
@@ -349,6 +350,8 @@ XML ou des textes.
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!DOCTYPE itineraire [
+  <!ELEMENT auteur ANY>
+  <!ELEMENT etape ANY>
   <!ENTITY copyright "© IUT Lannion 2022">
   <!ENTITY depart "<etape>Point de départ</etape>">
   <!ENTITY equipement SYSTEM "equipement.xml">
@@ -365,6 +368,8 @@ XML ou des textes.
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!DOCTYPE itineraire [
+  <!ELEMENT auteur ANY>
+  <!ELEMENT etape ANY>
   <!ENTITY copyright "© IUT Lannion 2022">
   <!ENTITY depart "<etape>Point de départ</etape>">
   <!ENTITY equipement SYSTEM "equipement.xml">
@@ -375,6 +380,25 @@ XML ou des textes.
   <etape>Point de départ</etape>
 </itineraire>
 ```
+
+---
+
+**Attention** une entité ne peut remplacer que du XML bien formé et complet ! Ceci n'est pas
+valide :
+
+```xml
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+  <!DOCTYPE itineraire [
+  <!ELEMENT auteur ANY>
+  <!ELEMENT etape ANY>
+  <!ENTITY depart "<etape>Point de départ">
+]>
+<itineraire>
+  &depart;</etape>
+</itineraire>
+```
+
+Pour que ça le soit, c'est dans la définition de l'entité `depart` qu'il faut mettre `</etape>`
 
 <!-- # Exos
 
