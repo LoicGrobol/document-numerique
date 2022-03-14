@@ -27,6 +27,9 @@ On a vu que XML était à la fois plus souple et plus strict que HTML
 - Plus strict : la syntaxe est moins permissive.
   - Ou plutôt : les interpréteurs n'essaient pas de deviner en cas d'erreur de syntaxe.
 
+<small>Ce cours est inspiré entre autres des transparents [XML et données
+internet](https://perso.univ-rennes1.fr/pierre.nerzic/XML) de Pierre Nerzic</small>
+
 ---
 
 Les règles de syntaxe qu'on a vu dans le cours précédent définissent le fait d'être **bien formé** :
@@ -177,5 +180,202 @@ Par défaut il vaut `"no"`, donc on ne le met que lorsqu’il vaut `"yes"`.
 De nombreux outils de validation existent, souvent associés à des éditeurs XML. Dans le cadre de ce
 cours, on peut se contenter d'un validateur simple comme <https://www.truugo.com/xml_validator>.
 
+# Structure d'une DTD
+
+Une DTD contient des règles comme celles-ci :
+
+```xml
+<!ELEMENT itineraire (etape+)>
+<!ATTLIST itineraire nom CDATA #IMPLIED>
+<!ELEMENT etape (#PCDATA)>
+<!ATTLIST etape distance CDATA #REQUIRED>
+```
+
+Ce sont des règles qui définissent :
+
+- Des éléments (`ELEMENT`) : leur nom et le contenu autorisé,
+- Des attributs (`ATTLIST`) : leur nom et options.
+
+---
+
+Le nom présent après le mot-clé `DOCTYPE` indique la racine du
+document. C’est un élément qui est défini dans la DTD.
+
+```xml
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE itineraire [
+<!ELEMENT itineraire (etape+)>
+<!ATTLIST itineraire nom CDATA #IMPLIED>
+<!ELEMENT etape (#PCDATA)>
+<!ATTLIST etape distance CDATA #REQUIRED>
+]>
+<itineraire nom="essai">
+<etape distance="0km">départ</etape>
+<etape distance="1km">tourner à droite</etape>
+</itineraire>
+```
+
+`<!DOCTYPE itineraire` définit la racine `<itineraire>`.
+
+## Éléments
+
+La règle `<!ELEMENT nom contenu>` définit un élément : son nom et ce qu’il peut y avoir entre ses
+balises ouvrantes et fermantes.
+
+La définition du contenu peut prendre différentes formes :
+
+- `EMPTY` : signifie que l’élément doit être vide,
+- `ANY` : signifie que l’élément peut contenir n’importe quels éléments (définis dans la DTD) et
+  textes (leur ordre d’apparition et leur nombre ne seront pas testés),
+- (`#PCDATA`) : signifie que l’élément ne contient que du texte,
+- (définitions de sous-éléments) : spécifie les sous-éléments qui peuvent être employés.
+
+---
+
+Voici un exemple d’éléments simples :
+
+```xml
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE itineraire [
+  <!ELEMENT itineraire ANY>
+  <!ELEMENT boucle EMPTY>
+  <!ELEMENT etape (#PCDATA)>
+]>
+<itineraire>
+  <boucle/>
+  <etape>départ</etape>
+  <etape>tourner à droite</etape>
+  <boucle></boucle>
+  <itineraire/> <!-- c'est possible avec ANY -->
+  <etape>tourner à gauche</etape>
+</itineraire>
+```
+
+---
+
+On peut restreindre les sous-éléments autorisés en donnant une liste ordonnée
+dans laquelle chaque sous-élément peut être suivi d’un quantificateur parmi `*`,
+`+` et `?` pour indiquer des répétitions, comme dans les expressions régulières.
+
+---
+
+```dtd
+<!ELEMENT itineraire (boucle?, etape+, variante*)>
+```
+
+Se lit ainsi : l’élément `<boucle>` est en option, il doit être suivi d'au moins un
+`<etape>` puis de zéro ou plus `<variante>`.
+
+---
+
+La liste peut aussi contenir des alternatives notées `( contenu1
+| contenu2 | … )` :
+
+```dtd
+<!ELEMENT informations (topoguide | carte)>
+```
+
+signifie que l’élément `<information>` peut contenir soit un enfant
+`<topoguide>`, soit un enfant `<carte>.`
+
+---
+
+On peut grouper plusieurs séquences avec des parenthèses pour
+spécifier ce qu’on désire :
+
+```dtd
+<!ELEMENT personne (titre?, (nom,prenom+) | (prenom+,nom))>
+```
+
+---
+
+On peut aussi indiquer que l'élément peut
+contenir du texte ou des sous-éléments :
+
+```dtd
+<!ELEMENT etape (#PCDATA | waypoint)* >
+```
+
+```xml
+<etape>avancer tout droit</etape>
+<etape><waypoint lon="3.1" lat="48.2"/></etape>
+<etape><waypoint lon="3.2" lat="48.1"/>aller au phare</etap
+```
+
+## Attributs
+
+On décrit un attribut avec une règle de la forme `<!ATTLIST elem attr type valeur ...>` :
+
+- Le nom de l’élément concerné
+- Le nom de l’attribut,
+- Son type
+- Sa valeur.
+  - `#REQUIRED` en tant que valeur indique que l’attribut est obligatoire
+  - `#IMPLIED` qu’il est optionnel,
+  - Si on fournit une chaîne `"…"`, c’est la valeur par défaut.
+
+---
+
+```dtd
+<!ELEMENT waypoint EMPTY>
+<!ATTLIST waypoint
+  lon CDATA #REQUIRED
+  lat CDATA #REQUIRED
+  ele CDATA #IMPLIED
+  precision CDATA "50m"
+  source (gps|utilisateur|carte) "carte">
+```
+
+---
+
+### Types d'attributs
+
+Il y a plusieurs types possibles, voici les plus utiles :
+
+- `CDATA` l’attribut peut prendre n’importe quelle valeur texte. Ne pas confondre avec `#PCDATA`.
+- `(mot1|mot2|...)` Cela force l’attribut à avoir l’une des valeurs de
+  l’énumération.
+- `ID` l’attribut est un identifiant XML, sa valeur doit être une chaîne (pas un nombre) unique
+  parmi tous les autres attributs de type ID du document.
+- `IDREF` l’attribut doit être égal, dans le document XML, à l’identifiant d’un autre élément.
+
+## Entités
+
+Les entités sont des symboles qui représentent des morceaux d’arbre
+XML ou des textes.
+
+---
+
+```xml
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE itineraire [
+  <!ENTITY copyright "© IUT Lannion 2022">
+  <!ENTITY depart "<etape>Point de départ</etape>">
+  <!ENTITY equipement SYSTEM "equipement.xml">
+]>
+<itineraire>
+  <auteur>&copyright;</auteur>
+  &equipement;
+  &depart;
+</itineraire>
+```
+
+---
+
+```xml
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE itineraire [
+  <!ENTITY copyright "© IUT Lannion 2022">
+  <!ENTITY depart "<etape>Point de départ</etape>">
+  <!ENTITY equipement SYSTEM "equipement.xml">
+]>
+<itineraire>
+  <auteur>© IUT Lannion 2022</auteur>
+  [Le contenu du fichier equipement.xml]
+  <etape>Point de départ</etape>
+</itineraire>
+```
+
 # Exos
-exos https://pageperso.lis-lab.fr/~pierre-alain.reynier/XML/ctp1/ctp1.html https://fabien-torre.fr/Enseignement/tp/XML/Modelisation/
+
+https://pageperso.lis-lab.fr/~pierre-alain.reynier/XML/ctp1/ctp1.html https://fabien-torre.fr/Enseignement/tp/XML/Modelisation/ https://pageperso.lis-lab.fr/~pierre-alain.reynier/XML/tp1/tp1.html
