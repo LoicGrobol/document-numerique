@@ -168,10 +168,8 @@ quand il y a une DTD interne.
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 ```
 
-Par défaut il vaut `"no"`, donc on ne le met que lorsqu’il vaut `"yes"`.
-
-- `"no"` : la DTD interne fournit les valeurs par défaut et les entités et il peut y avoir des
-  définitions externes (`SYSTEM`).
+- `"no"` (par défaut) : la DTD interne fournit les valeurs par défaut et les entités et il peut y
+  avoir des définitions externes (`SYSTEM`).
 - `"yes`" : la DTD interne ne sert que pour la validation et ne peut pas employer d’entités ou de
   règles externes. Le document XML et avec sa DTD interne est totalement indépendant.
 

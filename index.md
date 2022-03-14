@@ -70,6 +70,16 @@ communautaire](slides/06-css/exercice-college.html).
 - [Correction exercice collège communautaire](slides/06-css/correction-college.html)
 - [Slides XML](slides/07-xml/xml-slides.html)
 
+À **faire** pour la prochaine fois (pas de rendu) : [exercice
+XML](slides/07-xml/exercices-xml.html).
+
+### 2022-02-21 : DTD et modélisation
+
+- [Correction exercice XML](slides/07-xml/correction-xml.html)
+- [Slides DTD](slides/08-dtd/dtd-slides.html)
+
+À **rendre** pour la prochaine fois : [exercices DTD](slides/08-dtd/exercices-dtd.html).
+
 ## Ressources
 
 - [Le dépôt Github du cours](https://github.com/LoicGrobol/document-numerique/) contient toutes

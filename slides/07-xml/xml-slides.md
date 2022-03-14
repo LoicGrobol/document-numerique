@@ -121,7 +121,7 @@ assez complexes.
 ## Exemples
 
 Un itinéraire simple, du type « partir tout droit, au bout de 13 km, tournez à droite, au bout de
-22 km vous êtes arrivée. »
+22 km, vous êtes arrivée. »
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -478,16 +478,3 @@ Lorsqu’on veut écrire du texte brut à ne pas analyser, on emploie une sectio
 
 La partie entre <![CDATA[ et ]]> est ignorée par les analyseurs XML, on peut mettre n’importe quoi
 sauf ]]>. Ces données sont considérées comme du texte par les analyseurs.
-
-# Exercices
-
-Pour chacun des cinq fichiers XML suivants, dire s'il est bien formé et s'il ne l'est pas, dire
-pourquoi et proposer une correction.
-
-- Ce sont des fichiers textes tout à fait normaux, qui s'ouvrent dans n'importe quel éditeur de
-  texte (voir les cours précédents)
-- Les ouvrir avec un navigateur (voir cours Internet) devrait vous permettre de repérer les
-  documents mal formés, pour trouver les erreurs, il va falloir rechercher avec attention.
-
-Fichiers : [exemple 1](samples/simple1.xml), [exemple 2](samples/simple2.xml), [exemple
-3](samples/simple3.xml), [exemple 4](samples/simple4.xml), [exemple 5](samples/simple5.xml).

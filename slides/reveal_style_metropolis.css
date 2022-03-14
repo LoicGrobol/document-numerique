@@ -194,7 +194,9 @@ h1.title {
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
 
 .reveal code {
-    font-family: monospace; }
+    font-family: monospace;
+    background-color: rgb(235, 235, 235);
+}
 
 .reveal pre code {
     display: block;
@@ -247,14 +249,14 @@ h1.title {
  * LINKS
  *********************************************/
 .reveal a {
-    color: #51483D;
+    color: #7300c0;
     text-decoration: none;
     -webkit-transition: color 0.15s ease;
     -moz-transition: color 0.15s ease;
     transition: color 0.15s ease; }
 
 .reveal a:hover {
-    color: #8b7c69;
+    color: var(--accent);
     text-shadow: none;
     border: none; }
 
