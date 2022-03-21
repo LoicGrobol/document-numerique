@@ -231,7 +231,7 @@ pour tous les alphabets d'Europe.
 
 ---
 
-La solution historique c'est donc encore un fois que chaque constructeur définit ses propres
+La solution historique, c'est donc encore une fois que chaque constructeur définit ses propres
 extensions, évidemment incompatibles.
 
 La norme ISO 8859 est une tentative de définir des jeux de caractères standardisés par région
@@ -252,11 +252,11 @@ l'encodage d'un document sous forme de métadonnée, ce qui :
 - Déplace le problème : il faut des métadonnées standardisées
 
 En conséquence, surtout avec la démocratisation du Web, les confusions sont nombreuses et mènent
-souvent à des mojibake. Par exemple pour un certain nombre de sites web, je m'appelle LoÃ¯c.
+souvent à des « mojibake ». Par exemple pour un certain nombre de sites web, je m'appelle LoÃ¯c.
 
 ---
 
-Et ça ne résoud pas le problème des systèmes d'écriture logographiques pour lesquels des encodages
+Et ça ne résout pas le problème des systèmes d'écriture logographiques pour lesquels des encodages
 différents sont nécessaires.
 
 # Unicode

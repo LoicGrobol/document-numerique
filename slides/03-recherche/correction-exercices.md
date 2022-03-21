@@ -83,16 +83,18 @@ plutôt `\b[bB]\w*\b`.
 >
 > 4.1 Trouver une chaîne de caractères qui ne correspond pas à l'expression régulière
 
-`ab$c` convient, comme n'importe quelle chaîne de caractères qui contient le caractère `$`. Une chaîne vide ne correspondrait pas non-plus à cette expression régulière.
+`ab$c` convient, comme n'importe quelle chaîne de caractères qui contient le caractère `$`. Une
+chaîne vide ne correspondrait pas non-plus à cette expression régulière.
 
 > 4.2 Trouver une chaîne de caractères qui correspond à l'expression régulière
 
-`abc` convient, comme n'importe quelle chaîne de caractères non-vide qui ne contient pas le caractère `$`.
+`abc` convient, comme n'importe quelle chaîne de caractères non-vide qui ne contient pas le
+caractère `$`.
 
 > 5\. Comment reconnaître une adresse électronique ? Ex : `prénom.nom@domaine.net` (on ne
 > considèrera que les extensions de domaine `.com`, `.fr` et `.net`).
 
-Une regex qui reconnaît exactement toutes les adresses mail, c'est possible mais [vraiment
+Une regex qui reconnaît exactement toutes les adresses mail, c'est possible, mais [vraiment
 compliqué](https://stackoverflow.com/a/201378). Si on s'en tient à une solution simple, on peut
 penser à ceci :
 

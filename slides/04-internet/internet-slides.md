@@ -92,7 +92,8 @@ Mais ça fait beaucoup de câbles et de prises. Combien d'ailleurs ?
 
 ---
 
-Pour éviter ça, on peut plutôt avoir une machine qui sert de centre. Le plus souvent une machine spécialisée, qu'on appelle *routeur*.
+Pour éviter ça, on peut plutôt avoir une machine qui sert de centre. Le plus souvent une machine
+spécialisée, qu'on appelle *routeur*.
 
 ![Dix ordinateurs, nommés A, …, J, disposés en cercle et tous reliés à une machine centrale](pics/internet-schema-3.png)
 
@@ -105,7 +106,7 @@ B) et le routeur le passe à B.
 ---
 
 Il existe d'autres types de réseaux (on parle de *topologie*), le plus important étant les réseaux
-en anneau, qui ne nécessitent pas de centre mais sont moins efficaces.
+en anneau, qui ne nécessitent pas de centre, mais sont moins efficaces.
 
 ---
 
@@ -120,7 +121,7 @@ central](pics/internet-schema-5.png).
 Cette idée de réseaux locaux interconnectés en arborescence pour former un réseau global est le
 principe de base d'Internet.
 
-En pratique c'est un peu plus complexe que ça, avec notamment des liens redondants qui le rendent
+En pratique, c'est un peu plus complexe que ça, avec notamment des liens redondants qui le rendent
 plus modulable en fonction du trafic et plus robuste en cas d'interruption.
 
 ---
@@ -130,7 +131,7 @@ Les réseaux sont organisés hiérarchiquement :
 - Les LAN (*Local Area Network*) : Réseau local
   - À l'échelle d'un bâtiment ou d'un complexe
 - Les WAN (*Wide Area Network*) : Réseau étendu
-  - Couvrent des zones géographiques étendues : pays voire continent
+  - Couvrent des zones géographiques étendues : pays, voire continent
 - Les GAN (*Global Area Network*) : Réseau global → Internet
 
 On peut aussi construire des sous-réseaux en s'appuyant sur l'architecture globale : par exemple
@@ -140,11 +141,11 @@ avec un VPN (*Virtual Private Network*).
 
 Chaque machine est identifiée sur le réseau Internet de manière unique par son adresse IP.
 
-Vous pouvez trouver la votre en utilisant par exemple <https://whatismyipaddress.com/>.
+Vous pouvez trouver la vôtre en utilisant par exemple <https://whatismyipaddress.com/>.
 
 ---
 
-Deux version coexistent :
+Deux versions coexistent :
 
 - IPv4 : Combinaison de 4 chiffres allant de 0 à 255 (ex : `128.11.25.2`) codé sur 32 bits
 - IPv6 : Créé pour éviter la saturation de l’IPv4. Combinaison de 8 groupes de 4 chiffres en
@@ -190,27 +191,27 @@ Ces communications sont encodées en utilisant une **pile de protocole** :
   IMAP…)
 - La couche *de transport* : communication entre machines connectées (TCP, UDP…)
 - La couche *internet* : gestions des connexions entre réseaux (IP)
-- La couche *de lien* : implémentation matérielle/physique des réseaux (ethernet, wifi…)
+- La couche *de lien* : implémentation matérielle/physique des réseaux (Ethernet, wifi…)
 
 ---
 
 Chaque protocole permet de gérer les communications à un certain niveau de granularité. En principe,
 un protocole :
 
-- Traite les couches inférieures comme un boîte noire.
+- Traite les couches inférieures comme une boîte noire.
 - Ignore l'existence des couches supérieures.
 
 ---
 
 ![Représentation de la pile de protocoles internet : IP supporte UDP et TCP, UDP supporte DNS, TCP
-support TLS qui supporte HTTP, qui supporte HTML, CSS et Javascript, qui supporte les API
+support TLS qui supporte HTTP, qui supporte HTML, CSS et JavaScript, qui supporte les API
 web](pics/http-layers.png)
 
 # Le Web
 
 ## URL
 
-Le **World Wide Web**, ou web, est un système d'information reposant sur Internet.
+Le **World Wide Web** ou web, est un système d'information reposant sur Internet.
 
 Il est constitué de documents et de ressources, chacune possédant des *Universal Resource Locators*
 (URL) : des chaînes de caractères qui permettent d'y accéder de façon stable depuis n'importe quel
@@ -253,11 +254,12 @@ cohérent de documents textuels (ou *pages web*) liées par des liens hypertexte
 
 Une **page web** est un document électronique accessible sur le web.
 
-Elles sont souvent constituées d’une ressource centrale : un document au format HTML et d’autres ressources
+Elles sont souvent constituées d’une ressource centrale : un document au format HTML et d’autres
+ressources
 
 - Multimédia : images, vidéos, sons…
 - Style : un fichier au format CSS qui décrit l'apparence du document.
-- Scripts : un programme dans le langage Javascript qui s'éxécute sur la machine cliente et rend la
+- Scripts : un programme dans le langage JavaScript qui s'exécute sur la machine cliente et rend la
   page interactive.
 
 Un **site web** est un ensemble de pages web hiérarchisées.

@@ -42,7 +42,7 @@ Dans le fichier [Père Duchesne](Duchn-utf8.txt) :
 *Si plusieurs expressions régulières conviennent, répondre avec la plus courte que vous trouvez.*
 
 1. Trouver une expression régulière qui ne capture que les mots qui commencent par `b` (majuscule ou
-   minuscule) de la phrase `Le boa dans le baobab de Bob`.
+   minuscule) de la phrase `Le boa dans le baobab de Bob`..
 2. Trouver une expression régulière qui ne capture que les noms (sans leur déterminant) dans
    l'exemple suivant : `L'action et la réaction et la réactivité`.
 3. Pour l'expression régulière `^[^^]`

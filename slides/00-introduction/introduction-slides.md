@@ -52,7 +52,7 @@ lang: "fr"
 Connaissances :
 
 - Savoir ce qu'est un document numérique.
-- Savoir comment différents types de documents sont représentés dans des sytèmes informatiques.
+- Savoir comment différents types de documents sont représentés dans des systèmes informatiques.
 - Connaissances précises sur les représentations numériques des documents textuels.
 - Connaissances de bases sur ce que sont Internet et le Web et leurs fonctionnements.
 
@@ -120,11 +120,11 @@ La mémoire d'un ordinateur peut se concevoir à plusieurs échelles
 
 :::incremental
 
-- Une suite de *bits*, des élements d'information élémentaire à deux états, 0 ou 1.
-- Une série de *multiplets* (ou *byte*), chacun composés d'un nombre de fixe de bits (en général 8 :
+- Une suite de *bits*, des éléments d'information élémentaire à deux états, 0 ou 1.
+- Une série de *multiplets* (ou *byte*), chacun composés d'un nombre fixe de bits (en général 8 :
   des *octets*).
-  - Possèdents une *adresse*, c'est-à-dire un identifiant permettant de les localiser.
-  - Plus petites petites unités *adressables*.
+  - Possèdent une *adresse*, c'est-à-dire un identifiant permettant de les localiser.
+  - Plus petites unités *adressables*.
 - Une série de *mots*, chacun composé d'un nombre fixe de bytes (de nos jours, 32 ou 64 bits)
   - Plus petites unités traitables par un processeur.
 
@@ -184,10 +184,10 @@ d'informations ils permettent de représenter.
 - Compression avec pertes : Opus, MP3, Vorbis…
   - Mêmes idées que pour les images.
 
-## Vidéo et multimedia
+## Vidéo et multimédia
 
 - Combinent en général plusieurs flux images et son (et texte/métadonnées)
-- Partagent les formats pour le son et les images (en ajoutant la compasante temporelle dans le mix
+- Partagent les formats pour le son et les images (en ajoutant la composante temporelle dans le mix
   pour la compression)
 - Beaucoup de formats modernes pour les images et les sons viennent de travaux pour la vidéo.
 - Quelques noms : Theora, MPEG-*, AV1, H.26{3,4,5,6}, VP{8,9}, Dirac…
