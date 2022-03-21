@@ -80,6 +80,11 @@ XML](slides/07-xml/exercices-xml.html).
 
 À **rendre** pour la prochaine fois : [exercices DTD](slides/08-dtd/exercices-dtd.html).
 
+### 2022-02-21 : TEI
+
+- [Correction exercice DTD](slides/08-dtd/correction-dtd.html)
+- [Slides TEI](slides/09-TEI/tei-slides.html)
+
 ## Ressources
 
 - [Le dépôt Github du cours](https://github.com/LoicGrobol/document-numerique/) contient toutes
