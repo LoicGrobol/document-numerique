@@ -186,6 +186,26 @@ On peut également créer des sous-listes, signalées par l'indentation
 
 ---
 
+### Listes ordonnées
+
+On crée des listes ordonnées de la façon suivante
+
+```md
+1. Une liste
+2. Avec des numéros
+3. Ordonnée, donc
+```
+
+```html
+<ol>
+<li>Une liste</li>
+<li>Avec des numéros</li>
+<li>Ordonnée, donc</li>
+<ol>
+```
+
+---
+
 ### Lien
 
 Les liens hypertextes peuvent être notés *inline*
@@ -212,12 +232,69 @@ Voici un [lien][adddddddresse] étiqueté.
 Voici un <a href="http://example.com">lien</a> étiqueté.
 ```
 
+---
+
+### HTML
+
+Dans beaucoup d'applications, on autorise aussi l'insertion de balises HTML directement dans
+Markdown :
+
+```md
+Du texte *Markdown* avec du **HTML** <small>dedans</small>.
+```
+
+```html
+Du texte <em>Markdown</em> avec du <strong>HTML</strong> <small>dedans</small>.
+```
+
 ## Éditeurs avancés
 
-## Documents exécutables
+Plusieurs outils utilisant Markdown proposent des fonctionnalités en plus de Markdown qui pourraient
+vous être utiles comme
+
+- L'édition collaborative de documents : [démo](https://hackmd.io/ISHbVZC_TJm_03ByZ6z4zg).
+- Générer des diapositives, comme pour ce cours ! Consultez [le fichier
+  source](./autres_formats-slides.md) de celui-ci, par exemple.
+- Des documents exécutables contenant des programmes, comme
+  [RMarkdown](https://rmarkdown.rstudio.com/authoring_quick_tour.html).
+
+# Exercice
+
+# Exercice : rechercher remplacer avec des RegEx
+
+En plus de faire des recherches avec des RegEx, on peut s'en servir pour faire des remplacements.
+
+Dans un éditeur local comme Notepad++, c'est déjà intégré. <https://regexr.com/> vous permet de le
+faire en ligne.
+
+---
+
+Le principe est simple : comme avec un rechercher-remplacer dont vous avez l'habitude, mais ce qu'on
+recherche, c'est une chaîne de caractères.
+
+Par exemple, essayez de remplacer `\bc\w*\b` par `chats` dans
+
+```text
+Les chefs de section des comissariats sont invités à courir.
+```
+
+---
+
+Plus intéressant : on peut aussi conserver une partie de l'expression régulière : remplacer
+`\bc(\w*)\b` par `C$1` (dans Regexr) ou par `C\1` (dans Notepad++) dans
+
+```text
+Les chefs de section des comissariats sont invités à courir.
+```
+
+Principe : `$n` (ou `\n`) où n est un nombre sera remplacé par le contenu du n-ième groupe de
+capture (signalé par des parenthèses).
+
+---
+
+Maintenant, utilisez ce nouvel outil pour convertir du Markdown en HTML :
+[exercice](exercice-md2html.html).
 
 # OpenDocument
-
-## Historique
 
 # PDF
