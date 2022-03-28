@@ -275,7 +275,7 @@ faire en ligne.
 ---
 
 Le principe est simple : comme avec un rechercher-remplacer dont vous avez l'habitude, mais ce qu'on
-recherche, c'est une chaîne de caractères.
+recherche, c'est une expression régulière.
 
 Par exemple, essayez de remplacer `\bc\w*\b` par `chats` dans
 
@@ -299,6 +299,9 @@ capture (signalé par des parenthèses).
 
 Maintenant, utilisez ce nouvel outil pour convertir du Markdown en HTML :
 [exercice](exercice-md2html.html).
+
+Ou si vous peinez, vous pouvez vous rafraîchir la mémoire sur les RegEx avec les premiers niveaux
+(jusqu'à *Intermediate* inclus) de <https://regexcrossword.com>
 
 # OpenDocument
 
