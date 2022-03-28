@@ -138,7 +138,6 @@ Les titres sont notés en débutant une ligne avec autant de `#` que le niveau v
 ### Listes non-ordonnées
 
 Les listes non-ordonnées se notent en démarrant une ligne par `-`, `*` ou `+`.
-Elles sont séparées par des lignes blanches.
 
 ```md
 - un item
