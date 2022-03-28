@@ -263,6 +263,9 @@ vous être utiles comme
 Reprendre l'exercice [lettre](../05-html/exercice-lettre.html) en formatant à l'aide de Markdown
 plutôt que HTML. Attention : il ne sera pas possible de tout représenter.
 
+Pour vous entraîner, revoir les points précédents ou en apprendre plus, vous pouvez également suivre
+le tutoriel interactif de <https://www.markdowntutorial.com/fr>.
+
 # Exercice : rechercher-remplacer avec des RegEx
 
 En plus de faire des recherches avec des RegEx, on peut s'en servir pour faire des remplacements.
