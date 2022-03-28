@@ -19,7 +19,6 @@ leur équivalent en HTML (une regex par type !) :
 - Si vous avez réussi tout le reste : en plus des `<li>`, insérez aussi les `<ul>` et `<ol>`.
 
 ```md
-
 # Document structuré et écriture numérique
 
 Un *cours* fantastique, avec des [liens](https://example.com)

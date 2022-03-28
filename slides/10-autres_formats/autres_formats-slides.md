@@ -260,7 +260,10 @@ vous être utiles comme
 
 # Exercice
 
-# Exercice : rechercher remplacer avec des RegEx
+Reprendre l'exercice [lettre](../05-html/exercice-lettre.html) en formatant à l'aide de Markdown
+plutôt que HTML. Attention : il ne sera pas possible de tout représenter.
+
+# Exercice : rechercher-remplacer avec des RegEx
 
 En plus de faire des recherches avec des RegEx, on peut s'en servir pour faire des remplacements.
 
