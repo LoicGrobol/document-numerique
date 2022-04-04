@@ -42,3 +42,5 @@ lang: "fr"
    - Avez-vous une explication ?
 3. Ouvrez-le dans [HexEdit](https://hexed.it)
    - Que voyez-vous ?
+
+[Spécification du format PDF](https://web.archive.org/web/20220306202836/https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdf_reference_archive/pdf_reference_1-7.pdf)
