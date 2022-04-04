@@ -53,6 +53,8 @@ en ligne disponible, par exemple <https://dillinger.io> ou un éditeur local com
 
 ## Syntaxe
 
+<!-- TODO: ajouter aussi des exemples de rendu -->
+
 La spécification originale décrit Markdown en termes de balises HTML, et on va faire pareil.
 
 Un fichier Markdown est un fichier texte, généralement avec l'extension `.md`, qui comprend du
@@ -302,7 +304,3 @@ Maintenant, utilisez ce nouvel outil pour convertir du Markdown en HTML :
 
 Ou si vous peinez, vous pouvez vous rafraîchir la mémoire sur les RegEx avec les premiers niveaux
 (jusqu'à *Intermediate* inclus) de <https://regexcrossword.com>
-
-# OpenDocument
-
-# PDF
