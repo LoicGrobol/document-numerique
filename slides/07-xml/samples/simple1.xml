@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Contacts>
+	<Person>
+		<Firstname>John</Firstname>
+		<Lastname>Smith</Lastname>
+		<Position>CEO</Position>
+	</Person>
+	<Person>
+		<Firstname>Tom</Firstname>
+		<Lastname>Dunne</Lastname>
+		<Company>Today FM</Company>
+    		<Position/>
+		<Email>tom.dunne@todayfm.com</Email>
+	</Person>
+</Contacts>

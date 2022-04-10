@@ -1,0 +1,521 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Décrire et manipuler un document numérique - Décrire et manipuler un document numérique</title>
+<meta name="description" content="Contenus pour le cours « Décrire et manipuler un document numérique  », L2 SDL parcours LCN, université Paris Nanterre">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Décrire et manipuler un document numérique">
+<meta property="og:title" content="Décrire et manipuler un document numérique">
+<meta property="og:url" content="/document-numerique/slides/05-html/correction-lettre.html">
+
+
+  <meta property="og:description" content="Contenus pour le cours « Décrire et manipuler un document numérique  », L2 SDL parcours LCN, université Paris Nanterre">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-02-14T00:00:00+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="/document-numerique/slides/05-html/correction-lettre.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Loïc Grobol",
+      "url": "/document-numerique/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/document-numerique/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/document-numerique/">
+          Décrire et manipuler un document numérique
+          
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <!-- LTeX: language=fr -->
+
+<h1 id="correction-exercice-lettre-html">Correction Exercice lettre HTML</h1>
+
+<h2 id="solution">Solution</h2>
+
+<p>Voici une solution complète, voir ci-dessous pour les commentaires détaillés</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en-US"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"author"</span> <span class="na">content=</span><span class="s">"Dr. Eleanor Gaye"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Awesome science application correspondance<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;style&gt;</span>
+      <span class="nt">body</span> <span class="p">{</span>
+        <span class="nl">max-width</span><span class="p">:</span> <span class="m">800px</span><span class="p">;</span>
+        <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nc">.sender-column</span> <span class="p">{</span>
+        <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nt">h1</span> <span class="p">{</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.5em</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nt">h2</span> <span class="p">{</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.3em</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nt">p</span><span class="o">,</span><span class="nt">ul</span><span class="o">,</span><span class="nt">ol</span><span class="o">,</span><span class="nt">dl</span><span class="o">,</span><span class="nt">address</span> <span class="p">{</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.1em</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nt">p</span><span class="o">,</span> <span class="nt">li</span><span class="o">,</span> <span class="nt">dd</span><span class="o">,</span> <span class="nt">dt</span><span class="o">,</span> <span class="nt">address</span> <span class="p">{</span>
+        <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.5</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;address</span> <span class="na">class=</span><span class="s">"sender-column"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;strong&gt;</span>Dr. Eleanor Gaye<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
+      Awesome Science faculty<span class="nt">&lt;br&gt;</span>
+      University of Awesome<span class="nt">&lt;br&gt;</span>
+      Bobtown, CA 99999,<span class="nt">&lt;br&gt;</span>
+      USA<span class="nt">&lt;br&gt;</span>
+      <span class="nt">&lt;strong&gt;</span>Tel<span class="nt">&lt;/strong&gt;</span>: 123-456-7890<span class="nt">&lt;br&gt;</span>
+      <span class="nt">&lt;strong&gt;</span>Email<span class="nt">&lt;/strong&gt;</span>: no_reply@example.com
+    <span class="nt">&lt;/address&gt;</span>
+
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sender-column"</span><span class="nt">&gt;&lt;time</span> <span class="na">datetime=</span><span class="s">"2016-01-20"</span><span class="nt">&gt;</span>20 January 2016<span class="nt">&lt;/time&gt;&lt;/p&gt;</span>
+
+    <span class="nt">&lt;address&gt;</span>
+      <span class="nt">&lt;strong&gt;</span>Miss Eileen Dover<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
+      4321 Cliff Top Edge<span class="nt">&lt;br&gt;</span>
+      Dover, CT9 XXX<span class="nt">&lt;br&gt;</span>
+      UK
+    <span class="nt">&lt;/address&gt;</span>
+
+    <span class="nt">&lt;h1&gt;</span>Re: Eileen Dover university application<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>Dear Eileen,<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>Thank you for your recent application to join us at the University of Awesome's science faculty to study as part of your <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Doctor of Philosophy"</span><span class="nt">&gt;</span>PhD<span class="nt">&lt;/abbr&gt;</span> next year. I will answer your questions one by one, in the following sections.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;h2&gt;</span>Starting dates<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>We are happy to accommodate you starting your study with us at any time, however it would suit us better if you could start at the beginning of a semester; the start dates for each one are as follows:<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>First semester: <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"2016-09-09"</span><span class="nt">&gt;</span>9 September 2016<span class="nt">&lt;/time&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Second semester: <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"2017-01-15"</span><span class="nt">&gt;</span>15 January 2017<span class="nt">&lt;/time&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Third semester: <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"2017-05-02"</span><span class="nt">&gt;</span>2 May 2017<span class="nt">&lt;/time&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>Please let me know if this is ok, and if so which start date you would prefer.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>You can find more information about <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.example.com"</span> <span class="na">title=</span><span class="s">"table of awesome university important dates"</span><span class="nt">&gt;</span>important university dates<span class="nt">&lt;/a&gt;</span> on our website.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;h2&gt;</span>Subjects of study<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>At the Awesome Science Faculty, we have a pretty open-minded research facility — as long as the subjects fall somewhere in the realm of science and technology. You seem like an intelligent, dedicated researcher, and just the kind of person we'd like to have on our team. Saying that, of the ideas you submitted we were most intrigued by are as follows, in order of priority:<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;ol&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Turning H<span class="nt">&lt;sub&gt;</span>2<span class="nt">&lt;/sub&gt;</span>O into wine, and the health benefits of Resveratrol (C<span class="nt">&lt;sub&gt;</span>14<span class="nt">&lt;/sub&gt;</span>H<span class="nt">&lt;sub&gt;</span>12<span class="nt">&lt;/sub&gt;</span>O<span class="nt">&lt;sub&gt;</span>3<span class="nt">&lt;/sub&gt;</span>.)<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Measuring the effect on performance of funk bassplayers at temperatures exceeding 30°C (86°F), when the audience size exponentially increases (effect of 3 × 10<span class="nt">&lt;sup&gt;</span>3<span class="nt">&lt;/sup&gt;</span> increasing to 3 × 10<span class="nt">&lt;sup&gt;</span>4<span class="nt">&lt;/sup&gt;</span>.)<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"HyperText Markup Language"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;</span> and <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Cascading Style Sheets"</span><span class="nt">&gt;</span>CSS<span class="nt">&lt;/abbr&gt;</span> constructs for representing musical scores.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>So please can you provide more information on each of these subjects, including how long you'd expect the research to take, required staff and other resources, and anything else you think we'd need to know? Thanks.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;h2&gt;</span>Exotic dance moves<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>Yes, you are right! As part of my post-doctorate work, I <span class="nt">&lt;em&gt;</span>did<span class="nt">&lt;/em&gt;</span> study exotic tribal dances. To answer your question, my favourite dances are as follows, with definitions:<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;dl&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Polynesian chicken dance<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>A little known but <span class="nt">&lt;em&gt;</span>very<span class="nt">&lt;/em&gt;</span> influential dance dating back as far as 300<span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Before Christ"</span><span class="nt">&gt;</span>BC<span class="nt">&lt;/abbr&gt;</span>, a whole village would dance around in a circle like chickens, to encourage their livestock to be "fruitful".<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Icelandic brownian shuffle<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>Before the Icelanders developed fire as a means of getting warm, they used to practice this dance, which involved huddling close together in a circle on the floor, and shuffling their bodies around in imperceptibly tiny, very rapid movements. One of my fellow students used to say that he thought this dance inspired modern styles such as Twerking.<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Arctic robot dance<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>An interesting example of historic misinformation, English explorers in the 1960s believed to have discovered a new dance style characterised by "robotic", stilted movements, being practiced by inhabitants of Northern Alaska and Canada. Later on however it was discovered that they were just moving like this because they were really cold.<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;/dl&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>For more of my research, see my <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.example.com"</span> <span class="na">title=</span><span class="s">"Dr Gaye's exotic dance research"</span><span class="nt">&gt;</span>exotic dance research page<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>Yours sincerely,<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>Dr Eleanor Gaye<span class="nt">&lt;/p&gt;</span>
+
+
+    <span class="nt">&lt;p&gt;</span>University of Awesome motto: <span class="nt">&lt;q&gt;</span>Be awesome to each other.<span class="nt">&lt;/q&gt;</span> -- <span class="nt">&lt;cite&gt;</span>The memoirs of Bill S Preston, <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Esquire"</span><span class="nt">&gt;</span>Esq<span class="nt">&lt;/abbr&gt;&lt;/cite&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="détails">Détails</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</code></pre></div></div>
+
+<p><a href="https://developer.mozilla.org/fr/docs/Glossary/Doctype">L’instruction <code class="language-plaintext highlighter-rouge">DOCTYPE</code></a> est requise pour
+tous les documents HTML bien formés, elle sert à expliciter au navigateur quel est le type du
+document qui va suivre : attention, elle ressemble à une balise, mais ce n’en est pas une, c’est une
+<strong>instruction</strong>, dont on reparlera quand on traitera XML.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en-US"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<p>Un document en HTML est toujours inclus dans un élément
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/html"><code class="language-plaintext highlighter-rouge">&lt;html&gt;</code></a> et préciser la langue via
+l’attribut <code class="language-plaintext highlighter-rouge">lang</code> permet entre autre un meilleur support par les logiciels de lecture d’écran. La
+sémantique exacte de <code class="language-plaintext highlighter-rouge">lang</code> est — comme toujours —, un peu compliqué, mais la norme <a href="https://fr.wikipedia.org/wiki/ISO_639">ISO
+639</a> est un bon point de départ pour saisir son
+fonctionnement.</p>
+
+<p>Notez que <code class="language-plaintext highlighter-rouge">lang</code> peut être utilisé pour d’autres éléments : utilisé pour <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> il précise la
+langue principale du document, mais des documents multilingues peuvent par exemple l’utiliser pour
+des <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code> ou des <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"author"</span> <span class="na">content=</span><span class="s">"Dr. Eleanor Gaye"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Awesome science application correspondance<span class="nt">&lt;/title&gt;</span>
+</code></pre></div></div>
+
+<p>Le début de l’en-tête, dans l’élément
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/head"><code class="language-plaintext highlighter-rouge">&lt;head&gt;</code></a> sert (comme presque
+toujours) à préciser les métadonnées. Soit avec des éléments dédiés (comme
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/title"><code class="language-plaintext highlighter-rouge">&lt;title&gt;</code></a>), soit via des attributs
+donnés à des éléments <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta"><code class="language-plaintext highlighter-rouge">&lt;meta&gt;</code></a>. En
+particulier <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta#attr-charset"><code class="language-plaintext highlighter-rouge">charset</code></a>,
+s’il n’est pas
+<a href="https://www.w3.org/International/questions/qa-html-encoding-declarations">techniquement</a>
+obligatoire, est fortement recommandé et il est recommandé de le faire apparaître dans les 512
+premiers caractères de la page (pour faciliter le travail des navigateurs).</p>
+
+<p>Le deuxième élément de métadonnées, qui précise ici l’autrice de la lettre n’est pas obligatoire
+en général, mais vous donne un exemple de comment préciser des métadonnées via leur clé (<code class="language-plaintext highlighter-rouge">name</code>) et
+leur valeur (<code class="language-plaintext highlighter-rouge">content</code>).</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;style&gt;</span>
+      <span class="nt">body</span> <span class="p">{</span>
+        <span class="nl">max-width</span><span class="p">:</span> <span class="m">800px</span><span class="p">;</span>
+        <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nc">.sender-column</span> <span class="p">{</span>
+        <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nt">h1</span> <span class="p">{</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.5em</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nt">h2</span> <span class="p">{</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.3em</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nt">p</span><span class="o">,</span><span class="nt">ul</span><span class="o">,</span><span class="nt">ol</span><span class="o">,</span><span class="nt">dl</span><span class="o">,</span><span class="nt">address</span> <span class="p">{</span>
+        <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.1em</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="nt">p</span><span class="o">,</span> <span class="nt">li</span><span class="o">,</span> <span class="nt">dd</span><span class="o">,</span> <span class="nt">dt</span><span class="o">,</span> <span class="nt">address</span> <span class="p">{</span>
+        <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.5</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+</code></pre></div></div>
+
+<p>La deuxième partie de l’en-tête sert ici à injecter un ensemble de style, qui indiquent comment la
+page doit s’afficher, ceci en donnant un fragment de code en langage <code class="language-plaintext highlighter-rouge">CSS</code> dans un élément
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/style"><code class="language-plaintext highlighter-rouge">&lt;style&gt;</code></a>. Ce n’est pas forcément la
+meilleure façon de lier du CSS à une page HTML.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">&lt;body&gt;</span>
+</code></pre></div></div>
+
+<p>Le reste du document, son contenu à proprement parler, son <strong>corps</strong>, est contenu dans l’élément
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/body"><code class="language-plaintext highlighter-rouge">&lt;body&gt;</code></a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;address</span> <span class="na">class=</span><span class="s">"sender-column"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;strong&gt;</span>Dr. Eleanor Gaye<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
+      Awesome Science faculty<span class="nt">&lt;br&gt;</span>
+      University of Awesome<span class="nt">&lt;br&gt;</span>
+      Bobtown, CA 99999,<span class="nt">&lt;br&gt;</span>
+      USA<span class="nt">&lt;br&gt;</span>
+      <span class="nt">&lt;strong&gt;</span>Tel<span class="nt">&lt;/strong&gt;</span>: 123-456-7890<span class="nt">&lt;br&gt;</span>
+      <span class="nt">&lt;strong&gt;</span>Email<span class="nt">&lt;/strong&gt;</span>: no_reply@example.com
+    <span class="nt">&lt;/address&gt;</span>
+</code></pre></div></div>
+
+<p>Ceci est le bloc d’adresse, plusieurs choses à noter :</p>
+
+<ul>
+  <li>Il est noté avec l’élément sémantique
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/address"><code class="language-plaintext highlighter-rouge">&lt;address&gt;</code></a>, qui est prévu pour
+ce type d’usages. Il n’y a jamais d’obligation d’utiliser ce type d’éléments, mais le faire autant
+que possible rend la vie plus facile.</li>
+  <li>La classe <code class="language-plaintext highlighter-rouge">sender-column</code> est utilisée par le style donné plus haut, qui spécifie l’alignement à
+droite. Plus de détails sur ces points dans le cours sur CSS.
+    <ul>
+      <li>Notez que le nom de la classe ici est bien <strong>sémantique</strong> : on ne l’a pas appelé
+<code class="language-plaintext highlighter-rouge">aligne-a-droite</code>. Il donne le <strong>sens</strong> de l’élément, pas son format et si on décide plus tard
+d’aligner à gauche plutôt qu’à droite, le nom peut rester le même sans que ça fasse bizarre.</li>
+    </ul>
+  </li>
+  <li>Les éléments importants sont notés avec
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/strong"><code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code></a>, ce qui marque une
+mise en évidence de niveau maximal
+(<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/em"><code class="language-plaintext highlighter-rouge">&lt;em&gt;</code></a> étant la version moins
+forte), qui se traduit visuellement par défaut par du gras dans la plupart des navigateurs.</li>
+  <li>Pour le numéro de téléphone et l’email, on aurait aussi pu utiliser une liste de description.</li>
+  <li>Les retours à la ligne ici ne sont pas des changements de paragraphes, mais du formatage, marqués
+avec un saut de ligne <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/br"><code class="language-plaintext highlighter-rouge">&lt;br&gt;</code></a>. Il y a
+d’autres solutions, peut-être plus pures, mais celle-ci est simple et pragmatique.</li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"sender-column"</span><span class="nt">&gt;&lt;time</span> <span class="na">datetime=</span><span class="s">"2016-01-20"</span><span class="nt">&gt;</span>20 January 2016<span class="nt">&lt;/time&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>Le retour de la classe <code class="language-plaintext highlighter-rouge">sender-column</code>, qui précise l’alignement, ici dans un paragraphe. On aurait
+pu se passer de <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/p"><code class="language-plaintext highlighter-rouge">&lt;p&gt;</code></a> et utiliser
+simplement l’élément sémantique
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/time"><code class="language-plaintext highlighter-rouge">time</code></a>, mais ce dernier est prévu
+pour être utilisé dans un bloc de texte (comme <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>, plutôt que flottant seul sur la page). Là
+encore, il y a d’autres solutions, on aurait par exemple pu regrouper ce paragraphe et le bloc
+d’adresse dans un <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/div"><code class="language-plaintext highlighter-rouge">div</code></a> qui aurait
+porté la classe <code class="language-plaintext highlighter-rouge">sender-column</code>.</p>
+
+<p>Notez le format ISO de la date dans l’élément <code class="language-plaintext highlighter-rouge">&lt;time&gt;</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;address&gt;</span>
+      <span class="nt">&lt;strong&gt;</span>Miss Eileen Dover<span class="nt">&lt;/strong&gt;&lt;br&gt;</span>
+      4321 Cliff Top Edge<span class="nt">&lt;br&gt;</span>
+      Dover, CT9 XXX<span class="nt">&lt;br&gt;</span>
+      UK
+    <span class="nt">&lt;/address&gt;</span>
+</code></pre></div></div>
+
+<p>Une autre adresse, celle de la destinatrice cette fois, qui ne porte donc pas la classe
+<code class="language-plaintext highlighter-rouge">sender-column</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;h1&gt;</span>Re: Eileen Dover university application<span class="nt">&lt;/h1&gt;</span>
+</code></pre></div></div>
+
+<p>Un titre de niveau 1</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;p&gt;</span>Dear Eileen,<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>Les paragraphes sont marqués par des éléments <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/p"><code class="language-plaintext highlighter-rouge">&lt;p&gt;</code></a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;p&gt;</span>Thank you for your recent application to join us at the University of Awesome's science faculty to study as part of your <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Doctor of Philosophy"</span><span class="nt">&gt;</span>PhD<span class="nt">&lt;/abbr&gt;</span> next year. I will answer your questions one by one, in the following sections.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>Ici une abréviation est explicitée avec
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/abbr"><code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code></a>, c’est facultatif, mais
+toujours plus agréable pour les lecteurices.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;h2&gt;</span>Starting dates<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>We are happy to accommodate you starting your study with us at any time, however it would suit us better if you could start at the beginning of a semester; the start dates for each one are as follows:<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>RàS à part le titre de niveau 2</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>First semester: <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"2016-09-09"</span><span class="nt">&gt;</span>9 September 2016<span class="nt">&lt;/time&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Second semester: <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"2017-01-15"</span><span class="nt">&gt;</span>15 January 2017<span class="nt">&lt;/time&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Third semester: <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"2017-05-02"</span><span class="nt">&gt;</span>2 May 2017<span class="nt">&lt;/time&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<p>Une liste non-ordonnée, avec de nouveau des dates.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;p&gt;</span>Please let me know if this is ok, and if so which start date you would prefer.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>You can find more information about <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.example.com"</span> <span class="na">title=</span><span class="s">"table of awesome university important dates"</span><span class="nt">&gt;</span>important university dates<span class="nt">&lt;/a&gt;</span> on our website.<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>L’élément <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/a"><code class="language-plaintext highlighter-rouge">&lt;a&gt;</code></a> (<em>anchor</em>, « ancre »), qui sert ici pour définir un lien hypertexte, l’attribut <code class="language-plaintext highlighter-rouge">title</code> servant à indiquer ce qu’on trouvera si on suit le lien.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;h2&gt;</span>Subjects of study<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>At the Awesome Science Faculty, we have a pretty open-minded research facility — as long as the subjects fall somewhere in the realm of science and technology. You seem like an intelligent, dedicated researcher, and just the kind of person we'd like to have on our team. Saying that, of the ideas you submitted we were most intrigued by are as follows, in order of priority:<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;ol&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Turning H<span class="nt">&lt;sub&gt;</span>2<span class="nt">&lt;/sub&gt;</span>O into wine, and the health benefits of Resveratrol (C<span class="nt">&lt;sub&gt;</span>14<span class="nt">&lt;/sub&gt;</span>H<span class="nt">&lt;sub&gt;</span>12<span class="nt">&lt;/sub&gt;</span>O<span class="nt">&lt;sub&gt;</span>3<span class="nt">&lt;/sub&gt;</span>.)<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>Measuring the effect on performance of funk bassplayers at temperatures exceeding 30°C (86°F), when the audience size exponentially increases (effect of 3 × 10<span class="nt">&lt;sup&gt;</span>3<span class="nt">&lt;/sup&gt;</span> increasing to 3 × 10<span class="nt">&lt;sup&gt;</span>4<span class="nt">&lt;/sup&gt;</span>.)<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"HyperText Markup Language"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;</span> and <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Cascading Style Sheets"</span><span class="nt">&gt;</span>CSS<span class="nt">&lt;/abbr&gt;</span> constructs for representing musical scores.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+</code></pre></div></div>
+
+<p>Ici une liste ordonnée, notez que la numérotation est automatique, encore des abréviations et le
+signalement de texte en exposant/indice. Pour les formules mathématiques complexes, il y a d’autres
+solution plus sophistiquée, mais peu de standard.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;p&gt;</span>So please can you provide more information on each of these subjects, including how long you'd expect the research to take, required staff and other resources, and anything else you think we'd need to know? Thanks.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;h2&gt;</span>Exotic dance moves<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>Yes, you are right! As part of my post-doctorate work, I <span class="nt">&lt;em&gt;</span>did<span class="nt">&lt;/em&gt;</span> study exotic tribal dances. To answer your question, my favourite dances are as follows, with definitions:<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;dl&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Polynesian chicken dance<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>A little known but <span class="nt">&lt;em&gt;</span>very<span class="nt">&lt;/em&gt;</span> influential dance dating back as far as 300<span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Before Christ"</span><span class="nt">&gt;</span>BC<span class="nt">&lt;/abbr&gt;</span>, a whole village would dance around in a circle like chickens, to encourage their livestock to be "fruitful".<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Icelandic brownian shuffle<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>Before the Icelanders developed fire as a means of getting warm, they used to practice this dance, which involved huddling close together in a circle on the floor, and shuffling their bodies around in imperceptibly tiny, very rapid movements. One of my fellow students used to say that he thought this dance inspired modern styles such as Twerking.<span class="nt">&lt;/dd&gt;</span>
+      <span class="nt">&lt;dt&gt;</span>Arctic robot dance<span class="nt">&lt;/dt&gt;</span>
+      <span class="nt">&lt;dd&gt;</span>An interesting example of historic misinformation, English explorers in the 1960s believed to have discovered a new dance style characterised by "robotic", stilted movements, being practiced by inhabitants of Northern Alaska and Canada. Later on however it was discovered that they were just moving like this because they were really cold.<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;/dl&gt;</span>
+</code></pre></div></div>
+
+<p>Ici le dernier type de liste : une liste de description. Également un élément
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/em"><code class="language-plaintext highlighter-rouge">&lt;em&gt;</code></a>, qui sert à mettre en évidence
+(<em>emphasis</em>) et est en général rendu par des italiques.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    <span class="nt">&lt;p&gt;</span>For more of my research, see my <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.example.com"</span> <span class="na">title=</span><span class="s">"Dr Gaye's exotic dance research"</span><span class="nt">&gt;</span>exotic dance research page<span class="nt">&lt;/a&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>Yours sincerely,<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>Dr Eleanor Gaye<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>University of Awesome motto: <span class="nt">&lt;q&gt;</span>Be awesome to each other.<span class="nt">&lt;/q&gt;</span> -- <span class="nt">&lt;cite&gt;</span>The memoirs of Bill S Preston, <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Esquire"</span><span class="nt">&gt;</span>Esq<span class="nt">&lt;/abbr&gt;&lt;/cite&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>Rien de bien extraordinaire à signaler ici, à part les éléments
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/q"><code class="language-plaintext highlighter-rouge">&lt;q&gt;</code></a> et
+<a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/cite"><code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code></a> qui notent respectivement
+une citation à l’intérieur d’un paragraphe, et le titre d’une œuvre.</p>
+
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Loïc Grobol. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/document-numerique/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

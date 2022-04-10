@@ -1,0 +1,299 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Décrire et manipuler un document numérique - Décrire et manipuler un document numérique</title>
+<meta name="description" content="Contenus pour le cours « Décrire et manipuler un document numérique  », L2 SDL parcours LCN, université Paris Nanterre">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Décrire et manipuler un document numérique">
+<meta property="og:title" content="Décrire et manipuler un document numérique">
+<meta property="og:url" content="/document-numerique/slides/03-recherche/correction-exercices.html">
+
+
+  <meta property="og:description" content="Contenus pour le cours « Décrire et manipuler un document numérique  », L2 SDL parcours LCN, université Paris Nanterre">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-02-21T00:00:00+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="/document-numerique/slides/03-recherche/correction-exercices.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Loïc Grobol",
+      "url": "/document-numerique/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/document-numerique/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/document-numerique/">
+          Décrire et manipuler un document numérique
+          
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <!-- LTeX: language=fr -->
+
+<h1 id="correction-exercices-expressions-régulières">Correction : Exercices expressions régulières</h1>
+
+<p>Dans le fichier <a href="Duchn-utf8.txt">Père Duchesne</a> :</p>
+
+<blockquote>
+  <p>1. Combien de mots sont précédés par <code class="language-plaintext highlighter-rouge">*</code>, qu’est-ce que cela signifie d’après vous ?</p>
+</blockquote>
+
+<p>3968</p>
+
+<p>Expression régulière : <code class="language-plaintext highlighter-rouge">\*\b</code></p>
+
+<ul>
+  <li>Il faut bien despécialiser le <code class="language-plaintext highlighter-rouge">*</code>, sinon l’expression n’est pas bien formée</li>
+  <li>Le <code class="language-plaintext highlighter-rouge">\b</code> traduit la consigne, même si dans ce fichier il ne change rien, puisque tous les
+astérisques sont devant un mot. Si vous trouvez des comptes différents avec et dans , c’est
+probablement que votre moteur de regex gère mal Unicode et ne considère pas les caractères
+accentués comme des lettres.</li>
+  <li>Enfin, en regardant les résultats, il semble que ces astérisques servent à signaler des mots qui
+commençaient originellement en majuscules.</li>
+</ul>
+
+<blockquote>
+  <p>2. Combien de mots commencent par <code class="language-plaintext highlighter-rouge">aristo</code> ?</p>
+</blockquote>
+
+<p>162</p>
+
+<p>Expression régulière : <code class="language-plaintext highlighter-rouge">\baristo</code></p>
+
+<blockquote>
+  <p>3. Combien de mots de quatre lettres finissent par <code class="language-plaintext highlighter-rouge">t</code> ?</p>
+</blockquote>
+
+<p>3021</p>
+
+<p>Expression régulière : <code class="language-plaintext highlighter-rouge">\b\w{3}t\b</code></p>
+
+<blockquote>
+  <p>4. Combien de mots commencent par <code class="language-plaintext highlighter-rouge">t</code> et finissant par <code class="language-plaintext highlighter-rouge">ent</code> ?</p>
+</blockquote>
+
+<p>140</p>
+
+<p>Expression régulière : <code class="language-plaintext highlighter-rouge">\bt\w*ent\b</code></p>
+
+<blockquote>
+  <p>5. Combien de mots sont des dérivés de <code class="language-plaintext highlighter-rouge">république</code> ?</p>
+</blockquote>
+
+<p>501 avec l’expression régulière <code class="language-plaintext highlighter-rouge">\brépubli</code>, on aurait aussi pu utiliser <code class="language-plaintext highlighter-rouge">\brépubli(c|qu)</code>.</p>
+
+<h2 id="expressions-régulières-en-général">Expressions régulières en général</h2>
+
+<p><em>Si plusieurs expressions régulières conviennent, répondre avec la plus courte que vous trouvez.</em></p>
+
+<blockquote>
+  <p>1. Trouver une expression régulière qui ne capture que les mots qui commencent par <code class="language-plaintext highlighter-rouge">b</code> (majuscule
+ou minuscule) de la phrase <code class="language-plaintext highlighter-rouge">Le boa dans le baobab de Bob</code>.</p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">\b[bB]</code> pour trouver les mots. Si on veut que l’expression capture les mots entiers, on utilise
+plutôt <code class="language-plaintext highlighter-rouge">\b[bB]\w*\b</code>.</p>
+
+<blockquote>
+  <p>2. Trouver une expression régulière qui ne capture que les noms (sans leur déterminant) dans
+l’exemple suivant : <code class="language-plaintext highlighter-rouge">L'action et la réaction et la réactivité</code>.</p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">(ré)?ac</code> convient, <code class="language-plaintext highlighter-rouge">(ré)?ac\w*\b</code> pour capturer les mots entiers. On peut aussi utiliser
+<code class="language-plaintext highlighter-rouge">\b(r|a)</code>/<code class="language-plaintext highlighter-rouge">\b(r|a)\w*\b</code>.</p>
+
+<blockquote>
+  <p>3. Pour l’expression régulière <code class="language-plaintext highlighter-rouge">^[^^]</code> :</p>
+
+  <p>3.1 Trouver une chaîne de caractères qui ne correspond pas à l’expression régulière</p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">^abc</code> convient, comme n’importe quelle chaîne de caractères qui commence par le caractère <code class="language-plaintext highlighter-rouge">^</code>.</p>
+
+<blockquote>
+  <p>3.2 Trouver une chaîne de caractères qui correspond à l’expression régulière</p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">abc</code> convient, comme n’importe quelle chaîne de caractères qui ne commence pas par le caractère
+<code class="language-plaintext highlighter-rouge">^</code>.</p>
+
+<blockquote>
+  <p>4. Pour l’expression régulière <code class="language-plaintext highlighter-rouge">^[^$]+$</code> :</p>
+
+  <p>4.1 Trouver une chaîne de caractères qui ne correspond pas à l’expression régulière</p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">ab$c</code> convient, comme n’importe quelle chaîne de caractères qui contient le caractère <code class="language-plaintext highlighter-rouge">$</code>. Une
+chaîne vide ne correspondrait pas non-plus à cette expression régulière.</p>
+
+<blockquote>
+  <p>4.2 Trouver une chaîne de caractères qui correspond à l’expression régulière</p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">abc</code> convient, comme n’importe quelle chaîne de caractères non-vide qui ne contient pas le
+caractère <code class="language-plaintext highlighter-rouge">$</code>.</p>
+
+<blockquote>
+  <p>5. Comment reconnaître une adresse électronique ? Ex : <code class="language-plaintext highlighter-rouge">prénom.nom@domaine.net</code> (on ne
+considèrera que les extensions de domaine <code class="language-plaintext highlighter-rouge">.com</code>, <code class="language-plaintext highlighter-rouge">.fr</code> et <code class="language-plaintext highlighter-rouge">.net</code>).</p>
+</blockquote>
+
+<p>Une regex qui reconnaît exactement toutes les adresses mail, c’est possible, mais <a href="https://stackoverflow.com/a/201378">vraiment
+compliqué</a>. Si on s’en tient à une solution simple, on peut
+penser à ceci :</p>
+
+<p><code class="language-plaintext highlighter-rouge">^(\w+\.)*\w+@(\w+\.)*\w+\.(com|fr|net)$</code></p>
+
+<p>Si on la décompose : la partie avant le <code class="language-plaintext highlighter-rouge">@</code> et celle après sont essentiellement constituées de
+<code class="language-plaintext highlighter-rouge">(\w+\.)*\w+</code> : une séquence de zéro ou plus fragments constitués de caractères alphanumériques et
+terminés par un point, suivis une séquence d’une lettre ou plus.</p>
+
+<p>Le défaut principal de cette version, c’est qu’elle n’autorise pas les tirets et n’est donc pas
+assez flexible. On peut aussi penser à :</p>
+
+<p><code class="language-plaintext highlighter-rouge">^(\S+\.)*\S+@(\S+\.)*\w+\.(com|fr|net)$</code></p>
+
+<p>qui autorise bien les tirets, mais laisse passer <code class="language-plaintext highlighter-rouge">-@$.com</code>. Une solution courante est</p>
+
+<p><code class="language-plaintext highlighter-rouge">^([A-z0-9_%+\-]+\.)*[A-z0-9_%+\-]+@([A-z0-9_%+\-]+\.)*[A-z0-9_%+\-]+\.(com|fr|net)$</code></p>
+
+<p>Où on donne explicitement les caractères autorisés : <code class="language-plaintext highlighter-rouge">[A-z0-9_%+\-]</code>, les alphanumériques ASCII et
+les caractères <code class="language-plaintext highlighter-rouge">_%+-</code>. Ce n’est pas une mauvaise solution, même si c’est plus verbeux. On manque les
+caractères Unicode non-ASCII, qui devraient en théorie pouvoir être utilisées au moins pour la
+partie avant <code class="language-plaintext highlighter-rouge">@</code>, mais on peut régler ça ainsi si vraiment c’est important :</p>
+
+<p><code class="language-plaintext highlighter-rouge">^((\w|[_%+\-])+\.)*(\w|[_%+\-])+@((\w|[_%+\-])+\.)*(\w|[_%+\-])+\.(com|fr|net)$</code></p>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Loïc Grobol. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/document-numerique/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

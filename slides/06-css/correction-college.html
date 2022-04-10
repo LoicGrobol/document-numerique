@@ -1,0 +1,582 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Décrire et manipuler un document numérique - Décrire et manipuler un document numérique</title>
+<meta name="description" content="Contenus pour le cours « Décrire et manipuler un document numérique  », L2 SDL parcours LCN, université Paris Nanterre">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Décrire et manipuler un document numérique">
+<meta property="og:title" content="Décrire et manipuler un document numérique">
+<meta property="og:url" content="/document-numerique/slides/06-css/correction-college.html">
+
+
+  <meta property="og:description" content="Contenus pour le cours « Décrire et manipuler un document numérique  », L2 SDL parcours LCN, université Paris Nanterre">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-03-07T00:00:00+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="/document-numerique/slides/06-css/correction-college.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Loïc Grobol",
+      "url": "/document-numerique/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/document-numerique/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--default">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/document-numerique/">
+          Décrire et manipuler un document numérique
+          
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      <!-- LTeX: language=fr -->
+
+<h1 id="correction-exercice-collège-communautaire-css">Correction exercice collège communautaire CSS</h1>
+
+<h2 id="solution">Solution</h2>
+
+<p>Voici une solution complète, voir ci-dessous pour les commentaires détaillés</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* General setup */</span>
+
+<span class="o">*</span> <span class="p">{</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">min-width</span><span class="p">:</span> <span class="m">1000px</span><span class="p">;</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">1400px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Layout */</span>
+
+<span class="nt">section</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">aside</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">30%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">20%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">footer</span> <span class="p">{</span>
+  <span class="nl">clear</span><span class="p">:</span> <span class="nb">both</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">header</span><span class="o">,</span> <span class="nt">section</span><span class="o">,</span> <span class="nt">aside</span><span class="o">,</span> <span class="nt">nav</span><span class="o">,</span> <span class="nt">footer</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* header and footer */</span>
+
+<span class="nt">header</span><span class="o">,</span> <span class="nt">footer</span> <span class="p">{</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">5px</span> <span class="nb">solid</span> <span class="m">#6F00FF</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">5px</span> <span class="nb">solid</span> <span class="m">#6F00FF</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* WRITE YOUR CODE BELOW HERE */</span>
+
+<span class="c">/* font imports */</span>
+
+<span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'fjallaoneregular'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('fonts/fjallaone-regular-webfont.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">),</span>
+       <span class="sx">url('fonts/fjallaone-regular-webfont.woff')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff'</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'libertinus_serifregular'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('fonts/libertinusserif-regular-webfont.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">),</span>
+       <span class="sx">url('fonts/libertinusserif-regular-webfont.woff')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff'</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+
+<span class="p">}</span>
+<span class="c">/* typography stuff */</span>
+
+<span class="nt">html</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">libertinus_serifregular</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="o">,</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.5rem</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.5</span><span class="p">;</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">0.5px</span><span class="p">;</span>
+  <span class="nl">word-spacing</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">fjallaoneregular</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">5rem</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">3rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">section</span> <span class="nt">h2</span> <span class="o">+</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">text-indent</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Link styling */</span>
+
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">outline</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">*=</span><span class="s1">"http"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="m">19px</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="sx">url(external-link-52.png)</span> <span class="nb">no-repeat</span> <span class="m">100%</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="m">16px</span> <span class="m">16px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:link</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#6F00FF</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:focus</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="nd">:active</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">1px</span> <span class="m">#CC3311</span><span class="p">,</span>
+               <span class="m">0px</span> <span class="m">0px</span> <span class="m">2px</span> <span class="m">#CC3311</span><span class="p">,</span>
+               <span class="m">0px</span> <span class="m">0px</span> <span class="m">3px</span> <span class="no">black</span><span class="p">,</span>
+               <span class="m">0px</span> <span class="m">0px</span> <span class="m">4px</span> <span class="no">black</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* lists: extra margin top and bottom to make it
+always have the same spacing as with paragraphs */</span>
+
+<span class="nt">ul</span><span class="o">,</span> <span class="nt">ol</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">1.6rem</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">square</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ol</span> <span class="p">{</span>
+  <span class="nl">list-style-type</span><span class="p">:</span> <span class="n">lower-latin</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* nav menu */</span>
+
+<span class="nt">nav</span> <span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0.8rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">3</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">2.5rem</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#6F00FF</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:focus</span><span class="o">,</span> <span class="nt">nav</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#6F00FF</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:active</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="détails">Détails</h2>
+
+<h3 id="départ">Départ</h3>
+
+<p>Le début était donné, rien à signaler à part que j’ai changé la couleur de base pour <code class="language-plaintext highlighter-rouge">#6F00FF</code>
+(l’indigo électrique y a que ça de vrai). Le faire avec une variable aurait été mieux, mais est un
+peu hors-cadre pour ce cours.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* General setup */</span>
+
+<span class="o">*</span> <span class="p">{</span>
+  <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">min-width</span><span class="p">:</span> <span class="m">1000px</span><span class="p">;</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">1400px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Layout */</span>
+
+<span class="nt">section</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">aside</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">30%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">20%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">footer</span> <span class="p">{</span>
+  <span class="nl">clear</span><span class="p">:</span> <span class="nb">both</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">header</span><span class="o">,</span> <span class="nt">section</span><span class="o">,</span> <span class="nt">aside</span><span class="o">,</span> <span class="nt">nav</span><span class="o">,</span> <span class="nt">footer</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* header and footer */</span>
+
+<span class="nt">header</span><span class="o">,</span> <span class="nt">footer</span> <span class="p">{</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="m">5px</span> <span class="nb">solid</span> <span class="m">#6F00FF</span><span class="p">;</span>
+  <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">5px</span> <span class="nb">solid</span> <span class="m">#6F00FF</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="typographie">Typographie</h3>
+
+<p>On commence par les polices : on a récupéré les polices <a href="https://www.fontsquirrel.com/fonts/libertinus">Libertinus Regular
+Sans</a> et
+<a href="https://www.fontsquirrel.com/fonts/fjalla">Fjalla</a> sur FontSquirrel. Les fontes web dans le dossier
+<a href="fonts"><code class="language-plaintext highlighter-rouge">fonts</code></a> et le CSS ci-dessous viennent de <a href="https://www.fontsquirrel.com/tools/webfont-generator">leur
+générateur</a>. On peut aussi utiliser <a href="fonts.google.com">Google
+web fonts</a> pour une solution sans téléchargement.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* WRITE YOUR CODE BELOW HERE */</span>
+
+<span class="c">/* font imports */</span>
+
+<span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'fjallaoneregular'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('fonts/fjallaone-regular-webfont.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">),</span>
+       <span class="sx">url('fonts/fjallaone-regular-webfont.woff')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff'</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'libertinus_serifregular'</span><span class="p">;</span>
+  <span class="nl">src</span><span class="p">:</span> <span class="sx">url('fonts/libertinusserif-regular-webfont.woff2')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff2'</span><span class="p">),</span>
+       <span class="sx">url('fonts/libertinusserif-regular-webfont.woff')</span> <span class="n">format</span><span class="p">(</span><span class="s2">'woff'</span><span class="p">);</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+  <span class="nl">font-style</span><span class="p">:</span> <span class="nb">normal</span><span class="p">;</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ici on utilise simplement les fontes qu’on vient de définir, en réglant les tailles :</p>
+
+<ul>
+  <li>Taille de base <code class="language-plaintext highlighter-rouge">10px</code> (standard)</li>
+  <li>Texte de base en ×1.5</li>
+  <li>Titres de niveau 1 en ×5, titres de niveau 2 en ×3</li>
+  <li>Des espacements (<code class="language-plaintext highlighter-rouge">-spacing</code>) un peu plus larges</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* typography stuff */</span>
+
+<span class="nt">html</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">libertinus_serifregular</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="o">,</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">1.5rem</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.5</span><span class="p">;</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">0.5px</span><span class="p">;</span>
+  <span class="nl">word-spacing</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">fjallaoneregular</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">letter-spacing</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">5rem</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">3rem</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Le style pour le premier paragraphe après un titre de niveau 2 inclus dans une section : indentation
+de <code class="language-plaintext highlighter-rouge">20px</code> :</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">section</span> <span class="nt">h2</span> <span class="o">+</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">text-indent</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="les-liens">Les liens</h3>
+
+<p>On remet à zéro les éléments <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> en général.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Link styling */</span>
+
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">outline</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Pour les <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> qui sont effectivement des liens, on donne la couleur d’accent :</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="nd">:link</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#6F00FF</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Et on retire le soulignement au survol et pour la sélection par tabulation :</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="nd">:focus</span><span class="o">,</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Le sélecteur <code class="language-plaintext highlighter-rouge">active</code> est appliqué <strong>pendant</strong> un clic. On lui donne un style vraiment différent
+avec une ombre complexe. On pouvait faire plus simple ici.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="nd">:active</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">0px</span> <span class="m">0px</span> <span class="m">1px</span> <span class="m">#CC3311</span><span class="p">,</span>
+               <span class="m">0px</span> <span class="m">0px</span> <span class="m">2px</span> <span class="m">#CC3311</span><span class="p">,</span>
+               <span class="m">0px</span> <span class="m">0px</span> <span class="m">3px</span> <span class="no">black</span><span class="p">,</span>
+               <span class="m">0px</span> <span class="m">0px</span> <span class="m">4px</span> <span class="no">black</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ici un sélecteur exotique : pour les liens externes (repérés par la valeur de leur attribut <code class="language-plaintext highlighter-rouge">href</code>),
+on injecte une image :</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">*=</span><span class="s1">"http"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="m">19px</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="sx">url(external-link-52.png)</span> <span class="nb">no-repeat</span> <span class="m">100%</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="m">16px</span> <span class="m">16px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="listes">Listes</h3>
+
+<p>On change un peu les marges et le style des puces, rien de très exotique :</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* lists: extra margin top and bottom to make it
+always have the same spacing as with paragraphs */</span>
+
+<span class="nt">ul</span><span class="o">,</span> <span class="nt">ol</span> <span class="p">{</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">1.6rem</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">square</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Un truc intéressant ici : on numérote avec des lettres plutôt qu’avec des chiffres.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">ol</span> <span class="p">{</span>
+  <span class="nl">list-style-type</span><span class="p">:</span> <span class="n">lower-latin</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="menu-de-navigation">Menu de navigation</h3>
+
+<p>Ici on a pas mal de choses, l’objectif est de simuler des boutons de navigation avec des blocs.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* nav menu */</span>
+
+<span class="nt">nav</span> <span class="nt">ul</span> <span class="p">{</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">0.8rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
+  <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="nt">li</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">line-height</span><span class="p">:</span> <span class="m">3</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">2.5rem</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#6F00FF</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:focus</span><span class="o">,</span> <span class="nt">nav</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#6F00FF</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">nav</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:active</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Loïc Grobol. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/document-numerique/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

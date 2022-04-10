@@ -1,0 +1,14 @@
+Package: DigitalDocuments
+Type: Course Material
+Title: Décrire et manipuler un document numérique
+Version: 0.0.0
+Authors@R: 
+    person(given = "Loïc",
+           family = "Grobol",
+           role = c("aut", "cre"),
+           email = "loic.grobol@gmail.com")
+Encoding: UTF-8
+Description: "Contenus pour le cours « Décrire et manipuler un document numérique », L2 SDL parcours LCN, université Paris Nanterre."
+Imports: 
+    rmarkdown,
+    revealjs
