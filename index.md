@@ -7,6 +7,14 @@ toc: true
 
 ## Nouvelles
 
+- **2022-04-10** le partiel prévu pour le 11/04/2022 ne pourra pas avoir lieu en présentiel et est
+  remplacé par un devoir en temps libre.
+  - Le sujet sera rendu disponible sur [l'espace Cours en
+  Ligne](https://coursenligne.parisnanterre.fr/course/view.php?id=8022) du mardi 12/04 à 9h jusqu'au
+  mardi 19/04 à 20h.
+  - Le rendu se fera via cours en ligne ou a défaut par email à
+    [`<lgrobol@parisnanterre.fr>`](mailto:lgrobol@parisnanterre.fr).
+  - En cas de problème, contactez-moi le plus tôt possible.
 - **2022-02-06** un [espace sur Cours en
   Ligne](https://coursenligne.parisnanterre.fr/course/view.php?id=8022) a été créé. **Il ne
   contiendra rien de plus qu'un lien vers la page où vous vous trouvez** et un espace de dépôt pour
@@ -96,6 +104,14 @@ XML](slides/07-xml/exercices-xml.html).
 - [Correction exercice md, HMTL et RegEx](slides/10-autres_formats/correction-md2html.html)
 - [Slides autres formats](slides/11-odx_pdf/odx_pdf-slides.html) ([pdf](slides/11-odx_pdf/odx_pdf-slides.pdf))
 
+### 2022-04-11 : ~~Partiel~~ ANNULÉ
+
+- Le sujet sera rendu disponible sur [l'espace Cours en
+  Ligne](https://coursenligne.parisnanterre.fr/course/view.php?id=8022) du mardi 12/04 à 9h jusqu'au
+  mardi 19/04 à 20h.
+- Le rendu se fera via cours en ligne ou a défaut par email à
+[`<lgrobol@parisnanterre.fr>`](mailto:lgrobol@parisnanterre.fr).
+- En cas de problème, contactez-moi le plus tôt possible.
 
 ## Ressources
 
