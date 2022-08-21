@@ -5,6 +5,7 @@ author: Loïc Grobol
 date: 2022-04-04
 lang: "fr"
 output:
+  odt_document: {}
   pdf_document:
     latex_engine: "lualatex"
 ---
