@@ -12,5 +12,4 @@ html_slides
 _site
 
 renv
-renv.lock
 .Rprofile

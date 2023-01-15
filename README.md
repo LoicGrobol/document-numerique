@@ -59,6 +59,15 @@ Astuce pour les pages : Jekyll n'est pas très bon pour les pages qui ne sont 
 les ajouter dans `_pages` (ce qui fonctionne parce qu'on l'a mis dans `_config.yml`)- et leur donner
 un `permalink` dans le header.
 
+To [update renv.lock](https://inbo.github.io/tutorials/tutorials/r_renv_update/):
+
+```R
+renv::upgrade() # upgrades renv, if new version is available
+renv::hydrate(update = "all") # populates the renv cache with copies of up to 
+                              # date package versions, needed by the project
+renv::update() # updates packages from CRAN and GitHub, within the project
+renv::snapshot() # inspect the message before confirming to overwrite renv.lock
+```
 
 ## Licences
 
