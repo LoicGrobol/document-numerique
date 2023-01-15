@@ -21,21 +21,20 @@ lang: "fr"
 
 # Bonjour
 
-- Loïc Grobol (il/iel) [<loic.grobol@parisnanterre.fr>](mailto:loic.grobol@parisnanterre.fr)
+- Loïc Grobol (il/iel) [<lgrobol@parisnanterre.fr>](mailto:lgrobol@parisnanterre.fr)
 - PHILLIA / MoDyCo (Bâtiment Rémond, 4ème, bureau 404C)
-- *Office hours* le mardi après-midi, n'hésitez pas à passer y compris sans rendez-vous (mais je
-  préfère si vous m'envoyez un mail pour me prévenir)
-- De manière générale, n'hésitez pas à m'écrire
+- *Office hours* lundi matin, sur rendez-vous
+- **N'hésitez pas à m'écrire**
 
 # Le cours
 
 ## Infos pratiques
 
 - **Quoi** « Décrire et manipuler un document numérique » 4L4SC02P
-- **Où** Salle M114, bâtiment Éphémère 1
-- **Quand** 2 séances, les lundis de 13:20 à 15:20, du 17/01 au 11/04
+- **Où** Salle M209, bâtiment Éphémère 1
+- **Quand** 12 séances, les lundis de 13:20 à 15:20, du 16/01 au 10/04
   - Voir [le calendrier de
-    l'université](https://etudiants.parisnanterre.fr/calendrier-universitaire-2021-2022-1018180.kjsp)
+    l'université](https://etudiants.parisnanterre.fr/calendrier-universitaire/calendrier-universitaire-2022-2023)
     pour les dates de vacances.
 
 → Travail sur machine préférable, amener si possible un PC portable
@@ -104,8 +103,6 @@ sous forme numérique ? »
 # Fichiers
 
 Le support d'un document numérique est en général un **fichier** (informatique).
-
-. . .
 
 :::incremental
 

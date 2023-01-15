@@ -1,26 +1,15 @@
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-primer
 
 title: Décrire et manipuler un document numérique
 description: Contenus pour le cours « Décrire et manipuler un document numérique  », L2 SDL parcours LCN, université Paris Nanterre
-name: Loïc Grobol
+emojicon: 📑
 
+url: https://loicgrobol.github.io/
 baseurl: "/document-numerique"
 repository: "loicgrobol/document-numerique"
 
-atom_feed:
-  hide: true
-
-
 exclude:
-  - "*-slides.md"
-  - "*.py.md"
-  - "**/local"
+  - renv
 
-keep_files:
-  - "*-slides.html"
-  - "*.py.html"
-  - "pdf_slides/*"
-
-plugins:
-  - jekyll-default-layout
-
+include:
+  - _pages

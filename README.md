@@ -13,21 +13,52 @@ Université Paris Nanterre.
 - [Site du cours](https://loicgrobol.github.io/document-numerique/)
 - [Dépôt GitHub](https://github.com/LoicGrobol/document-numerique)
 
-Contact : [<loic.grobol@parisnanterre.fr>](mailto:loic.grobol@parisnanterre.fr)
+Contact : [<lgrobol@parisnanterre.fr>](mailto:loic.grobol@parisnanterre.fr)
 
-## Compiler les slides
+## Ressources
 
-RMarkdown/Knitr utilisés comme wrapper de pandoc.
+- Les slides sont dans [slides/](slides) et faites en
+  [RMarkdown](https://bookdown.org/yihui/rmarkdown). Pour les compiler on peut utiliser la commande
+  suivante (en adaptant les noms de fichiers) :
 
-## Générer le site
+  ```sh
+   R -e rmarkdown::render"('slides/lecture-01/lecture-01.Rmd',output_file='lecture-01.html')"
+   ```
+
+  Cela nécessite que R et les packages `rmarkdown` et `revealjs` soient installés, voir [la
+  doc](https://bookdown.org/yihui/rmarkdown/compile.html) pour plus d'informations. À défaut, on
+  peut également les lire comme des fichiers markdown standards.
+
+## Générer le site en local
+
+Dependencies:
+
+- R
+- pandoc
+- Ruby
+  - Bundle
+
+Setup:
 
 ```console
+Rscript setup_local.R
 gem install jekyll bundler
 bundle config set --local path 'vendor/bundle'
 bundle install
+```
+
+Regenerate:
+
+```bash
+Rscript build_slides.R
 bundle exec jekyll build
 bundle exec jekyll serve
 ```
+
+Astuce pour les pages : Jekyll n'est pas très bon pour les pages qui ne sont pas des postes de blog,
+les ajouter dans `_pages` (ce qui fonctionne parce qu'on l'a mis dans `_config.yml`)- et leur donner
+un `permalink` dans le header.
+
 
 ## Licences
 
