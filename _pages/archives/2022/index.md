@@ -1,7 +1,7 @@
 ---
 title: Informations et cours
-toc: true
 layout: default
+permalink: /2022/
 ---
 
 [comment]: <> "LTeX: language=fr"
