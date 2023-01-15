@@ -1,5 +1,5 @@
 ---
-title: Décrire et manipuler un document numérique
+title: Informations et cours
 layout: default
 ---
 
