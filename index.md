@@ -35,8 +35,8 @@ layout: default
 
 ### 2022-01-17 : Introduction, documents et fichiers
 
-- [Slides Introduction](slides/00-introduction/introduction-slides.html)
-  ([pdf](slides/00-introduction/introduction-slides.pdf))
+- [Slides Introduction]({{site.url}}{{site.baseurl}}/html_slides/introduction-slides.html))
+  ([pdf](html_slides/introduction-slides.pdf)
   
 ## Licences
 
