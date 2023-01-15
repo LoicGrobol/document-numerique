@@ -1,7 +1,6 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 1 : Informatique"
-date: 2022-01-24
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
@@ -19,15 +18,15 @@ output:
 lang: "fr"
 ---
 
-# Qu'est ce que l'informatique ?
+# Qu'est-ce que l'informatique ?
 
 Le mot « **informatique** » est inventé par Philippe Dreyfus en 1962 par contraction des mots
 information et automatique.
 
-- L’informatique serait doncle traitement automatique d'informations.
-- *Automatique* au sens de *automate*, c'est-à-dire **machine**, pas de « se faire sans intervention
+- L’informatique serait donc le traitement automatique d'informations.
+- *Automatique* au sens d'*automate*, c'est-à-dire **machine**, pas de « se faire sans intervention
   humaine ».
-- **Information** au sens large ou mathématique : il s'agit pas (ou pas seulement) des nouvelles.
+- **Information** au sens large ou mathématique : il ne s'agit pas (ou pas seulement) des nouvelles.
 
 ---
 
@@ -37,7 +36,7 @@ Pas vraiment.
 
 # Une brève histoire
 
-Qui sont ces gens:
+Qui sont ces gens ?
 
 - Joseph-Marie Jacquard
 - Ada Lovelace et Charles Babbage
@@ -82,11 +81,11 @@ Qui sont ces gens:
 
 ## Appareils de traitements générique
 
-- Milieu du 19ème siècle : machine a différence et machine analytique (non-concrétisée) de Babbage
+- Milieu du 19ème siècle : machine à différence et machine analytique (non-concrétisée) de Babbage
   et Lovelace
   - Augusta Ada King née Byron, comtesse de Lovelace décrit le premier [programme
     informatique](https://en.wikipedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg)
-- Tout au long du 19éme et du début du 20ème, plusieurs propositions d'ordinateurs analogiques
+- Tout au long du 19ème et du début du 20ème, plusieurs propositions d'ordinateurs analogiques
 
 ---
 

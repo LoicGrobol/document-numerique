@@ -33,10 +33,12 @@ layout: default
 
 ## Séances
 
-### 2022-01-17 : Introduction, documents et fichiers
+### 2022-01-17 : Introduction, documents, fichiers et une brève histoire de l'informatique
 
-- [Slides Introduction]({{site.url}}{{site.baseurl}}/html_slides/introduction-slides.html))
-  ([pdf](html_slides/introduction-slides.pdf)
+- [Slides Introduction]({{site.url}}{{site.baseurl}}/html_slides/introduction-slides.html)
+  ([pdf](html_slides/introduction-slides.pdf))
+- [Slides Intformatique]({{site.url}}{{site.baseurl}}/html_slides/informatique-slides.html)
+  ([pdf](html_slides/informatique-slides.pdf))
   
 ## Licences
 

@@ -1,7 +1,6 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Introduction"
-date: 2022-01-17
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
