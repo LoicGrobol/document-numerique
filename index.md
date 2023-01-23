@@ -36,9 +36,14 @@ layout: default
 
 - [Slides Introduction]({{site.url}}{{site.baseurl}}/html_slides/introduction-slides.html)
   ([pdf](html_slides/introduction-slides.pdf))
-- [Slides Intformatique]({{site.url}}{{site.baseurl}}/html_slides/informatique-slides.html)
+- [Slides Informatique]({{site.url}}{{site.baseurl}}/html_slides/informatique-slides.html)
   ([pdf](html_slides/informatique-slides.pdf))
-  
+
+### 2022-01-23 : Encodage de caractères
+
+- [Slides Encodage]({{site.url}}{{site.baseurl}}/html_slides/encodages-slides.html)
+  ([pdf](html_slides/encodages-slides.pdf))
+
 ## Licences
 
 [![CC BY Licence

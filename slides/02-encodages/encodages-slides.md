@@ -289,6 +289,11 @@ Ainsi le caractère « Я », « *CYRILLIC CAPITAL LETTER YA* » corresp
 
 ---
 
+Pour le voir, on peut ouvrir les fichier textes dans un éditeur hexadécimal comme
+<https://hexed.it>.
+
+---
+
 Unicode contient beaucoup de caractères, pour des raisons plus ou moins bonnes. Entre autre il
 contient à la fois des caractères combinants (par exemple des accents qui s'ajoutent au caractère
 précédent), mais parfois aussi des caractères déjà combinés. Ainsi « ñ » peut se représenter comme
@@ -304,17 +309,28 @@ caractères non-combinants. Ainsi l'emoji « 🏳️‍⚧️ » est représ
 🏳️, ZWJ et ⚧️, ZWJ (_**Z**ero **W**idth **J**oiner_) marquant une combinaison entre ces deux
 emojis.
 
-# 👀 Exercice 👀
+# 👀 Exercices 👀
 
-À faire par exemple à l'aide de <https://unicode-table.com>
+À rendre sur cours en ligne sous la forme d'un fichier zip contenant les fichiers demandés
 
-1. Donner la représentation de votre nom complet sous forme d'une suite de points de code Unicode.
+## 1. Unicode
+
+À faire par exemple à l'aide de <https://unicode-table.com>, rendre vos réponses dans un fichier
+txt nommé `1.txt`.
+
+1. Donner la représentation de votre nom complet sous la forme d'une suite de points de code
+   Unicode.
 2. Donner la représentation en UTF-8 des cinq (au plus) premiers caractères de votre prénom.
 3. À quoi correspond la suite de points de code U+5317, U+4EAC, U+5E02 ?
 
----
+## 2. Fichiers et encodage
 
-1. Loïc Grobol : `U+004c`, `U+006f`, `U+00ef`, `U+0063`, `U+0020`, `U+0047`, `U+0072`, `U+006f`,
-   `U+0062`, `U+006f`, `U+006c`.
-2. `4c`, `6f`, `c3af`, `63`, ou `76`, `111`, `195`, `175`, `99`.
-3. 北京, « capitale du nord », le nom de la ville de Pékin ; suivi de l'idéogramme 市, « ville ».
+- Dans un éditeur de texte (par exemple <https://vscode.dev>), créez un fichier texte contenant
+  uniquement le mot `préfère`.
+- Sauvegardez ce fichier dans une version encodée en UTF-8, à laquelle vous donnerez le nom de
+  fichier `utf8.txt` et une encodée en windows-1252 sous le nom `windows.txt`.
+- À l'aide ces fichiers et de <https://hexed.it>, déterminer comment sont représentés les caractères
+  `é` et `è` dans ces deux formats d'encodage.
+
+Rendre les deux fichier txt que vous avez créé, plus un fichier nommé `2.txt` qui contiendra votre
+réponse à la dernière question
