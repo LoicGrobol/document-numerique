@@ -1,7 +1,7 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 2 : Encodage et représentation des caractères"
-date: 2022-01-24
+date: 2023-01-23
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
@@ -204,7 +204,7 @@ Principes :
 ## Exercice
 
 1. À quelle série de nombres correspond la chaîne de caractères `Vive le TAL!` ?
-2. À quelle chaîne de caractère correspond la suite de nombre `085, 080, 088, 060, 051` ?
+2. À quelle chaîne de caractère correspond la suite de nombres `085, 080, 088, 060, 051` ?
 
 ## Les extensions d'ASCII
 
@@ -252,7 +252,7 @@ l'encodage d'un document sous forme de métadonnée, ce qui :
 - Déplace le problème : il faut des métadonnées standardisées
 
 En conséquence, surtout avec la démocratisation du Web, les confusions sont nombreuses et mènent
-souvent à des « mojibake ». Par exemple pour un certain nombre de sites web, je m'appelle LoÃ¯c.
+souvent à des « mojibake ». Par exemple pour un certain nombre de sites web, mon nom légal est LoÃ¯c.
 
 ---
 
@@ -289,8 +289,8 @@ Ainsi le caractère « Я », « *CYRILLIC CAPITAL LETTER YA* » corresp
 
 ---
 
-Pour le voir, on peut ouvrir les fichier textes dans un éditeur hexadécimal comme
-<https://hexed.it>.
+Pour voir les représentations concrètes, on peut ouvrir les fichier textes dans un éditeur
+hexadécimal comme <https://hexed.it>.
 
 ---
 
