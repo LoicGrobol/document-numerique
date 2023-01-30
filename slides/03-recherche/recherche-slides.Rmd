@@ -1,7 +1,7 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 3 : Techniques de recherche avancées"
-date: 2022-01-31
+date: 2023-01-30
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre

@@ -48,6 +48,7 @@ layout: default
 
 - [Slides Recherche et RegEx]({{site.url}}{{site.baseurl}}/html_slides/recherche-slides.html)
   ([pdf](html_slides/recherche-slides.pdf))
+  - [`Duchn-utf8.txt`]({{site.url}}{{site.baseurl}}/slides/03-recherche/Duchn-utf8.txt)
   - [Exercices]({{site.url}}{{site.baseurl}}/slides/03-recherche/exercices.html)
 
 ## Licences
