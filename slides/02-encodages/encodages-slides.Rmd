@@ -330,7 +330,7 @@ txt nommé `1.txt`.
 - Sauvegardez ce fichier dans une version encodée en UTF-8, à laquelle vous donnerez le nom de
   fichier `utf8.txt` et une encodée en windows-1252 sous le nom `windows.txt`.
 - À l'aide ces fichiers et de <https://hexed.it>, déterminer comment sont représentés les caractères
-  `é` et `è` dans ces deux formats d'encodage.
+  `é` et `è` dans ces deux formats d'encodage.
 
 Rendre les deux fichier txt que vous avez créé, plus un fichier nommé `2.txt` qui contiendra votre
 réponse à la dernière question

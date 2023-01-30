@@ -95,8 +95,8 @@ caractère `$`.
 > considèrera que les extensions de domaine `.com`, `.fr` et `.net`).
 
 Une regex qui reconnaît exactement toutes les adresses mail, c'est possible, mais [vraiment
-compliqué](https://stackoverflow.com/a/201378). Si on s'en tient à une solution simple, on peut
-penser à ceci :
+compliqué et en pratique, c'est une mauvaise idée](https://stackoverflow.com/a/201378). Cependant,
+si on s'en tient à une solution simple, on peut penser à ceci :
 
 `^(\w+\.)*\w+@(\w+\.)*\w+\.(com|fr|net)$`
 

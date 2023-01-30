@@ -84,7 +84,7 @@ Expressions régulières = ER = Regex
   - Même préfixe / suffixe / contexte
   - Dates
   - Adresses
-  - Urls
+  - URL
 
 Définition de critères de recherche pour des chaînes de caractères
 
@@ -321,8 +321,10 @@ Faire les quatre premiers niveaux sur : <https://alf.nu/RegexGolf>
 
 ## Stratégie de reconnaissance
 
-- Par principe, un quantifieur est **glouton** (*greedy*) : il reconnaît le maximum de caractères possibles.
-- En ajoutant ? après un quantifieur, on le rend *lazy* : il reconnait le minimum de caractères.
+- Par principe, un quantificateur est **glouton** (*greedy*) : il reconnaît le maximum de caractères
+  possibles.
+- En ajoutant `?` après un quantificateur, on le rend *lazy* : il reconnait le minimum de
+  caractères.
 
 Par exemple, si l'entrée est `AHHHHHHHHH` :
 
