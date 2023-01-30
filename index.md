@@ -44,6 +44,12 @@ layout: default
 - [Slides Encodage]({{site.url}}{{site.baseurl}}/html_slides/encodages-slides.html)
   ([pdf](html_slides/encodages-slides.pdf))
 
+### 2022-01-30 : Recherche avancée et expressions régulières
+
+- [Slides Recherche et RegEx]({{site.url}}{{site.baseurl}}/html_slides/recherche-slides.html)
+  ([pdf](html_slides/recherche-slides.pdf))
+  - [Exercices]({{site.url}}{{site.baseurl}}/slides/03-recherche/exercices.html)
+
 ## Licences
 
 [![CC BY Licence
