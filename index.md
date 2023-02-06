@@ -49,7 +49,16 @@ layout: default
 - [Slides Recherche et RegEx]({{site.url}}{{site.baseurl}}/html_slides/recherche-slides.html)
   ([pdf](html_slides/recherche-slides.pdf))
   - [`Duchn-utf8.txt`]({{site.url}}{{site.baseurl}}/slides/03-recherche/Duchn-utf8.txt)
-  - [Exercices]({{site.url}}{{site.baseurl}}/slides/03-recherche/exercices.html)
+  - [Solutions](slides/03-recherche/correction-slides.html)
+
+- [Exercices]({{site.url}}{{site.baseurl}}/slides/03-recherche/exercices.html)
+  - [Solutions]({{site.url}}{{site.baseurl}}/slides/03-recherche/correction-exercices.html)
+
+### 2022-02-06 : Internet, Web et HTML
+
+- [Slides Internet]({{site.url}}{{site.baseurl}}/html_slides/internet-slides.html)
+- [Slides HTML]({{site.url}}{{site.baseurl}}/html_slides/html-slides.html)
+
 
 ## Licences
 

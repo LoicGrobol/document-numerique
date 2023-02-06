@@ -329,7 +329,7 @@ Faire les quatre premiers niveaux sur : <https://alf.nu/RegexGolf>
 Par exemple, si l'entrée est `AHHHHHHHHH` :
 
 - `AH+` reconnaît la plus longue suite de caractères : `AHHHHHHHHH`
-- `AH+?` reconnaît la plus petite suite de caractères : `AH`7
+- `AH+?` reconnaît la plus petite suite de caractères : `AH`
 
 ## Références
 
