@@ -40,6 +40,7 @@ Les chaînes de caractères `ll`, `lol`, `lool`… pour n'importe quel nombre de
 
 ---
 
+
 > 4\. `loo*l`  
 > 5\. `lo+l`
 
