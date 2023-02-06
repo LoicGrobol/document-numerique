@@ -52,7 +52,7 @@ layout: default
   - [Solutions](slides/03-recherche/correction-slides.html)
 
 - [Exercices]({{site.url}}{{site.baseurl}}/slides/03-recherche/exercices.html)
-  - [Solutions]({{site.url}}{{site.baseurl}}/slides/03-recherche/correction-exercices.html)
+  <!-- - [Solutions]({{site.url}}{{site.baseurl}}/slides/03-recherche/correction-exercices.html) -->
 
 ### 2022-02-06 : Internet, Web et HTML
 
