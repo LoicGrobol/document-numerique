@@ -175,29 +175,25 @@ deuxième paragraphe
 
 > 3.1 de 3 lettres finissant par `r` ?
 
-`\b\w\wr\b` : 1137 matchs
-
-- Attention à bien activer le mode Unicode
-- Sur Regex101, il faut augmenter le temps d'exécutions (il faut environ 3s et la limite par défaut
-  est 2s).
+`\b[A-zéèêôâï][a-zéèêôâï]r\b` : 1137 matchs
 
 ---
 
 > 3.2 de 4 lettres au plus commençant par `r` ?
 
-`\br\w{0,3}\b` : 449 matchs
+`\br[a-zéèêôâï]{0,3}\b` : 449 matchs
 
 ---
 
 > 3.3 commençant par `a` et finissant par `er` ?
 
-`\ba\w*er\b` : 348 matchs
+`\ba[a-zéèêôâï]*er\b` : 348 matchs
 
 ---
 
-> 3.4 contenant la séquence `er` en fin de ligne ?
+> 3.4 finissant par `er` et en fin de ligne ?
 
-`er$` : 460 matchs
+`\b[a-zéèêôâï]*er$` : 460 matchs
 
 # Exercices
 

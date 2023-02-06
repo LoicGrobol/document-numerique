@@ -285,7 +285,7 @@ Dans le fichier Père Duchesne :
    1. de 3 lettres finissant par `r` ?
    2. de 4 lettres au plus commençant par `r` ?
    3. commençant par `a` et finissant par `er` ?
-   4. contenant la séquence `er` en fin de ligne ?
+   4. finissant par `er` en fin de ligne ?
 
 # Classes de caractères
 
