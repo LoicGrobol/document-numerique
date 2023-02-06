@@ -106,6 +106,6 @@ C'est une convention historique d'annotation, recyclée
 Suivre les tutoriels suivants sur MDN :
 
 - [Introduction au Web](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web)
-  - Les modules « Bases de Javascript » et « Publier votre site web » sont facultatives.
-- [Introduction à HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML)
-  (partiellement interactif)
+  - Les modules « Bases de CSS », « Bases de Javascript » et « Publier votre site web » sont facultatives.
+<!-- - [Introduction à HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML)
+  (partiellement interactif) -->
