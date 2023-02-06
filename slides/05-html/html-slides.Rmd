@@ -1,7 +1,7 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 5 : HTML"
-date: 2022-02-14
+date: 2022-02-06
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre

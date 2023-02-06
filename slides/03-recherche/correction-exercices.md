@@ -2,7 +2,7 @@
 title: "Décrire et manipuler un document numérique"
 subtitle: "Correction : Exercice expressions régulières"
 author: Loïc Grobol
-date: 2022-02-21
+date: 2022-02-06
 lang: "fr"
 output:
   pdf_document:
