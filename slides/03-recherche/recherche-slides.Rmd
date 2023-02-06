@@ -278,9 +278,10 @@ Et pour représenter un anti-slash ? Pareil
 
 Dans le fichier Père Duchesne :
 
-1. Recherchez `^.évolution`
-2. Recherchez `r?évolution`
-3. Combien y a-t-il de mots…
+1. Combien trouvez vous de match pour chacun des regex suivantes ? Que signifient-elles ?
+  1. Recherchez `^.évolution`.
+  2. Recherchez `r?évolution`
+2. Combien y a-t-il de mots…
    1. de 3 lettres finissant par `r` ?
    2. de 4 lettres au plus commençant par `r` ?
    3. commençant par `a` et finissant par `er` ?
