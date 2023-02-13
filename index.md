@@ -51,7 +51,6 @@ layout: default
   - [`Duchn-utf8.txt`]({{site.url}}{{site.baseurl}}/slides/03-recherche/Duchn-utf8.txt)
   - [Solutions](slides/03-recherche/correction-slides.html)
 
-
 ### 2022-02-06 : Regex (suite) et HTML
 
 - [Slides HTML]({{site.url}}{{site.baseurl}}/html_slides/html-slides.html)
@@ -60,6 +59,13 @@ Pour la prochaine fois :
 
 - [Exercices regex]({{site.url}}{{site.baseurl}}/slides/03-recherche/exercices.html)
 - Suivre le tutoriel [Introduction au Web](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web)
+
+### 2022-03-13 : Internet et web
+
+- [Slides Internet]({{site.url}}{{site.baseurl}}/html_slides/internet-slides.html)
+- Tutoriel [Introduction à HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML)
+
+À **rendre** pour la prochaine fois : [exercice lettre](slides/05-html/exercice-lettre.html)
 
 ## Licences
 

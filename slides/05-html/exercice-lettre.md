@@ -2,7 +2,7 @@
 title: "Décrire et manipuler un document numérique"
 subtitle: "Exercice lettre HTML"
 author: Loïc Grobol
-date: 2022-02-14
+date: 2022-02-13
 lang: "fr"
 output:
   pdf_document:
@@ -16,14 +16,13 @@ Exercice lettre HTML
 
 Consignes pour le rendu :
 
-- Exercices individuels à rendre au plus tard le 20/02/2022 à 19h.
+- Exercices individuels à rendre au plus tard le 19/02/2023 à 19h.
 - Vos réponses sont à rendre en HTML uniquement.
 - Le nom de fichier doit être de la forme `<Prénom>_<Nom>-lettre-4L4SC02P.html`, par exemple
   pour William Labov, le nom du fichier sera `William_Labov-lettre-4L4SC02P.html`.
   - Pour éviter les éventuels problèmes d'encodage ou de plateformes, merci d'utiliser une version
-  de vos noms et prénoms en alphabet latin (toutes mes excuses)
-- Dépôt sur [Cours en ligne](https://coursenligne.parisnanterre.fr/course/view.php?id=8022) (clé
-  d'inscription `lovelace`)
+  de vos noms et prénoms en alphabet latin
+- Dépôt sur Cours en Ligne
 
 Les consignes à suivre sont celle de
 [MDN](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter),

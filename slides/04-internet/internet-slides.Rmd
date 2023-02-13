@@ -1,7 +1,7 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 4 : Internet et le Web"
-date: 2022-02-06
+date: 2022-02-13
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
