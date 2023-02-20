@@ -4,7 +4,7 @@ subtitle: "Cours 7 : XML"
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
-date: 2022-03-07
+date: 2023-02-20
 output:
   revealjs::revealjs_presentation:
     css: "../reveal_slides_style.css"
@@ -87,10 +87,10 @@ Est-ce que vous voyez le problème ?
 On a transcrit l'apparence du document, mais pas son sens :
 
 - La mise en forme **esthétique** et non **sémantique**
-- Or dans le document original, les éléments de mise en forme ont une qne
-  - Numérotation de parties, insertion dans un ensemble
-  - Indication de locuteur
-  - Versification
+- Or dans le document original, les éléments de mise en forme servent à indiquer
+  - Une numérotation de parties, insertion dans un ensemble
+  - Une indication de locuteur
+  - La versification
 
 On peut bricoler, par exemple avec des classes, pour retrouver la sémantique, comme `<b
 class="speaker">` ou autres, mais c'est assez peu pratique.
@@ -236,7 +236,7 @@ structurées. :
   - Équations mathématiques : format MathML
 - Itinéraires GPS : format GPX
 - Base de données sémantiques : RDF
-- Flux d'actualité : [RSS](rss.xml)
+- Flux d'actualité : [RSS](slides/07-xml/rss.xml)
 
 # Structure d'un document XML
 
@@ -248,7 +248,7 @@ Un document XML est composé de plusieurs parties :
 
 ---
 
-- Un élément possède un nom, des attributs et un contenu
+- Un élément possède un **nom**, des **attributs** et un **contenu**
 - Le contenu d’un élément peut être :
   - Rien : élément vide noté `<nom />` ou `<nom attributs.../>`
   - Du texte
@@ -287,7 +287,7 @@ Représentation graphique :
 
 ## Vocabulaire
 
-Soit le document HTML suivant
+Soit le document XML suivant
 
 ![](imgs/tree_voc.png)
 
@@ -296,11 +296,10 @@ Soit le document HTML suivant
 Voici comment on désigne les différents nœuds les uns par rapport
 aux autres :
 
-- `<racine>` est le nœud parent du nœud enfant
-- `<enfant3>`, lui-même parent de `<enfant4>` et `<enfant5>`,
-- `<racine>`, `<enfant3>` sont des nœuds ancêtres de `<enfant4>` et `<enfant5>`,
-- `<enfant4>` et `<enfant5>` sont des descendants de `<racine>` et `<enfant3>`,
-- `<enfant1>` est un nœud frère de `<enfant2>` et réciproquement.
+- `<racine>` est le nœud **parent** du nœud **enfant** `<enfant3>`, lui-même **parent** de `<enfant4>` et `<enfant5>`,
+- `<racine>`, `<enfant3>` sont des nœuds **ancêtres** de `<enfant4>` et `<enfant5>`,
+- `<enfant4>` et `<enfant5>` sont des **descendants** de `<racine>` et `<enfant3>`,
+- `<enfant1>` est un nœud **frère** (sœur, adelphe, frœur…) de `<enfant2>` et réciproquement.
 
 ## Prologue
 
@@ -413,7 +412,7 @@ déclaré dans le prologue) mais pas les signes de ponctuation.
 L’initiale doit être une lettre ou le signe `_` ensuite, on peut trouver des lettres, des chiffres
 ou `-`, `.`, et `_`.
 
-**Exercice** : écrire une expression régulière pour valides les noms autorisés.
+**Exercice** : écrire une expression régulière pour valider les noms autorisés.
 
 ## Attributs
 

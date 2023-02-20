@@ -11,7 +11,7 @@ output:
 
 Tiré de <https://pageperso.lis-lab.fr/~pierre-alain.reynier/XML/tp1/tp1.html>
 
-Pour chacun des cinq fichiers XML suivants, dire s'il est bien formé et s'il ne l'est pas, dire
+Pour chacun des quatre fichiers XML suivants, dire s'il est bien formé et s'il ne l'est pas, dire
 pourquoi et proposer une correction.
 
 - Ce sont des fichiers textes tout à fait normaux, qui s'ouvrent dans n'importe quel éditeur de
