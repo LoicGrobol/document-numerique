@@ -67,6 +67,14 @@ Pour la prochaine fois :
 
 À **rendre** pour la prochaine fois : [exercice lettre](slides/05-html/exercice-lettre.html)
 
+### 2023-02-20 : XMl
+
+- [Correction exercice lettre HTML](slides/05-html/correction-lettre.html)
+- [Slides XML](slides/07-xml/xml-slides.html) ([pdf](slides/07-xml/xml-slides.pdf))
+
+À **faire** pour la prochaine fois (pas de rendu) : [exercice
+XML](slides/07-xml/exercices-xml.html).
+
 ## Licences
 
 [![CC BY Licence
