@@ -75,6 +75,14 @@ Pour la prochaine fois :
 À **faire** pour la prochaine fois (pas de rendu) : [exercice
 XML](slides/07-xml/exercices-xml.html).
 
+### 2023-03-06 : CSS
+
+- [Correction exercice XML](slides/07-xml/correction-xml.html)
+- [Slides CSS]]({{site.url}}{{site.baseurl}}/html_slides/css-slides.html)
+- [Tutoriel Introduction aux CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps)
+
+À **rendre** pour le 20/03 : [exercice CSS](slides/06-css/exercice-college.html)
+
 ## Licences
 
 [![CC BY Licence
