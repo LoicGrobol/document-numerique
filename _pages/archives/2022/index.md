@@ -82,7 +82,7 @@ communautaire](slides/06-css/exercice-college.html).
 À **faire** pour la prochaine fois (pas de rendu) : [exercice
 XML](slides/07-xml/exercices-xml.html).
 
-### 2022-02-21 : DTD et modélisation
+### 2022-03-21 : DTD et modélisation
 
 - [Correction exercice XML](slides/07-xml/correction-xml.html)
 - [Slides DTD](slides/08-dtd/dtd-slides.html) ([pdf](slides/08-dtd/dtd-slides.pdf))

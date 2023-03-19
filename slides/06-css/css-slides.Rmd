@@ -99,7 +99,7 @@ ou de leur attribut `id` :
 
 ### Règles
 
-Le reste du bloc, qui est compris entre deux accolades `{` et `}` se composent de règles, chacune
+Le reste du bloc, qui est compris entre deux accolades `{` et `}` se compose de règles, chacune
 sous la forme suivante
 
 ```css

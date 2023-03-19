@@ -78,10 +78,18 @@ XML](slides/07-xml/exercices-xml.html).
 ### 2023-03-06 : CSS
 
 - [Correction exercice XML](slides/07-xml/correction-xml.html)
-- [Slides CSS]]({{site.url}}{{site.baseurl}}/html_slides/css-slides.html)
+- [Slides CSS]({{site.url}}{{site.baseurl}}/html_slides/css-slides.html)
 - [Tutoriel Introduction aux CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps)
 
 À **rendre** pour le 20/03 : [exercice CSS](slides/06-css/exercice-college.html)
+
+### 2023-03-20 : DTD et modélisation
+
+- [Correction exercice XML](slides/07-xml/correction-xml.html)
+- [Slides DTD](slides/08-dtd/dtd-slides.html) ([pdf](slides/08-dtd/dtd-slides.pdf))
+
+À **rendre** pour la prochaine fois : [exercices DTD](slides/08-dtd/exercices-dtd.html).
+
 
 ## Licences
 
