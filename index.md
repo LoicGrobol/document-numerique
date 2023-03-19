@@ -85,8 +85,7 @@ XML](slides/07-xml/exercices-xml.html).
 
 ### 2023-03-20 : DTD et modélisation
 
-- [Correction exercice XML](slides/07-xml/correction-xml.html)
-- [Slides DTD](slides/08-dtd/dtd-slides.html) ([pdf](slides/08-dtd/dtd-slides.pdf))
+- [Slides DTD]({{site.url}}{{site.baseurl}}/html_slides/dtd-slides.html)
 
 À **rendre** pour la prochaine fois : [exercices DTD](slides/08-dtd/exercices-dtd.html).
 
