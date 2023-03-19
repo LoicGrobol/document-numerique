@@ -81,13 +81,13 @@ XML](slides/07-xml/exercices-xml.html).
 - [Slides CSS]({{site.url}}{{site.baseurl}}/html_slides/css-slides.html)
 - [Tutoriel Introduction aux CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps)
 
-À **rendre** pour le 20/03 : [exercice CSS](slides/06-css/exercice-college.html)
+À **rendre** pour le 27/03 : [exercice CSS](slides/06-css/exercice-college.html)
 
 ### 2023-03-20 : DTD et modélisation
 
 - [Slides DTD]({{site.url}}{{site.baseurl}}/html_slides/dtd-slides.html)
 
-À **rendre** pour la prochaine fois : [exercices DTD](slides/08-dtd/exercices-dtd.html).
+À **faire** pour la prochaine fois : [exercices DTD](slides/08-dtd/exercices-dtd.html).
 
 
 ## Licences
