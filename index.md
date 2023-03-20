@@ -86,6 +86,7 @@ XML](slides/07-xml/exercices-xml.html).
 ### 2023-03-20 : DTD et modélisation
 
 - [Slides DTD]({{site.url}}{{site.baseurl}}/html_slides/dtd-slides.html)
+- Validateur DTD en ligne: <https://www.truugo.com/xml_validator/>
 
 À **faire** pour la prochaine fois : [exercices DTD](slides/08-dtd/exercices-dtd.html).
 

@@ -171,6 +171,9 @@ output:
 <!DOCTYPE guide [
   <!ELEMENT guide (program*)>
   <!ELEMENT program (title, genre, diffusion+)>
+  <!ATTLIST program
+    duration CDATA #REQUIRED
+  >
   <!ELEMENT title (#PCDATA)>
   <!ELEMENT genre (#PCDATA)>
   <!ELEMENT diffusion EMPTY>
@@ -181,17 +184,17 @@ output:
   >
 ]>
 <guide>
-    <program>
+    <program duration="1h55">
         <title>Mon poussin</title>
         <genre>Cinéma</genre>
         <diffusion channel="TF1" start="21h05" end="23h" />
     </program>
-    <program>
+    <program duration="1h35">
         <title>L’embarras du choix</title>
         <genre>Cinéma</genre>
         <diffusion channel="France 2" start="21h05" end="22h40" />
     </program>
-    <program>
+    <program duration="0h50">
         <title>Grantchester</title>
         <genre>Série TV</genre>
         <diffusion channel="France 3" start="21h05" end="21h55" />
