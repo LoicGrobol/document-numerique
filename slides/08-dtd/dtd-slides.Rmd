@@ -177,7 +177,7 @@ quand il y a une DTD interne.
 
 De nombreux outils de validation existent, souvent associés à des éditeurs XML. Dans le cadre de ce
 cours, on peut se contenter d'un validateur simple comme
-<https://www.w3schools.com/xml/xml_validator.asp>.
+<https://www.truugo.com/xml_validator/>.
 
 # Structure d'une DTD
 
