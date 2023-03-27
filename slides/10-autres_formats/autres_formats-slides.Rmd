@@ -46,7 +46,7 @@ solution.
 
 Pour visualiser, tester et expérimenter avec Markdown, vous pouvez utiliser un des nombreux éditeurs
 en ligne disponible, par exemple <https://dillinger.io> ou un éditeur local comme
-[Marktext](https://marktext.app).
+[Zettlr](https://www.zettlr.com/).
 
 Évidemment — c'est tout le principe —, vous pouvez aussi écrire en Markdown dans n'importe quel
 éditeur de texte (bloc note, notepad++, …).
@@ -104,8 +104,8 @@ Mais ici c'est en est un autre.
 
 Markdown a, comme HTML, deux niveaux d'emphase :
 
-- `*hello*` équivaut à `<em>hello</em>` et est en général marqué en italiques.
-- `**hello**` équivaut à `<strong>hello</strong>` et est en général marqué en gras.
+- `*hello*` équivaut à `<em>hello</em>` et est en général marqué en *italiques*.
+- `**hello**` équivaut à `<strong>hello</strong>` et est en général marqué en **gras**.
 
 ```md
 Ceci est **un** texte *avec* emphase.
@@ -163,6 +163,14 @@ Les listes non-ordonnées se notent en démarrant une ligne par `-`, `*` ou `+`.
 
 ---
 
+- un item
+- un autre item
+
+- un autre item dans une autre liste
+- et un autre
+
+---
+
 On peut également créer des sous-listes, signalées par l'indentation
 
 ```md
@@ -187,6 +195,14 @@ On peut également créer des sous-listes, signalées par l'indentation
 
 ---
 
+- un item
+  sur plusieurs lignes
+- un autre item
+  - avec 
+  - des sous-items
+
+---
+
 ### Listes ordonnées
 
 On crée des listes ordonnées de la façon suivante
@@ -207,9 +223,15 @@ On crée des listes ordonnées de la façon suivante
 
 ---
 
+1. Une liste
+2. Avec des numéros
+3. Ordonnée, donc
+
+---
+
 ### Lien
 
-Les liens hypertextes peuvent être notés *inline*
+Les [liens hypertextes](http://example.com) peuvent être notés *inline*
 
 ```md
 Voici un [lien](http://example.com) inline.
@@ -221,12 +243,12 @@ Voici un <a href="http://example.com">lien</a> inline.
 
 ---
 
-Ils peuvent aussi être référencés ailleurs dans le document en leur donnant une étiquette arbitraire
+Ils peuvent aussi être référencés ailleurs dans le document en leur donnant une étiquette arbitraire (ici `1`)
 
 ```md
-Voici un [lien][adddddddresse] étiqueté.
+Voici un [lien][1] étiqueté.
 …
-[adddddddresse]: http://example.com
+[1]: http://example.com
 ```
 
 ```html
@@ -247,6 +269,8 @@ Du texte *Markdown* avec du **HTML** <small>dedans</small>.
 ```html
 Du texte <em>Markdown</em> avec du <strong>HTML</strong> <small>dedans</small>.
 ```
+
+Du texte <em>Markdown</em> avec du <strong>HTML</strong> <small>dedans</small>.
 
 ## Éditeurs avancés
 
