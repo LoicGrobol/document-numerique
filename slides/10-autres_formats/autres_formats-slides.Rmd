@@ -277,16 +277,17 @@ Du texte <em>Markdown</em> avec du <strong>HTML</strong> <small>dedans</small>.
 Plusieurs outils utilisant Markdown proposent des fonctionnalités en plus de Markdown qui pourraient
 vous être utiles comme
 
-- L'édition collaborative de documents : [démo](https://hackmd.io/ISHbVZC_TJm_03ByZ6z4zg).
-- Générer des diapositives, comme pour ce cours ! Consultez [le fichier
-  source](./autres_formats-slides.md) de celui-ci, par exemple.
+- L'édition collaborative de documents : [démo](https://hackmd.io/ISHbVZC_TJm_03ByZ6z4zg). - Générer
+des diapositives, comme pour ce cours ! Consultez [le fichier
+  source](https://github.com/LoicGrobol/document-numerique/blob/main/slides/10-autres_formats/autres_formats-slides.Rmd)
+  de celui-ci, par exemple.
 - Des documents exécutables contenant des programmes, comme
   [RMarkdown](https://rmarkdown.rstudio.com/authoring_quick_tour.html).
 
 # Exercice
 
-Reprendre l'exercice [lettre](../05-html/exercice-lettre.html) en formatant à l'aide de Markdown
-plutôt que HTML. Attention : il ne sera pas possible de tout représenter.
+Reprendre l'exercice lettre en formatant à l'aide de Markdown plutôt que HTML. Attention : il ne
+sera pas possible de tout représenter.
 
 Pour vous entraîner, revoir les points précédents ou en apprendre plus, vous pouvez également suivre
 le tutoriel interactif de <https://www.markdowntutorial.com/fr>.
