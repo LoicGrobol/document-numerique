@@ -71,8 +71,8 @@ Ordered
 
 ## Emphase
 
-- Italiques : rechercher `\*([^*]*)\*`, remplacer par `<em>$1</em>`.
 - Gras : rechercher `\*\*([^*]*)\*\*`, remplacer par `<strong>$1</strong>`.
+- Italiques : rechercher `\*([^*]*)\*`, remplacer par `<em>$1</em>`.
 
 ## Liens inline
 

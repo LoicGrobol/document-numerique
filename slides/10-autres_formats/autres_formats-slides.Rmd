@@ -271,8 +271,8 @@ le tutoriel interactif de <https://www.markdowntutorial.com/fr>.
 
 En plus de faire des recherches avec des RegEx, on peut s'en servir pour faire des remplacements.
 
-Dans un éditeur local comme Notepad++, c'est déjà intégré. <https://regexr.com/> vous permet de le
-faire en ligne.
+Dans un éditeur local comme Notepad++, c'est déjà intégré. <https://regexr.com> ou
+<https://vscode.dev> vous permettent de le faire en ligne.
 
 ---
 
@@ -288,10 +288,10 @@ Les chefs de section des comissariats sont invités à courir.
 ---
 
 Plus intéressant : on peut aussi conserver une partie de l'expression régulière : remplacer
-`\bc(\w*)\b` par `C$1` (dans Regexr) ou par `C\1` (dans Notepad++) dans
+`\bc(\w*)\b` par `C$1` (dans Regexr ou VSCode) ou par `C\1` (dans Notepad++) dans
 
 ```text
-Les chefs de section des comissariats sont invités à courir.
+Les copains de collège des carabiniers sont priés de choisir.
 ```
 
 Principe : `$n` (ou `\n`) où n est un nombre sera remplacé par le contenu du n-ième groupe de

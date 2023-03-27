@@ -313,7 +313,7 @@ Un texte peut aussi optionnellement contenir un `<front>`, avec préface, table 
 Maintenant, quand vous aurez besoin de représenter des documents textuels (et plus) sous forme
 numérique, vous pourrez utiliser un format TEI en :
 
-- Identifiant dans les *guidelines* les élémenst qui vous intéressent et les modules associés
+- Identifiant dans les *guidelines* les éléments qui vous intéressent et les modules associés
 - Concevant une spécification à l'aide de ROMA
 - Encoder vos documents, idéalement dans un éditeur adapté, mais à défaut dans n'import quel éditeur
   de texte.
@@ -322,7 +322,7 @@ Et comment on affiche toutes ces données ? C'est une histoire pour une procha
 
 ## Exercice
 
-Pour chacun des chapitre 5 à 13 des
+Pour chacun des chapitres 5 à 13 des
 [*guidelines*](https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html), dire rapidement ce que
 contient le module décrit dans ce chapitre et quel(s) type(s) de documents il peut concerner.
 

@@ -94,7 +94,7 @@ XML](slides/07-xml/exercices-xml.html).
 - [Correction exercice DTD](slides/08-dtd/correction-dtd.html)
 - [Slides TEI](slides/09-TEI/tei-slides.html) ([pdf](slides/09-TEI/tei-slides.pdf))
 
-### 2022-03-28 :  Autres formats de documents
+### 2022-03-28 : Autres formats de documents
 
 - [Slides autres formats](slides/10-autres_formats/autres_formats-slides.html)
 - [Exercice md, HMTL et RegEx](slides/10-autres_formats/exercice-md2html.html) ([pdf](slides/10-autres_formats/exercice-md2html.pdf))

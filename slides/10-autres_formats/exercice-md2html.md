@@ -27,7 +27,7 @@ Un *cours* fantastique, avec des [liens](https://example.com)
 - Des [liens](https://example.com) dans des listes!
 
 # Un titre
-## Un titre (mais plus petit)
+## Un titre (mais de plus bas niveau)
 ### Encore un titre
 
 ## Emphasis

@@ -90,6 +90,13 @@ XML](slides/07-xml/exercices-xml.html).
 
 À **faire** pour la prochaine fois : [exercices DTD](slides/08-dtd/exercices-dtd.html).
 
+### 2023-04-27 : Markdown et TEI
+
+- [Correction exercice DTD](slides/08-dtd/correction-dtd.html)
+- [Slides markdown]({{site.url}}{{site.baseurl}}/html_slides/autres_formats-slides.html)
+- [Slides TEI]({{site.url}}{{site.baseurl}}/html_slides/tei-slides.html)
+- [Exercice md, HMTL et RegEx](slides/10-autres_formats/exercice-md2html.html)
+
 
 ## Licences
 
