@@ -4,7 +4,7 @@ subtitle: "Cours 11: OpenDocument et PDF"
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
-date: 2022-04-04
+date: 2023-04-03
 output:
   revealjs::revealjs_presentation:
     css: "../reveal_slides_style.css"

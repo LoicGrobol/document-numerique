@@ -111,4 +111,4 @@ $1
 ```
 
 Mais c'est vraiment un abus des expressions régulières : quand on arrive à ce stade, il faut
-commencer à écrire des analyseurs, ce qui est d'ailleurs étonnament compliqué pour Markdown.
+commencer à écrire des analyseurs syntaxiques.

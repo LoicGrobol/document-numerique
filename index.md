@@ -97,6 +97,12 @@ XML](slides/07-xml/exercices-xml.html).
 - [Slides TEI]({{site.url}}{{site.baseurl}}/html_slides/tei-slides.html)
 - [Exercice md, HMTL et RegEx](slides/10-autres_formats/exercice-md2html.html)
 
+### 2022-04-04 : Exercices
+
+- [Entraînement partiel](slides/11-odx_pdf/entrainement-exercice.html)
+- [Correction exercice md, HMTL et RegEx](slides/10-autres_formats/correction-md2html.html)
+- [Slides autres formats](slides/11-odx_pdf/odx_pdf-slides.html)
+
 
 ## Licences
 

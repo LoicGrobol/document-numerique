@@ -2,7 +2,7 @@
 title: "Décrire et manipuler un document numérique"
 subtitle: "Entraînement pour le partiel" 
 author: Loïc Grobol
-date: 2022-04-04
+date: 2023-04-03
 lang: "fr"
 output:
   odt_document: {}
