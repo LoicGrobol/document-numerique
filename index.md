@@ -28,7 +28,7 @@ layout: default
   - Inscription libre avec la clé `lovelace`
   - Attention, cet espace ne sert qu'aux dépôts de devoirs. -->
 - [Page du cours de l'an dernier]({{site.url}}{{site.baseurl}}/2023)
-- [Le dépôt Github du cours](https://github.com/LoicGrobol/document-numerique/) contient toutes
+- [Le dépôt Github du cours](https://github.com/{{site.repository}}) contient toutes
   les sources permettant de générer le matériel du cours.
 
 ## Séances
