@@ -22,6 +22,8 @@ layout: default
 
 ## Liens
 
+- Prendre rendez-vous pour des *office hours* :
+  [Calendly](https://calendly.com/lgrobol/remote-office-hour)
 <!-- - [Espace Cours en Ligne](https://coursenligne.parisnanterre.fr/course/view.php?id=7431)
   - Inscription libre avec la clé `lovelace`
   - Attention, cet espace ne sert qu'aux dépôts de devoirs. -->

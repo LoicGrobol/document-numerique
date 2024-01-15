@@ -23,7 +23,7 @@ lang: "fr"
 
 - Loïc Grobol (il/iel) [<lgrobol@parisnanterre.fr>](mailto:lgrobol@parisnanterre.fr)
 - PHILLIA / MoDyCo (Bâtiment Rémond, 4ème, bureau 404C)
-- *Office hours* lundi matin, sur rendez-vous
+- *Office hours*, etc.: voir <https://loicgrobol.github.io/teaching>
 - **N'hésitez pas à m'écrire**
 
 # Le cours
