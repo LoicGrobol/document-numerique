@@ -10,6 +10,6 @@ Authors@R:
 Encoding: UTF-8
 Description: "Contenus pour le cours « Décrire et manipuler un document numérique », L2 SDL parcours LCN, université Paris Nanterre."
 Imports:
-    revealjs
+    revealjs,
     rmarkdown,
     tinytex
