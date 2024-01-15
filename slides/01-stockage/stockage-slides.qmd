@@ -150,7 +150,3 @@ Les supports magnétiques évoluent peu à peu, et sont toujours utilisés aujou
 - Disques rigides (disques durs), en général utilisés en piles.
 
 :::
-
-# Crédits
-
-- Punch cards: Dragfyre, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons

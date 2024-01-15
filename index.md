@@ -39,8 +39,8 @@ layout: default
   Introduction]({{site.url}}{{site.baseurl}}/slides/00-introduction/introduction-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/00-introduction/introduction-slides.pdf))
 - [Slides
-  Informatique]({{site.url}}{{site.baseurl}}/slides/_site/slides/01-stockage/stockage-slides.html)
-  ([pdf]({{site.url}}{{site.baseurl}}/slides/_site/slides/01-stockage/stockage-slides.pdf))
+  Stockage de l'information]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.pdf))
 
 ## Licences
 
