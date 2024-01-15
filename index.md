@@ -33,10 +33,12 @@ layout: default
 
 ### 2024-01-15 : Introduction et stockage de l'information
 
-- [Slides Introduction]({{site.url}}{{site.baseurl}}/_render/slides/introduction-slides.html)
-  ([pdf](_render/slides/introduction-slides.pdf))
-- [Slides Informatique]({{site.url}}{{site.baseurl}}/html_slides/informatique-slides.html)
-  ([pdf](html_slides/informatique-slides.pdf))
+- [Slides
+  Introduction]({{site.url}}{{site.baseurl}}/slides/00-introduction/introduction-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/00-introduction/introduction-slides.pdf))
+- [Slides
+  Informatique]({{site.url}}{{site.baseurl}}/slides/_site/slides/01-stockage/stockage-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/_site/slides/01-stockage/stockage-slides.pdf))
 
 ## Licences
 

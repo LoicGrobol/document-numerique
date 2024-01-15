@@ -10,6 +10,10 @@ repository: "loicgrobol/document-numerique"
 
 exclude:
   - renv
+  - slides
+
+keep_files:
+  - slides
 
 include:
   - _pages

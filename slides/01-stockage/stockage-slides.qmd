@@ -4,10 +4,9 @@ subtitle: "Cours 1 : Stockage de l'information"
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
-output:
-  pdf_document:
-    latex_engine: "lualatex"
 format:
+  pdf:
+    "pdf-engine": "lualatex"
   revealjs:
     css: "../reveal_slides_style.css"
     theme: white

@@ -42,7 +42,7 @@ Dependencies:
 Setup:
 
 ```bash
-rtx activate
+rtx activate # ← adapt to your shell
 Rscript setup_local.R
 gem install jekyll bundler
 bundle config set --local path 'vendor/bundle'

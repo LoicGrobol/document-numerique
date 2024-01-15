@@ -4,8 +4,10 @@ subtitle: "Introduction"
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
-output:
-  revealjs::revealjs_presentation:
+format:
+  pdf:
+    "pdf-engine": "lualatex"
+  revealjs:
     css: "../reveal_slides_style.css"
     theme: white
     highlight: pygments
@@ -13,8 +15,7 @@ output:
     reveal_options:
       slideNumber: true
       progress: true
-  pdf_document:
-    latex_engine: "lualatex"
+    self-contained: true
 lang: "fr"
 ---
 
@@ -31,9 +32,9 @@ lang: "fr"
 
 - **Quoi** « Décrire et manipuler un document numérique » 4L4SC02P
 - **Où** Salle M209, bâtiment Éphémère 1
-- **Quand** 12 séances, les lundis de 13:20 à 15:20, du 16/01 au 10/04
+- **Quand** 12 séances, les lundis de 13:20 à 15:20, du 15/01 au 08/04
   - Voir [le calendrier de
-    l'université](https://etudiants.parisnanterre.fr/calendrier-universitaire/calendrier-universitaire-2022-2023)
+    l'université](https://etudiants.parisnanterre.fr/calendrier-universitaire/calendrier-universitaire-2023-2024)
     pour les dates de vacances.
 
 → Travail sur machine préférable, amener si possible un PC portable
@@ -58,10 +59,9 @@ Connaissances :
 
 Compétences :
 
-- Créer et modifier des documents XML simples.
 - Créer et modifier des pages web simples avec HTML et CSS.
+- Créer et modifier des documents XML simples.
 - Créer et modifier des documents structurés en Markdown.
-- Représenter des données linguistiques sous forme tabulaire et semi-tabulaire.
 - Utiliser des expressions régulières pour faire des recherches et des modifications dans des
   fichiers textes.
 
