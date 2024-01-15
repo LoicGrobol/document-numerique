@@ -1,4 +1,3 @@
-renv::activate()
 for (slide_file in Sys.glob("slides/*/*.Rmd")) {
     quarto::render(
         slide_file,
