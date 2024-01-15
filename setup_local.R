@@ -1,3 +1,10 @@
-install.packages("renv", repos="https://cloud.r-project.org/");
+install.packages("renv", repos = "https://cloud.r-project.org/")
 renv::init()
-tinytex::install_tinytex()
+renv::install()
+tryCatch(
+    tinytex::install_tinytex(),
+    error = function(err) {
+        print(err)
+    }
+)
+tinytex::tlmgr_update()

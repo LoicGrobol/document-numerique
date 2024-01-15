@@ -34,13 +34,15 @@ Contact : [<lgrobol@parisnanterre.fr>](mailto:loic.grobol@parisnanterre.fr)
 Dependencies:
 
 - R
+- rtx
 - pandoc
 - Ruby
   - Bundle
 
 Setup:
 
-```console
+```bash
+rtx activate
 Rscript setup_local.R
 gem install jekyll bundler
 bundle config set --local path 'vendor/bundle'
@@ -50,6 +52,7 @@ bundle install
 Regenerate:
 
 ```bash
+rtx activate
 Rscript build_slides.R
 bundle exec jekyll build
 bundle exec jekyll serve

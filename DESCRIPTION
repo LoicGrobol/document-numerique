@@ -9,6 +9,7 @@ Authors@R:
            email = "loic.grobol@gmail.com")
 Encoding: UTF-8
 Description: "Contenus pour le cours « Décrire et manipuler un document numérique », L2 SDL parcours LCN, université Paris Nanterre."
-Imports: 
-    rmarkdown,
+Imports:
     revealjs
+    rmarkdown,
+    tinytex

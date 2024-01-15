@@ -1,3 +1,8 @@
-for (slide_file in Sys.glob("slides/*/*.Rmd")){
-    rmarkdown::render(slide_file, output_dir='html_slides', output_format='all')
+renv::activate()
+for (slide_file in Sys.glob("slides/*/*.Rmd")) {
+    rmarkdown::render(
+        slide_file,
+        output_dir = "_site/slides",
+        output_format = "all"
+    )
 }

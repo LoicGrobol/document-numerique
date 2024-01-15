@@ -1,0 +1,157 @@
+---
+title: "Décrire et manipuler un document numérique"
+subtitle: "Cours 1 : Stockage de l'information"
+author:
+  - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
+institute: Université Paris Nanterre
+output:
+  pdf_document:
+    latex_engine: "lualatex"
+format:
+  revealjs:
+    css: "../reveal_slides_style.css"
+    theme: white
+    highlight: pygments
+    center: true
+    reveal_options:
+      slideNumber: true
+      progress: true
+    self-contained: true
+lang: "fr"
+---
+
+# Stockage
+
+Même si un document numérique n'a pas forcément de support matériel immédiatement évident (ou en
+tout cas aussi évident qu'un document non-numérique), il faut bien à un moment que l'information
+existe quelque part dans la réalité.
+
+L'information a donc besoin d'un support pour son stockage. Et ce support doit évidemment être
+manipulable par une machine.
+
+L'objectif de ce cours c'est de voir comment on fait ça.
+
+# Les débuts
+
+Les premières apparitions de support d'information manipulables par des machines :
+
+:::incremental
+
+- Ne stockent pas des documents, mais des **instructions**
+- Datent du 18ème siècle (!)
+- Ne concernent pas des machines électriques
+
+:::
+
+## Des cartes pour les métiers à tisser
+
+Les premiers support de stockage d'information sont des cartes en papier rigide, percées de trous,
+utilisées pour configurer des métiers à tisser.
+
+---
+
+[![Punch cards used in a Jacquard silk loom at a workshop in Van Phuc silk village, Hanoi,
+Vietnam.](img/Van_Phuc_loom_punch_cards_02.jpg){.r-stretch}](https://upload.wikimedia.org/wikipedia/commons/2/28/Van_Phuc_loom_punch_cards_02.jpg)
+
+---
+
+Leur première usage documenté est dû à Basile Bouchon, en 1725, et leur première usage complètement
+automatisé est breveté par Joseph Marie Jacquard en 1804.
+
+---
+
+Les « métiers Jacquard » fonctionnent à l'aide d'une grille de crochet sur laquelle on presse les
+cartes.
+
+- Les crochets se trouvant en face de trous restent en place
+- Les autres crochets sont poussés, déterminant quels fils seront utilisés pour l'étape
+suivante de tissage.
+
+---
+
+Cette opération peut être faite sans intervention humaine, ce qui accélère considérablement la mise
+en place des fils et permet de réaliser des motifs complexes, très difficiles à obtenir auparavant.
+
+Ce principe, et les formats de cartes restent encore utilisés aujourd'hui, même s'ils sont remplacés
+par des machines entièrement électroniques.
+
+## Généralisations
+
+Partant de cette idée, d'autres usages apparaissent pour les cartes perforées :
+
+- Stocker des instructions, puis des données pour une machine à calculer : Charles Babbage et **Ada Lovelace** vers 1830
+  - Système à tiges, similaire au métier Jacquard.
+  - Nombres stockées en système binaire 👀
+- Stocker de la musique : automaphone de Jules Carpentier en 1881.
+  - Les trous laissent passer l'air dans des tuyaux d'orgues ou d'harmonium
+
+---
+
+- Machines à « tabuler » électromécaniques : Herman Hollerith, vers 1890 pour les machines à voter étatsuniennes, puis plein d'autres.
+  - L'entreprise fondée par Hollerith est à l'origine d'IBM
+
+---
+
+[![Une carte perforée IBM 12 lignes/80 colonne du milieu du 20ème siècle](img/Used_Punchcard_(5151286161).jpg){.r-stretch}](https://commons.wikimedia.org/wiki/File:Used_Punchcard_(5151286161).jpg)
+
+## Pour les ordinateurs
+
+Un ordinateur fonctionne à l'aide de signal électrique. Il existe différentes manière de convertir l'information d'une carte perforée en signal :
+
+- La carte placée sur une grille de contacts, on fait passer un conducteur (balais en cuivre, cylindre roulant, plaque de fer…) sur la carte, les trous permettent le contact entre les deux éléments.
+- La carte est placée sur une plaque photoélectrique et on éclaire l'ensemble. Les trous laissent passer la lumière, ce qui génère du courant sur la plaque.
+
+# Stocker des nombres avec des trous
+
+Le système binaire : au tableau !
+
+# Stocker du son
+
+## Stockage mécanique
+
+En parallèle, en 1877 Thomas Edison et Charles Cros inventent indépendamment le phonographe : une machine qui permet de reproduire des sons à l'aide d'une membrane mobile actionée par un stylet lisant un cylindre (de métal ou de cire) gravé.
+
+---
+
+[![Un cylindre de phonographe](img/Recording,_sound_(AM_1965.78.20-7).jpg){.r-stretch}](commons.wikimedia.org/wiki/File:Recording,_sound_(AM_1965.78.20-7).jpg)
+
+---
+
+Les cylindres laissent place aux disques, plus pratiques, entre autres avec le grammophone d'Émile Berliner, vers 1890
+
+---
+
+[![Un disque de grammophone](img/MARRS_-_Pump_up_the_volume_(1988)_Side_A.jpg){.r-stretch}](https://commons.wikimedia.org/wiki/Category:Vinyl_records#/media/File:MARRS_-_Pump_up_the_volume_(1988)_Side_A.jpg)
+
+## Stockage magnétique
+
+Une alternative au stockage mécanique apparaît avec la conception de stockage magnétique sur fil (Valdemar Poulsen, 1898), puis sur bande (Fritz Pfleumer, 1928). Il s'agit toujours de transcrire les mouvements d'une membrane mobile, mais cette fois par l'intensité de la magnétisation de grains de métaux ferromagnétiques.
+
+---
+
+[![Une bande magnétique](img/Magtape1.jpg){.r-stretch}](https://commons.wikimedia.org/wiki/File:Magtape1.jpg)
+
+# Stockage magnétique numérique
+
+La combinaison des deux méthodes précédentes de stockage a lieu dans les années 1950. L'idée ici est de stocker sur une bande magnétique des 1 et des 0, correspondant aux trous et aux pleins des cartes perforées, par l'orientation de dipôles magnétiques (ici des grains de matériaux ferromagnétiques) répartis sur une bande.
+
+---
+
+Ce format remporte un grand succès : la facilité de stockage, de réplication et leur grande capacitée (relativement) fait des supports de stockage numériques l'élement essentiel de l'informatique, en particulier avec le développement des machines personnelles.
+
+---
+
+Les supports magnétiques évoluent peu à peu, et sont toujours utilisés aujourd'hui
+
+:::incremental
+
+- Bandes sur bobine
+- Bandes sur cassettes
+- Disques souples protégés (disquettes)
+- Disques rigides (disques durs), en général utilisés en piles.
+
+:::
+
+# Crédits
+
+- Punch cards: Dragfyre, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
