@@ -45,8 +45,8 @@ layout: default
 ### 2024-01-22 : Représentation de l'information
 
 - [Slides
-  Encodage]({{site.url}}{{site.baseurl}}slides/02-encodages/encodages-slides.html)
-  ([pdf]({{site.url}}{{site.baseurl}}slides/02-encodages/encodages-slides.pdf))
+  Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.pdf))
 
 ## Licences
 
