@@ -42,6 +42,12 @@ layout: default
   Stockage de l'information]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.pdf))
 
+### 2024-01-22 : Représentation de l'information
+
+- [Slides
+  Encodage]({{site.url}}{{site.baseurl}}slides/02-encodages/encodages-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}slides/02-encodages/encodages-slides.pdf))
+
 ## Licences
 
 [![CC BY Licence

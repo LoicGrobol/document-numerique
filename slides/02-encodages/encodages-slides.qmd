@@ -5,8 +5,10 @@ date: 2023-01-23
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
-output:
-  revealjs::revealjs_presentation:
+format:
+  pdf:
+    "pdf-engine": "lualatex"
+  revealjs:
     css: "../reveal_slides_style.css"
     theme: white
     highlight: pygments
@@ -14,8 +16,7 @@ output:
     reveal_options:
       slideNumber: true
       progress: true
-  pdf_document:
-    latex_engine: "lualatex"
+    self-contained: true
 lang: "fr"
 ---
 
@@ -171,7 +172,7 @@ conventions d'encodages à être devenue une norme (*de facto* et *de jure*) à 
 
 ---
 
-Principes :
+### Principes
 
 - Les caractères sont codés sur 7 bits, soit 128 caractères possibles
   - Sur des machines utilisant des mots de 8 bits, le dernier peut par exemple servir pour la
@@ -184,6 +185,8 @@ Principes :
   - Des caractères dits « de contrôle » : fin de ligne, beep…
 
 ---
+
+### Table
 
 |     | ⋅⋅0 | ⋅⋅1 | ⋅⋅2 | ⋅⋅3 | ⋅⋅4 | ⋅⋅5 | ⋅⋅6 | ⋅⋅7 | ⋅⋅8 | ⋅⋅9 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -201,7 +204,7 @@ Principes :
 | 11⋅ |  n  |  o  |  p  |  q  |  r  |  s  |  t  |  u  |  v  |  w  |
 | 12⋅ |  x  |  y  |  z  |  {  | \|  |  }  |  ~  | DEL |     |     |
 
-## Exercice
+### Exercice
 
 1. À quelle série de nombres correspond la chaîne de caractères `Vive le TAL!` ?
 2. À quelle chaîne de caractère correspond la suite de nombres `085, 080, 088, 060, 051` ?
@@ -280,6 +283,16 @@ pour tous les systèmes d'écritures.
 
 ## Détails techniques
 
+---
+
+### Notation hexadécimale
+
+Au tableau !
+
+---
+
+### Points de codes et représentations concrètes
+
 On ajoute un niveau de représentation : le **point de code**, un nombre, souvent noté en
 hexadécimal, qui correspond à la position d'un caractère dans la table Unicode mais n'est pas
 nécessairement sa représentation concrète sur la machine.
@@ -293,6 +306,8 @@ Pour voir les représentations concrètes, on peut ouvrir les fichier textes dan
 hexadécimal comme <https://hexed.it>.
 
 ---
+
+### Caractères combinants
 
 Unicode contient beaucoup de caractères, pour des raisons plus ou moins bonnes. Entre autre il
 contient à la fois des caractères combinants (par exemple des accents qui s'ajoutent au caractère
@@ -311,19 +326,15 @@ emojis.
 
 # 👀 Exercices 👀
 
-À rendre sur cours en ligne sous la forme d'un fichier zip contenant les fichiers demandés
-
-## 1. Unicode
-
 À faire par exemple à l'aide de <https://unicode-table.com>, rendre vos réponses dans un fichier
-txt nommé `1.txt`.
+txt nommé `utf.txt`.
 
 1. Donner la représentation de votre nom complet sous la forme d'une suite de points de code
    Unicode.
 2. Donner la représentation en UTF-8 des cinq (au plus) premiers caractères de votre prénom.
 3. À quoi correspond la suite de points de code U+5317, U+4EAC, U+5E02 ?
 
-## 2. Fichiers et encodage
+<!-- ## 2. Fichiers et encodage
 
 - Dans un éditeur de texte (par exemple <https://vscode.dev>), créez un fichier texte contenant
   uniquement le mot `préfère`.
@@ -333,4 +344,4 @@ txt nommé `1.txt`.
   `é` et `è` dans ces deux formats d'encodage.
 
 Rendre les deux fichier txt que vous avez créé, plus un fichier nommé `2.txt` qui contiendra votre
-réponse à la dernière question
+réponse à la dernière question -->
