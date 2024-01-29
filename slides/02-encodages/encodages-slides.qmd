@@ -275,7 +275,7 @@ pour tous les systèmes d'écritures.
 - Finalement représentation de **taille variable** : UTF-8
   - Les caractères ASCII sont codés sur un octet.
   - Les autres caractères sur plus, avec une organisation plus ou moins arbitraire.
-- En évolution (croissance) constante depuis : à l'automne 2021, on en est à la version 14
+- En évolution (croissance) constante depuis : à l'automne 2023, on en est à la version 15.1
 
 :::
 
@@ -336,7 +336,7 @@ txt nommé `utf.txt`.
 2. Donner la représentation en UTF-8 des cinq (au plus) premiers caractères de votre prénom.
 3. À quoi correspond la suite de points de code U+5317, U+4EAC, U+5E02 ?
 
-<!-- ## 2. Fichiers et encodage
+## 2. Fichiers et encodage
 
 - Dans un éditeur de texte (par exemple <https://vscode.dev>), créez un fichier texte contenant
   uniquement le mot `préfère`.
@@ -346,4 +346,4 @@ txt nommé `utf.txt`.
   `é` et `è` dans ces deux formats d'encodage.
 
 Rendre les deux fichier txt que vous avez créé, plus un fichier nommé `2.txt` qui contiendra votre
-réponse à la dernière question -->
+réponse à la dernière question

@@ -48,6 +48,12 @@ layout: default
   Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.pdf))
 
+### 2024-01-22 : Unicode, hexadécimal et systèmes de fichiers
+
+- [Slides
+  Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.pdf))
+
 ## Licences
 
 [![CC BY Licence
