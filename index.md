@@ -24,9 +24,9 @@ layout: default
 
 - Prendre rendez-vous pour des *office hours* :
   [Calendly](https://calendly.com/lgrobol/remote-office-hour)
-<!-- - [Espace Cours en Ligne](https://coursenligne.parisnanterre.fr/course/view.php?id=7431)
+- [Espace Cours en Ligne](https://coursenligne.parisnanterre.fr/course/view.php?id=8350)
   - Inscription libre avec la clé `lovelace`
-  - Attention, cet espace ne sert qu'aux dépôts de devoirs. -->
+  - Attention, cet espace ne sert qu'aux dépôts de devoirs.
 - [Page du cours de l'an dernier]({{site.url}}{{site.baseurl}}/2023)
 - [Le dépôt Github du cours](https://github.com/{{site.repository}}) contient toutes
   les sources permettant de générer le matériel du cours.
