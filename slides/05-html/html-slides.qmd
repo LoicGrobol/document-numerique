@@ -40,13 +40,37 @@ _**H**yper**t**ext **M**arkup **L**anguage_
     <title>Le titre de la page</title>
   </head>
   <body>
-    <h1>Un sous-titre de niveau 1</h1>
+    <h1>Un titre de niveau 1</h1>
     <section>
       <p>Bonjour, tout le <a href="https://fr.wikipedia.org/wiki/Hello_world">monde</a></p>
     </section>
   </body>
 </html>
 ```
+
+---
+
+## Entraînement
+
+### Créer une page
+
+1. Copiez-collez le code précédent dans un fichier texte en utilisant l'éditeur de votre choix (le bloc notes si vous n'avez rien d'autre).
+2. Sauvegarder votre fichier texte sous le nom `hello.html` (ou un autre nom qui vous ferait plaisir).
+3. Ouvrez votre fichier dans votre navigateur préféré (Firefox, donc).
+4. Émerveillez-vous.
+
+---
+
+### Modifier une page
+
+1. Reprenez votre fichier `hello.html`
+2. Modifiez-le pour que le titre de la page soit votre nom.
+3. Modidifiez-le encore : remplacer le paragraphe de texte par un paragraphe qui vous décrit en
+trois phrases et qui contient un lien vers la page Wikipédia de votre lieu de naissance (ou de la
+ville la plus proche qui a une page Wikipédia).
+4. Sauvegardez le résultat sous le nom `moi.html`
+5. Ouvrez ce nouveau fichier dans un navigateur, et autocongratulez-vous si tout a bien marché.
+
 
 ## Balises
 
