@@ -1,12 +1,12 @@
 ---
 title: "Décrire et manipuler un document numérique"
-subtitle: "Cours 5 : HTML"
-date: 2023-02-06
+subtitle: "Cours 4 : HTML"
+date: 2023-02-05
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
-output:
-  revealjs::revealjs_presentation:
+format:
+  revealjs:
     css: "../reveal_slides_style.css"
     theme: white
     highlight: pygments
@@ -14,8 +14,9 @@ output:
     reveal_options:
       slideNumber: true
       progress: true
-  pdf_document:
-    latex_engine: "lualatex"
+    self-contained: true
+  pdf:
+    "pdf-engine": "lualatex"
 lang: "fr"
 ---
 
@@ -88,24 +89,11 @@ Les balises peuvent aussi contenir des métadonnées, comme la cible d'un lien�
 <a href="https://fr.wikipedia.org/wiki/Hello_world">monde</a>
 ```
 
----
-
 En principe, l'information donnée est purement **sémantique** : on ne code pas la mise en forme.
-
-## Pourquoi des chevrons ?
-
-C'est une convention historique d'annotation, recyclée
-
-- Dans son usage philologique, s’utilise par paires et sert à ajouter un mot, un groupe
-  de mots, un élément conjecturel dans une édition généralement scientifique.
-- Sert de parenthèse qui permet d’isoler une portion de texte en l’isolant de la
-  situation de communication.
 
 # TODO
 
-Suivre les tutoriels suivants sur MDN :
-
-- [Introduction au Web](https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web)
-  - Les modules « Bases de CSS », « Bases de Javascript » et « Publier votre site web » sont facultatives.
-<!-- - [Introduction à HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML)
-  (partiellement interactif) -->
+Suivre le tutoriel [Introduction à
+HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML) sur MDN jusqu'à
+« Déboguer de l'HTML ». Il est partiellement interactif, assurez vous de bien tout lire avec
+attention, de faire tous les exercices et de venir vers moi si quelque chose coince
