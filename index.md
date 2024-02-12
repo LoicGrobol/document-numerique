@@ -66,6 +66,7 @@ layout: default
   CSS]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.pdf))
 
+À **rendre** pour la prochaine fois : [exercice collège communautaire]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-college.html).
 
 ## Licences
 
