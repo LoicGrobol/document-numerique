@@ -60,6 +60,12 @@ layout: default
   HMTL]({{site.url}}{{site.baseurl}}/slides/05-html/html-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/05-html/html-slides.pdf))
 
+### 2024-02-12 : CSS
+
+- [Slides
+  HMTL]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.pdf))
+
 
 ## Licences
 
