@@ -24,7 +24,7 @@ lang: "fr"
 
 _**C**ascading **S**tyle **S**heets_
 
-- Créé en 2014 par Håkon Wium Lie, dans la même équipe que Tim Berners-Lee
+- Créé en 1994 par Håkon Wium Lie, dans la même équipe que Tim Berners-Lee
 - Un complément à HTML qui permet de cibler des éléments dans un document en HTML et de spécifier
   leur apparence.
   - Idée générale : on doit être capable en changeant uniquement le style CSS appliqué à un document
