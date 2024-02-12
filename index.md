@@ -63,7 +63,7 @@ layout: default
 ### 2024-02-12 : CSS
 
 - [Slides
-  HMTL]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.html)
+  CSS]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.pdf))
 
 
