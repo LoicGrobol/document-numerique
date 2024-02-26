@@ -1,12 +1,12 @@
 ---
 title: "Décrire et manipuler un document numérique"
-subtitle: "Cours 7 : XML"
+subtitle: "Cours 6 : XML"
+date: 2024-02-26
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
-date: 2023-02-20
-output:
-  revealjs::revealjs_presentation:
+format:
+  revealjs:
     css: "../reveal_slides_style.css"
     theme: white
     highlight: pygments
@@ -14,8 +14,9 @@ output:
     reveal_options:
       slideNumber: true
       progress: true
-  pdf_document:
-    latex_engine: "lualatex"
+    self-contained: true
+  pdf:
+    "pdf-engine": "lualatex"
 lang: "fr"
 ---
 
@@ -312,40 +313,6 @@ l’encodage :
 <?xml version="1.0" encoding="utf-8"?>
 ```
 
-## Commentaires
-
-On peut placer des commentaires à peu près partout dans un document XML. La syntaxe est identique à
-celle d’un fichier HTML. Un commentaire peut d’étendre sur plusieurs lignes. La seule contrainte est
-de ne pas pouvoir employer les caractères `--` dans le commentaire, même s’ils ne sont pas suivis de
-`>`
-
-```xml
-<!-- voici un commentaire -->
-ceci n'est pas un commentaire
-<!--
-voici un autre commentaire
-et ça -- , c'est une erreur
--->
-```
-
-## Directives
-
-Après le prologue, on peut trouver plusieurs parties optionnelles
-délimitées par `<?...?>` ou `<!...>`. Ce sont des instructions de
-traitement, des directives pour l’analyseur XML.
-
-Par exemple :
-
-- Une *Document Type Definitions* (DTD) qui permet de valider le contenu du document. C’est l’objet
-  du prochain cours.
-- Une feuille de style.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE personne SYSTEM "personne.dtd">
-<?xml-stylesheet href="personne.css" type="text/css"?>
-```
-
 # Éléments XML
 
 Les éléments définissent la structure du document. Un élément est
@@ -462,6 +429,42 @@ Voici un exemple d’emploi d’entités :
 - Cela entraîne une erreur si on remplace ces entités par le caractère correspondant,
 - Ces entités sont automatiquement remplacées par les caractères lorsqu’on traite le fichier.
 - Ce contenu bizarre vise uniquement à illustrer l’emploi d’entités.
+
+# Autres outils
+
+## Commentaires
+
+On peut placer des commentaires à peu près partout dans un document XML. La syntaxe est identique à
+celle d’un fichier HTML. Un commentaire peut d’étendre sur plusieurs lignes. La seule contrainte est
+de ne pas pouvoir employer les caractères `--` dans le commentaire, même s’ils ne sont pas suivis de
+`>`
+
+```xml
+<!-- voici un commentaire -->
+ceci n'est pas un commentaire
+<!--
+voici un autre commentaire
+et ça -- , c'est une erreur
+-->
+```
+
+## Directives
+
+Après le prologue, on peut trouver plusieurs parties optionnelles
+délimitées par `<?...?>` ou `<!...>`. Ce sont des instructions de
+traitement, des directives pour l’analyseur XML.
+
+Par exemple :
+
+- Une *Document Type Definitions* (DTD) qui permet de valider le contenu du document. C’est l’objet
+  du prochain cours.
+- Une feuille de style.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE personne SYSTEM "personne.dtd">
+<?xml-stylesheet href="personne.css" type="text/css"?>
+```
 
 ## CDATA
 

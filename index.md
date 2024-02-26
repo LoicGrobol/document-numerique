@@ -68,6 +68,16 @@ layout: default
 
 À **rendre** pour la prochaine fois : [exercice collège communautaire]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-college.html).
 
+
+### 2024-02-26 : XML
+
+- [Slides
+  CSS]({{site.url}}{{site.baseurl}}/slides/07-xml/xml-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/07-xml/xml-slides.pdf))
+
+À **rendre** pour la prochaine fois : [exercice XML]({{site.url}}{{site.baseurl}}/slides/07-xml/exercices-xml.html).
+
+
 ## Licences
 
 [![CC BY Licence
