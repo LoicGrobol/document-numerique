@@ -159,7 +159,8 @@ Une bibliographie (les espaces servent uniquement à faciliter la lecture)
 <?xml version="1.0" encoding="UTF-8"?>
 <bibliography>
 <journalArticle>
-  <title>The Misgendering Machines: Trans/HCI Implications of Automatic Gender Recognition</title><author><forename>Os</forename><surname>Keyes</surname></author>
+  <title>The Misgendering Machines: Trans/HCI Implications of Automatic Gender Recognition</title>
+  <author><forename>Os</forename><surname>Keyes</surname></author>
   <journal>
     <title>Proceedings of the ACM on Human-Computer Interaction</title>
     <date>2018</date>
@@ -337,6 +338,21 @@ texte3
 Dans le cas où l’élément n’a pas de contenu (élément vide), on peut
 regrouper ses deux balises en une seule `<nom attributs…/>`.
 
+
+## Choses permises
+
+Parmi les choses permises, le même type d’élément peut se trouver
+plusieurs fois avec le même parent, avec des contenus identiques ou
+différents :
+
+```xml
+<element1>
+<element2>texte1</element2>
+<element2>texte2</element2>
+<element2>texte1</element2>
+</element1>
+```
+
 ## Choses interdites
 
 Les règles d’imbrication XML interdisent différentes configurations
@@ -357,20 +373,6 @@ qui sont plus ou moins tolérées en HTML :
 
 En XML, cela crée des erreurs « document mal formé ».
 
-## Choses permises
-
-Parmi les choses permises, le même type d’élément peut se trouver
-plusieurs fois avec le même parent, avec des contenus identiques ou
-différents :
-
-```xml
-<element1>
-<element2>texte1</element2>
-<element2>texte2</element2>
-<element2>texte1</element2>
-</element1>
-```
-
 ## Noms des éléments
 
 Les noms des éléments peuvent employer de nombreux caractères Unicode (correspondant au codage
@@ -378,8 +380,8 @@ déclaré dans le prologue) mais pas les signes de ponctuation.
 
 L’initiale doit être une lettre ou le signe `_` ensuite, on peut trouver des lettres, des chiffres
 ou `-`, `.`, et `_`.
-
-**Exercice** : écrire une expression régulière pour valider les noms autorisés.
+<!-- 
+**Exercice** : écrire une expression régulière pour valider les noms autorisés. -->
 
 ## Attributs
 

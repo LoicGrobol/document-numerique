@@ -318,8 +318,6 @@ numérique, vous pourrez utiliser un format TEI en :
 - Encoder vos documents, idéalement dans un éditeur adapté, mais à défaut dans n'import quel éditeur
   de texte.
 
-Et comment on affiche toutes ces données ? C'est une histoire pour une prochaine fois
-
 ## Exercice
 
 Pour chacun des chapitres 5 à 13 des

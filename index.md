@@ -68,7 +68,6 @@ layout: default
 
 À **rendre** pour la prochaine fois : [exercice collège communautaire]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-college.html).
 
-
 ### 2024-02-26 : XML
 
 - [Slides
@@ -76,6 +75,13 @@ layout: default
   ([pdf]({{site.url}}{{site.baseurl}}/slides/07-xml/xml-slides.pdf))
 
 À **rendre** pour la prochaine fois : [exercice XML]({{site.url}}{{site.baseurl}}/slides/07-xml/exercices-xml.html).
+
+### 2024-03-04 : DTD
+
+- [Slides
+  XML]({{site.url}}{{site.baseurl}}/slides/08-dtd/dtd-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/08-dtd/dtd-slides.pdf))
+- [Exercice DTD]({{site.url}}{{site.baseurl}}/slides/08-dtd/exercices-dtd.html).
 
 
 ## Licences

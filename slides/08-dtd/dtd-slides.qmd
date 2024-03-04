@@ -1,21 +1,22 @@
 ---
 title: "Décrire et manipuler un document numérique"
-subtitle: "Cours 8: DTD et modélisation"
+subtitle: "Cours 7 : DTD et modélisation"
+date: 2024-03-04
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
-date: 2022-03-14
-output:
-  revealjs::revealjs_presentation:
+format:
+  revealjs:
     css: "../reveal_slides_style.css"
     theme: white
     highlight: pygments
     center: true
     reveal_options:
       slideNumber: true
-      progress: true,
-  pdf_document:
-    latex_engine: "lualatex"
+      progress: true
+    self-contained: true
+  pdf:
+    "pdf-engine": "lualatex"
 lang: "fr"
 ---
 
@@ -176,8 +177,9 @@ quand il y a une DTD interne.
 ## Validateurs
 
 De nombreux outils de validation existent, souvent associés à des éditeurs XML. Dans le cadre de ce
-cours, on peut se contenter d'un validateur simple comme
-<https://www.truugo.com/xml_validator/>.
+cours, on peut utiliser l'[extension XML de
+vscode](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml) ou se contenter d'un
+validateur simple comme <https://www.truugo.com/xml_validator/>.
 
 # Structure d'une DTD
 

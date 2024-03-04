@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE bibliography [
+  <!ELEMENT bibliography (entry*)>
+  <!ELEMENT entry (title, author+, publication+)>
+  <!ATTLIST entry type CDATA #REQUIRED>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (firstname?, lastname?, nomDePlume?)>
+  <!ELEMENT firstname (#PCDATA)>
+  <!ELEMENT lastname (#PCDATA)>
+  <!ELEMENT nomDePlume (#PCDATA)>
+  <!ELEMENT publication EMPTY>
+  <!ATTLIST publication date CDATA #REQUIRED>
+]>
+<bibliography>
+    <entry type="roman historique">
+        <title>Notre-Dame de Paris</title>
+        <author>
+            <firstname>Victor</firstname>
+            <lastname>Hugo</lastname>
+        </author>
+        <publication date="1831" />
+    </entry>
+    <entry type="conte philosophique">
+        <title>Candide</title>
+        <author>
+            <nomDePlume>Voltaire</nomDePlume>
+        </author>
+        <publication date="1759" />
+    </entry>
+    <entry type="théâtre">
+        <title>Andromaque</title>
+        <author>
+            <firstname>Jean</firstname>
+            <lastname>Racine</lastname>
+        </author>
+        <publication date="1667" />
+    </entry>
+</bibliography>
