@@ -300,7 +300,7 @@ contenir du texte ou des sous-éléments :
 ```xml
 <etape>avancer tout droit</etape>
 <etape><waypoint lon="3.1" lat="48.2"/></etape>
-<etape><waypoint lon="3.2" lat="48.1"/>aller au phare</etap
+<etape><waypoint lon="3.2" lat="48.1"/>aller au phare</etape>
 ```
 
 ## Attributs
