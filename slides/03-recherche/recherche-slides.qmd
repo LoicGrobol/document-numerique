@@ -99,29 +99,14 @@ Outils :
 
 ## Dans un éditeur de texte
 
-On va avoir besoin d’un bon éditeur de texte brut, par exemple :
-
-- [Notepad++](https://notepad-plus-plus.or) (Windows)
-- Kate (Linux KDE)
-- Gedit (Linux GNOME)
-- [CotEditor](https://coteditor.com/) (macOS)
-- Quickedit (Android)
-- Regex Knife (iOS)
-
-Ou dans <https://regex101.com> ou Google drive en désespoir de cause.
-
----
-
-Pour tester :
-
-1. Récupérez le fichier [`Duchn-utf8.txt`](./Duchn-utf8.txt)
+1. Récupérez le fichier [`clg.txt`](./clg.txt)
 2. Ouvrez-le avec l'éditeur de votre choix (Clic-droit sur le fichier + ouvrir avec)
 3. Ctrl+f pour accéder à la fonction de recherche/remplacement
-   - Cochez « expression régulière »
+   - Cochez « expression régulière » (ou `.*`)
 
 ## Principe général
 
-- Règle générale : chaque caractère se reconnaît (*match*) lui-même
+- Règle générale : par défaut chaque caractère d'une expression correspond (*match*) à ce caractère
   - `madeleine` reconnaît `madeleine` mais pas `Madeleine`
   - `France 2` reconnaît `France 2` mais pas `France2` ni `France 3`
 - Cas particuliers : les **métacaractères**
@@ -154,16 +139,6 @@ Ils portent sur l’élément qui précède et indiquent une répétition
 5. `lo+l`
 
 (Tester vos réponses dans un éditeur)
-
-## Accolades
-
-Les accolades indiquent un intervalle de répétitions :
-
-- `lo{1,3}ng` reconnaît long, loong et looong
-- `lo{3,}` reconnaît looong, loooong, etc.
-- `lo{3}ng` ne reconnaît que looong
-
-Exercice : écrire une expression régulière qui reconnaît exclusivement  `lool`, `loool` et `looool`.
 
 # Les opérateurs
 
@@ -276,7 +251,7 @@ Et pour représenter un anti-slash ? Pareil
 
 # Exercices
 
-Dans le fichier Père Duchesne :
+Dans le fichier `clg.txt` :
 
 1. Combien trouvez vous de match pour chacun des regex suivantes ? Que signifient-elles ?
   1. Recherchez `^.évolution`.
@@ -287,9 +262,21 @@ Dans le fichier Père Duchesne :
    3. commençant par `a` et finissant par `er` ?
    4. finissant par `er` en fin de ligne ?
 
-# Classes de caractères
+# Raccourcis
 
-| **Classe** |               **Signification**               |      **Équivalent**       |
+## Accolades
+
+Les accolades indiquent un intervalle de répétitions :
+
+- `lo{1,3}ng` reconnaît long, loong et looong
+- `lo{3,}` reconnaît looong, loooong, etc.
+- `lo{3}ng` ne reconnaît que looong
+
+Exercice : écrire une expression régulière qui reconnaît exclusivement  `lool`, `loool` et `looool`.
+
+## Classes de caractères
+
+| **Classe** |               **Signification**               |   **Équivalent ASCII**    |
 | :--------: | :-------------------------------------------: | :-----------------------: |
 |    `\d`    |                  un chiffre                   |          `[0-9]`          |
 |    `\D`    |             tout sauf un chiffre              |         `[^0-9]`          |

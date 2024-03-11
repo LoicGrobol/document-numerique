@@ -84,6 +84,12 @@ layout: default
 - [Exercice DTD]({{site.url}}{{site.baseurl}}/slides/08-dtd/exercices-dtd.html).
 
 
+### 2024-03-11 : Expressions régulières
+
+- [Slides
+  regex]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.pdf))
+
 ## Licences
 
 [![CC BY Licence

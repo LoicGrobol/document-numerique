@@ -28,13 +28,12 @@ Consignes pour le rendu :
 
 ## Père Duchesne
 
-Dans le fichier [Père Duchesne](Duchn-utf8.txt) :
+Dans le fichier [Cours de linguistique générale](clg.txt) :
 
-1. Combien de mots commencent par `aristo` ?
+1. Combien de mots commencent par `ling` ?
 2. Combien de mots de quatre lettres finissent par `t` ?
 3. Combien de mots commencent par `t` et finissant par `ent` ?
-4. Combien de mots sont des dérivés de `république` ?
-5. Combien de mots sont précédés par `*`, qu'est-ce que cela signifie d'après vous ?
+4. Combien de mots sont des dérivés de `langue` ?
 
 ## Expressions régulières en général
 
