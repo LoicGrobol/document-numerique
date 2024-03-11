@@ -29,9 +29,9 @@ jobs:
             - name: Checkout repo
               uses: actions/checkout@v4
 
-            - uses: r-lib/actions/setup-r@v2
+            # - uses: r-lib/actions/setup-r@v2
 
-            - uses: r-lib/actions/setup-r-dependencies@v2
+            # - uses: r-lib/actions/setup-r-dependencies@v2
 
             - uses: quarto-dev/quarto-actions/setup@v2
               with:
@@ -39,7 +39,6 @@ jobs:
 
             - name: Build slides
               run: |
-                  Rscript build_slides.R
                   bash build_slides.sh
 
             - name: Setup Ruby
