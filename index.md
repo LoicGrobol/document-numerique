@@ -89,6 +89,7 @@ layout: default
 - [Slides
   regex]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.pdf))
+  - [`clg.txt`](slides/03-recherche/clg.txt)
 
 ## Licences
 
