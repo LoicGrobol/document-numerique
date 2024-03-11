@@ -141,7 +141,58 @@ Ils portent sur l’élément qui précède et indiquent une répétition
 
 (Tester vos réponses dans un éditeur)
 
+# Caractères spéciaux
+
+| **Caractère** |                **Sens**                |              **Exemple**               |
+| :-----------: | :------------------------------------: | :------------------------------------: |
+|      `.`      |        n'importe quel caractère        |    `p.re` : `pare`, `pire`, `père`…    |
+|      `^`      |             début de ligne             |         `^Je` (début de ligne)         |
+|      `$`      |              fin de ligne              |     `informatique$` (fin de ligne)     |
+|     `\b`      | frontière de mot (début ou fin de mot) | `\bjour` : `journée` mais pas `ajouré` |
+|     `\n`      |             saut de ligne              |     `a\n` : `a` puis saut de ligne     |
+|     `\t`      |               tabulation               |      `a\t` : `a` puis tabulation       |
+
+---
+
+**Exercices** : à quoi correspondent ces expressions ?
+
+1. `Nom\tPrénom`
+2. `\bcap\b`
+3. `\bcap`
+4. `premier paragraphe\ndeuxième paragraphe`
+
+## Déspécialisation
+
+On a vu un certain nombre de métacaractères (les caractères avec une signification spéciale).
+
+Pour les reconnaître littéralement (les déspécialiser), il faut les faire précéder d'un anti-slash
+`\` :
+
+- `\^machin` : reconnaît `^machin`
+- `3\.0` reconnaît `3.0` mais pas `310`
+- Pareil pour `$`, `[`, `]`, `(`, `)`, `*`, `+`, `?`, `{`, `}`
+
+Et pour représenter un anti-slash ? Pareil
+
+- `machin\\bidule` reconnaît `machin\bidule`
+
+
 # Les opérateurs
+
+## Alternatives
+
+Le *pipe* indique une alternative :
+
+- `machin|truc` reconnaît `machin` et `truc`.
+- `je|tu|nous` reconnaît `je`, `tu` et `nous`.
+- `je|tu|[nv]ous` reconnaît `je`, `tu`, `nous` et `vous`.
+
+---
+
+On les utilise le plus souvent avec des parenthèses
+
+- `(m|r)aison` reconnaît `maison` et `raison`.
+- `(il|elle|iel)s?` reconnaît `il`, `elle`, `iel` et leurs versions plurielles.
 
 ## Ensembles de caractères
 
@@ -191,21 +242,6 @@ Les parenthèses permettent de construire des groupes
 - `([ab]c)+` reconnaît `ac`, `bc`, `acac`, `acbc`, `bcac`…
 - `([aeiouy][^aeiouy])+` reconnait une suite de couples voyelle-consonne.
 
-## Alternatives
-
-Le *pipe* indique une alternative :
-
-- `machin|truc` reconnaît `machin` et `truc`.
-- `je|tu|nous` reconnaît `je`, `tu` et `nous`.
-- `je|tu|[nv]ous` reconnaît `je`, `tu`, `nous` et `vous`.
-
----
-
-On les utilise le plus souvent avec des parenthèses
-
-- `(m|r)aison` est équivalent à `[mr]aison`.
-- `(il|elle|iel)s?` reconnaît `il`, `elle`, `iel` et leurs versions plurielles.
-
 ---
 
 **Exercice** : que reconnaissent les expressions suivantes ?
@@ -215,48 +251,13 @@ On les utilise le plus souvent avec des parenthèses
 3. Wiki[a-z]+
 4. Wiki[a-z]*
 
-# Caractères spéciaux
-
-| **Caractère** |                **Sens**                |              **Exemple**               |
-| :-----------: | :------------------------------------: | :------------------------------------: |
-|      `.`      |        n'importe quel caractère        |    `p.re` : `pare`, `pire`, `père`…    |
-|      `^`      |             début de ligne             |         `^Je` (début de ligne)         |
-|      `$`      |              fin de ligne              |     `informatique$` (fin de ligne)     |
-|     `\b`      | frontière de mot (début ou fin de mot) | `\bjour` : `journée` mais pas `ajouré` |
-|     `\n`      |             saut de ligne              |     `a\n` : `a` puis saut de ligne     |
-|     `\t`      |               tabulation               |      `a\t` : `a` puis tabulation       |
-
----
-
-**Exercices** : à quoi correspondent ces expressions ?
-
-1. `Nom\tPrénom`
-2. `\bcap\b`
-3. `\bcap`
-4. `premier paragraphe\ndeuxième paragraphe`
-
-## Déspécialisation
-
-On a vu un certain nombre de métacaractères (les caractères avec une signification spéciale).
-
-Pour les reconnaître littéralement (les déspécialiser), il faut les faire précéder d'un anti-slash
-`\` :
-
-- `\^machin` : reconnaît `^machin`
-- `3\.0` reconnaît `3.0` mais pas `310`
-- Pareil pour `$`, `[`, `]`, `(`, `)`, `*`, `+`, `?`, `{`, `}`
-
-Et pour représenter un anti-slash ? Pareil
-
-- `machin\\bidule` reconnaît `machin\bidule`
-
 # Exercices
 
 Dans le fichier `clg.txt` :
 
 1. Combien trouvez vous de match pour chacun des regex suivantes ? Que signifient-elles ?
-  1. Recherchez `^.évolution`.
-  2. Recherchez `r?évolution`
+   1. Recherchez `^.évolution`.
+   2. Recherchez `r?évolution`
 2. Combien y a-t-il de mots…
    1. de 3 lettres finissant par `r` ?
    2. de 4 lettres au plus commençant par `r` ?
