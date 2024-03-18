@@ -1,12 +1,16 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Exercice : de Markdown vers HTML" 
-author: Loïc Grobol
-date: 2022-03-28
+date: 2024-03-04
+author:
+  - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
+institute: Université Paris Nanterre
+format:
+  html: {}
+  pdf:
+    "pdf-engine": "lualatex"
 lang: "fr"
-output:
-  pdf_document:
-    latex_engine: "lualatex"
+---
 ---
 
 À l'aide d'expressions régulières remplacez dans le document en Markdown suivant ces éléments par

@@ -1,22 +1,24 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 10: Autres formats de documents"
+date: 2024-03-18
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
-date: 2022-03-28
-output:
-  revealjs::revealjs_presentation:
+format:
+  revealjs:
     css: "../reveal_slides_style.css"
     theme: white
     highlight: pygments
     center: true
     reveal_options:
       slideNumber: true
-      progress: true,
-  pdf_document:
-    latex_engine: "lualatex"
+      progress: true
+    self-contained: true
+  pdf:
+    "pdf-engine": "lualatex"
 lang: "fr"
+---
 ---
 
 # Markdown
@@ -295,9 +297,6 @@ le tutoriel interactif de <https://www.markdowntutorial.com/fr>.
 # Exercice : rechercher-remplacer avec des RegEx
 
 En plus de faire des recherches avec des RegEx, on peut s'en servir pour faire des remplacements.
-
-Dans un éditeur local comme Notepad++, c'est déjà intégré. <https://regexr.com> ou
-<https://vscode.dev> vous permettent de le faire en ligne.
 
 ---
 

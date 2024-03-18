@@ -99,7 +99,7 @@ C'est assez imparfait, mais si on suppose que les listes sont comprises entre de
 et n'en contiennent pas, on peut essayer en mode multiligne de rechercher :
 
 ```regexp
-\n\n(-\s.*)\n\n
+\n\n(-\s.*)+\n\n
 ```
 
 et remplacer par
@@ -108,6 +108,18 @@ et remplacer par
 <ul>
 $1
 </ul>
+```
+
+Puis rechercher
+
+```regexp
+-\s(.*)+
+```
+
+et remplacer par
+
+```regexp
+<li>$1</li>
 ```
 
 Mais c'est vraiment un abus des expressions régulières : quand on arrive à ce stade, il faut

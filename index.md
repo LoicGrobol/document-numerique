@@ -83,13 +83,20 @@ layout: default
   ([pdf]({{site.url}}{{site.baseurl}}/slides/08-dtd/dtd-slides.pdf))
 - [Exercice DTD]({{site.url}}{{site.baseurl}}/slides/08-dtd/exercices-dtd.html).
 
-
 ### 2024-03-11 : Expressions régulières
 
 - [Slides
   regex]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.pdf))
   - [`clg.txt`]({{site.url}}{{site.baseurl}}/slides/03-recherche/clg.txt)
+
+
+### 2024-03-18 : Autres formats
+
+- [Slides
+  autres formats]({{site.url}}{{site.baseurl}}/slides/10-autres_formats/autres_formats-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/10-autres_formats/autres_formats-slides.html))
+
 
 ## Licences
 
