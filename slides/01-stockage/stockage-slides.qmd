@@ -2,7 +2,7 @@
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 1 : Stockage de l'information"
 author:
-  - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
+  - "L. Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
 format:
   pdf:
@@ -54,7 +54,7 @@ Vietnam.](img/Van_Phuc_loom_punch_cards_02.jpg){.r-stretch}](https://upload.wiki
 
 ---
 
-Leur première usage documenté est dû à Basile Bouchon, en 1725, et leur première usage complètement
+Leur premier usage documenté est dû à Basile Bouchon, en 1725, et leur première usage complètement
 automatisé est breveté par Joseph Marie Jacquard en 1804.
 
 ---
@@ -78,7 +78,7 @@ par des machines entièrement électroniques.
 
 Partant de cette idée, d'autres usages apparaissent pour les cartes perforées :
 
-- Stocker des instructions, puis des données pour une machine à calculer : Charles Babbage et **Ada Lovelace** vers 1830
+- Stocker des instructions, puis des données pour une machine à calculer : Charles Babbage et Ada Lovelace vers 1830
   - Système à tiges, similaire au métier Jacquard.
   - Nombres stockées en système binaire 👀
 - Stocker de la musique : automaphone de Jules Carpentier en 1881.
@@ -91,7 +91,17 @@ Partant de cette idée, d'autres usages apparaissent pour les cartes perforées�
 
 ---
 
-[![Une carte perforée IBM 12 lignes/80 colonne du milieu du 20ème siècle](img/Used_Punchcard_(5151286161).jpg){.r-stretch}](https://commons.wikimedia.org/wiki/File:Used_Punchcard_(5151286161).jpg)
+[![La première description moderne d'un algorithme par Ada
+Lovelace](img/Diagram_for_the_computation_of_Bernoulli_numbers.jpg){.r-stretch}](https://commons.wikimedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg)
+
+---
+
+[![Augusta Ada King, Comtesse de Lovelace](img/Ada_Lovelace_portrait.jpg){.r-stretch}](https://commons.wikimedia.org/wiki/File:Ada_Lovelace_portrait.jpg)
+
+---
+
+[![Une carte perforée IBM 12 lignes/80 colonne du milieu du 20ème
+siècle](img/Used_Punchcard_(5151286161).jpg){.r-stretch}](https://commons.wikimedia.org/wiki/File:Used_Punchcard_(5151286161).jpg)
 
 ## Pour les ordinateurs
 
@@ -150,3 +160,7 @@ Les supports magnétiques évoluent peu à peu, et sont toujours utilisés aujou
 - Disques rigides (disques durs), en général utilisés en piles.
 
 :::
+
+# Stockage optique numérique
+
+# Mémoires flash
