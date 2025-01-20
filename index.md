@@ -15,9 +15,7 @@ layout: default
 - **Où** Salle M209, bâtiment Éphémère 1, Université Paris Nanterre, 200 avenue de la République,
   Nanterre
 - **Quand** 12 séances, les lundis de 13:20 à 15:20, du 20/01 au 14/04
-  - Voir [le calendrier de
-    l'université](https://etudiants.parisnanterre.fr/calendrier-universitaire/calendrier-universitaire-2023-2024)
-    pour les dates de vacances.
+  - Voir le calendrier de l'université pour les dates de vacances.
 - **Contact** Loïc Grobol [`<lgrobol@parisnanterre.fr>`](mailto:lgrobol@parisnanterre.fr)
 
 ## Liens
