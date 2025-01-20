@@ -1,5 +1,4 @@
-[comment]: <> "LTeX: language=fr"
-<!-- markdownlint-disable MD003 MD025 MD033 -->
+<!-- LTeX: language=fr -->
 
 Décrire et manipuler un document numérique 
 ===========================================
@@ -18,31 +17,31 @@ Contact : [<lgrobol@parisnanterre.fr>](mailto:loic.grobol@parisnanterre.fr)
 ## Ressources
 
 - Les slides sont dans [slides/](slides) et faites en
-  [RMarkdown](https://bookdown.org/yihui/rmarkdown). Pour les compiler on peut utiliser la commande
+  [Quarto](https://quarto.org/). Pour les compiler on peut utiliser la commande
   suivante (en adaptant les noms de fichiers) :
 
-  ```sh
-   R -e rmarkdown::render"('slides/lecture-01/lecture-01.Rmd',output_file='lecture-01.html')"
+  ```bash
+   quarto render slides/lecture-01/lecture-01.qmd --to="all"
    ```
 
-  Cela nécessite que R et les packages `rmarkdown` et `revealjs` soient installés, voir [la
-  doc](https://bookdown.org/yihui/rmarkdown/compile.html) pour plus d'informations. À défaut, on
-  peut également les lire comme des fichiers markdown standards.
+  Cela nécessite que Quarto soit installés avec tinytex voir [la
+  doc][(https://bookdown.org/yihui/rmarkdown/compile.html](https://quarto.org/docs/output-formats/pdf-engine.html))
+  pour plus d'informations. À défaut, on peut également les lire comme des fichiers markdown
+  standards.
 
 ## Générer le site en local
 
 Dependencies:
 
-- R
-- rtx
-- pandoc
+- Quarto
+- Mise
 - Ruby
   - Bundle
 
 Setup:
 
 ```bash
-rtx activate # ← adapt to your shell
+mise activate # ← adapt to your shell
 Rscript setup_local.R
 gem install jekyll bundler
 bundle config set --local path 'vendor/bundle'
@@ -52,8 +51,8 @@ bundle install
 Regenerate:
 
 ```bash
-rtx activate
-Rscript build_slides.R
+mise activate
+Rscript build_slides.sh
 bundle exec jekyll build
 bundle exec jekyll serve
 ```
@@ -62,22 +61,12 @@ Astuce pour les pages : Jekyll n'est pas très bon pour les pages qui ne sont 
 les ajouter dans `_pages` (ce qui fonctionne parce qu'on l'a mis dans `_config.yml`)- et leur donner
 un `permalink` dans le header.
 
-To [update renv.lock](https://inbo.github.io/tutorials/tutorials/r_renv_update/):
-
-```R
-renv::upgrade() # upgrades renv, if new version is available
-renv::hydrate(update = "all") # populates the renv cache with copies of up to 
-                              # date package versions, needed by the project
-renv::update() # updates packages from CRAN and GitHub, within the project
-renv::snapshot() # inspect the message before confirming to overwrite renv.lock
-```
-
 ## Licences
 
 [![CC BY Licence badge](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 
 
-Copyright © 2021 Loïc Grobol [\<loic.grobol@gmail.com\>](mailto:loic.grobol@gmail.com)
+Copyright © 2025 L. Grobol [\<lgrobol@tuta.com\>](mailto:lgrobol@tuta.com)
 
 Sauf indication contraire, les fichiers présents dans ce dépôt sont distribués selon les termes de
 la licence [Creative Commons Attribution 4.0
