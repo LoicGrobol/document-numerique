@@ -42,7 +42,6 @@ Setup:
 
 ```bash
 mise activate # ← adapt to your shell
-Rscript setup_local.R
 gem install jekyll bundler
 bundle config set --local path 'vendor/bundle'
 bundle install
