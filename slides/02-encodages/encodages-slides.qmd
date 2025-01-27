@@ -1,7 +1,6 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 2 : Encodage et représentation des caractères"
-date: 2024-01-22
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
