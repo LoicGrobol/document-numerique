@@ -62,7 +62,8 @@ un `permalink` dans le header.
 
 ## Licences
 
-[![CC BY Licence badge](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
+[![CC BY Licence
+badge](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
 
 
 Copyright © 2025 L. Grobol [\<lgrobol@tuta.com\>](mailto:lgrobol@tuta.com)
@@ -71,7 +72,8 @@ Sauf indication contraire, les fichiers présents dans ce dépôt sont distribu�
 la licence [Creative Commons Attribution 4.0
 International](https://creativecommons.org/licenses/by/4.0/).
 
-Un résumé simplifié de cette licence est disponible à <https://creativecommons.org/licenses/by/4.0/>.
+Un résumé simplifié de cette licence est disponible à
+<https://creativecommons.org/licenses/by/4.0/>.
 
 Le texte intégral de cette licence est disponible à
 <https://creativecommons.org/licenses/by/4.0/legalcode>

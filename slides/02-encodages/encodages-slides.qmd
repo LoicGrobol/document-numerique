@@ -174,6 +174,7 @@ conventions d'encodages à être devenue une norme (*de facto* et *de jure*) à 
 
 ### Principes
 
+:::incremental
 - Les caractères sont codés sur 7 bits, soit 128 caractères possibles
   - Sur des machines utilisant des mots de 8 bits, le dernier peut par exemple servir pour la
     détection d'erreurs.
@@ -183,6 +184,7 @@ conventions d'encodages à être devenue une norme (*de facto* et *de jure*) à 
   - Les chiffres de 0 à 9
   - ```!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~```
   - Des caractères dits « de contrôle » : fin de ligne, beep…
+:::
 
 ---
 

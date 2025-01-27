@@ -22,7 +22,7 @@ layout: default
 
 - Prendre rendez-vous pour des *office hours* en visio :
   [mon calendrier](https://calendar.app.google/N9oW2c9BzhXsWrrv9)
-- Espace Cours en Ligne (bientôt !)
+- [Espace Cours en Ligne](https://coursenligne.parisnanterre.fr/course/view.php?id=8006)
   - Inscription libre avec la clé `lovelace`
   - Attention, cet espace ne sert qu'aux dépôts de devoirs.
 - [Page du cours de l'an dernier]({{site.url}}{{site.baseurl}}/2024)
@@ -39,6 +39,12 @@ layout: default
 - [Slides
   Stockage de l'information]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.pdf))
+
+### 2025-01-27 : Représentation de l'information
+
+- [Slides
+  Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.pdf))
 
 ## Licences
 
