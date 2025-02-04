@@ -3,7 +3,7 @@ title: Informations et cours
 layout: default
 ---
 
-[comment]: <> "LTeX: language=fr"
+<!-- LTeX: language=fr -->
 
 ## Nouvelles
 
@@ -41,6 +41,12 @@ layout: default
   ([pdf]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.pdf))
 
 ### 2025-01-27 : Représentation de l'information
+
+- [Slides
+  Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.pdf))
+
+### 2025-02-03 : Unicode, hexadécimal et systèmes de fichiers
 
 - [Slides
   Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
