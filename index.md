@@ -52,6 +52,12 @@ layout: default
   Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.pdf))
 
+### 2025-02-10 : HTML
+
+- [Slides
+  HMTL]({{site.url}}{{site.baseurl}}/slides/05-html/html-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/05-html/html-slides.pdf))
+
 ## Licences
 
 [![CC BY Licence

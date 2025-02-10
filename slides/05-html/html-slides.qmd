@@ -1,7 +1,6 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 4 : HTML"
-date: 2024-02-05
 author:
   - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
@@ -120,4 +119,4 @@ En principe, l'information donnée est purement **sémantique** : on ne code p
 Suivre le tutoriel [Introduction à
 HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML) sur MDN jusqu'à
 « Déboguer de l'HTML ». Il est partiellement interactif, assurez vous de bien tout lire avec
-attention, de faire tous les exercices et de venir vers moi si quelque chose coince
+attention, de faire tous les exercices et de venir vers moi si quelque chose coince.
