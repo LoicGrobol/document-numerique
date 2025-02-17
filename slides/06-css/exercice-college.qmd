@@ -1,8 +1,7 @@
 ---
 title: "Décrire et manipuler un document numérique"
-subtitle: "Exercice collège communautaire CSS"
-author: Loïc Grobol
-date: 2024-02-12
+subtitle: "Exercice *community college* CSS"
+author: L. Grobol
 lang: "fr"
 format:
   html: {}
@@ -12,12 +11,12 @@ format:
 
 <!-- LTeX: language=fr -->
 
-Exercice collège communautaire CSS
+Exercice *community college* CSS
 ==================================
 
 Consignes pour le rendu :
 
-- Exercices individuels à rendre au plus tard le 25/02/2024 à 19h.
+- Exercices individuels à rendre au plus tard le 01/03/2025 à 19h.
 - Ne rendre que le fichier CSS.
 - Le nom de fichier doit être de la forme `<Prénom>_<Nom>-college-4L4SC02P.css`, par exemple pour
   William Labov, le nom du fichier sera `William_Labov-college-4L4SC02P.css`.
@@ -37,7 +36,7 @@ simplement le contenu des fichiers dans un de ces éditeur.
 
 ## Énoncé de l'exercice
 
-Vous disposez d'undocument HTML pour la page d'accueil du site internet d'une université imaginaire et d'un CSS de départ. Vous devez compléter ce CSS
+Vous disposez d'un document HTML pour la page d'accueil du site internet d'une université imaginaire et d'un CSS de départ. Vous devez compléter ce CSS
 sous le commentaire au bas du fichier de façon à pouvoir marquer aisément vos ajouts. Ne vous
 tracassez pas si certains sélecteurs sont répétés.
 
@@ -76,13 +75,12 @@ Listes :
 
 Polices de caractères :
 
-- Téléchargez quelques polices gratuites. Comme il s'agit d'un collège communautaire, les
+- Choisissez des nouvelles polices de caractères [*web-safe*](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals#web_safe_fonts). Comme il s'agit d'un collège communautaire, les
   polices choisies doivent donner à la page une impression de sérieux, de formalisme et de confiance
   — une police serif ample pour le corps du texte général, associée une police sans serif ou bloc
   serif pour les en-têtes serait pas mal.
-- Ensuite, utilisez le service ad-hoc pour créer le « bulletproof `@font-face` code » pour ces deux
-  fontes.
 - Appliquez la police pour le corps à toute la page et celle pour les titres aux en-têtes.
+- Vous pouvez aussi utiliser des [polices web](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Web_fonts) via `@font-face`, mais ce n'est pas obligatoire.
 
 Menu de navigation :
 

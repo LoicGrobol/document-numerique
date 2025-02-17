@@ -58,6 +58,15 @@ layout: default
   HMTL]({{site.url}}{{site.baseurl}}/slides/05-html/html-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/05-html/html-slides.pdf))
 
+### 2025-02-17 CSS
+
+- [Slides
+  CSS]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.pdf))
+
+À **rendre** pour la prochaine fois : [exercice *community
+college*]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-college.html).
+
 ## Licences
 
 [![CC BY Licence

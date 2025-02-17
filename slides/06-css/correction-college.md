@@ -1,8 +1,7 @@
 ---
 title: "Décrire et manipuler un document numérique"
-subtitle: "Correction exercice collège communautaire CSS"
+subtitle: "Correction exercice *community college* CSS"
 author: Loïc Grobol
-date: 2022-03-07
 lang: "fr"
 output:
   pdf_document:
@@ -11,7 +10,7 @@ output:
 
 <!-- LTeX: language=fr -->
 
-Correction exercice collège communautaire CSS
+Correction exercice *community college* CSS
 =============================================
 
 ## Solution
