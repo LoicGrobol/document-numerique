@@ -74,7 +74,7 @@ qu'elles concernent. Leur structure est la suivante :
 ### Sélecteurs
 
 Un bloc commence par un ou plusieurs **sélecteurs** séparés par des virgules, qui décrivent les
-éléments auxquels la règle s'appliquent : ici tous les éléments `<p>` :
+éléments auxquels les règles s'appliquent : ici tous les éléments `<p>` :
 
 ```css
 p
@@ -99,8 +99,8 @@ ou de leur attribut `id` :
 
 ### Règles
 
-Le reste du bloc, qui est compris entre deux accolades `{` et `}` se compose de règles, chacune
-sous la forme suivante
+Le reste du bloc, qui est compris entre deux accolades `{` et `}` se compose d'une liste d'options,
+ou *règles*, chacune sous la forme suivante
 
 ```css
 propriété: valeur;
