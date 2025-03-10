@@ -74,7 +74,6 @@ college*]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-college.html).
   ([pdf]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.pdf))
   - [`clg.txt`]({{site.url}}{{site.baseurl}}/slides/03-recherche/clg.txt)
 
-
 ## Licences
 
 [![CC BY Licence

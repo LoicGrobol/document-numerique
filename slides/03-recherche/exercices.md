@@ -1,8 +1,7 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Exercice expressions régulières"
-author: Loïc Grobol
-date: 2023-02-07
+author: L. Grobol
 lang: "fr"
 output:
   pdf_document:
