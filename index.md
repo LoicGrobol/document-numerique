@@ -67,6 +67,14 @@ layout: default
 À **rendre** pour la prochaine fois : [exercice *community
 college*]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-college.html).
 
+### 2025-03-10 : Expressions régulières
+
+- [Slides
+  regex]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.pdf))
+  - [`clg.txt`]({{site.url}}{{site.baseurl}}/slides/03-recherche/clg.txt)
+
+
 ## Licences
 
 [![CC BY Licence

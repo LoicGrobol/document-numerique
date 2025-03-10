@@ -75,41 +75,46 @@ Exemple : [`une colère
 *`](https://books.google.com/ngrams/graph?content=une+col%C3%A8re+%2A&year_start=1800&year_end=2019&corpus=30&smoothing=3&direct_url=t2%3B%2Cune%20col%C3%A8re%20%2A%3B%2Cc0%3B%2Cs0%3B%3Bune%20col%C3%A8re%20qui%3B%2Cc0%3B%3Bune%20col%C3%A8re%20noire%3B%2Cc0%3B%3Bune%20col%C3%A8re%20terrible%3B%2Cc0%3B%3Bune%20col%C3%A8re%20de%3B%2Cc0%3B%3Bune%20col%C3%A8re%20%C3%A9pouvantable%3B%2Cc0%3B%3Bune%20col%C3%A8re%20sourde%3B%2Cc0%3B%3Bune%20col%C3%A8re%20violente%3B%2Cc0%3B%3Bune%20col%C3%A8re%20froide%3B%2Cc0%3B%3Bune%20col%C3%A8re%20et%3B%2Cc0%3B%3Bune%20col%C3%A8re%20concentr%C3%A9e%3B%2Cc0)
 donne les fréquences de trigrammes dont les deux premiers mots sont « une » et « colère »
 
-
 # Expressions régulières
 
-Expressions régulières = ER = Regex
+Expressions régulières = ER = RegEx
 
-- Outil de recherche dans des textes
-- Permet de trouver des séquences correspondant à un motif (patron). Ex :
-  - Même préfixe / suffixe / contexte
+- Formellement : définissent un test d'acceptabilité pour une suite (chaîne) de caractères :
+  « est-ce que cette chaîne de caractère suit ce motif/ce patron/cette expression ? »
+- Outil de recherche dans des (fichier) textes : « donne-moi toutes les sous-chaînes de caractères
+  de ce fichier qui sont acceptables pour cette expression ».
+- Utilisées pour extraire rapidement des informations à la syntaxe régulières dans des grandes
+  masses de données :
   - Dates
   - Adresses
-  - URL
-
-Définition de critères de recherche pour des chaînes de caractères
+  - Structures linguistiques
 
 ---
 
 Outils :
 
+- IDE: [VSCode](https://code.visualstudio.com/), éventuellement dans sa version [en ligne](https://vscode.dev/).
 - Éditeur de texte brut : Notepad++ (Windows), Kate/Gedit (Linux), CotEditor (Mac)…
+- Test en ligne : <https://regex101.com/>, <https://pythex.org/>
+
+Possible, mais moins pratique pour ce cours :
+
 - Traitement de texte : Google Drive, Word, Writer, Pages…
-- Test en ligne : <https://regex101.com/>
-- Langage de programmation : java, perl, python, PHP...
+- Langage de programmation : Java, Perl, Python, PHP…
 
 ## Dans un éditeur de texte
 
 1. Récupérez le fichier [`clg.txt`](./clg.txt)
 2. Ouvrez-le avec l'éditeur de votre choix (Clic-droit sur le fichier + ouvrir avec)
-3. Ctrl+f pour accéder à la fonction de recherche/remplacement
-   - Cochez « expression régulière » (ou `.*`)
+3. Accéder à la fonction de recherche (en général
+   <kbd>ctrl</kbd>+<kbd>F</kbd>/<kbd>R</kbd>/<kbd>H</kbd>).
+   - Cochez « expression régulière » (ou `.*`) et « respecter la casse » (ou `Aa`)
 
 ## Principe général
 
-- Règle générale : par défaut chaque caractère d'une expression correspond (*match*) à ce caractère
-  - `madeleine` reconnaît `madeleine` mais pas `Madeleine`
-  - `France 2` reconnaît `France 2` mais pas `France2` ni `France 3`
+- Règle générale : par défaut chaque caractère d'une expression correspond (*match*) à ce caractère :
+  - `France 2` match `France 2`, mais pas `France2` ni `France 3`
+  - (en mode `Aa`) `madeleine` match `madeleine`, mais pas `Madeleine`
 - Cas particuliers : les **métacaractères**
   - Quantificateurs
   - Opérateurs
@@ -121,100 +126,98 @@ Outils :
 Ils portent sur l’élément qui précède et indiquent une répétition
 
 | **Quantificateur** |       `?`       |           `*`           |           `+`           |
-| :----------------: | :-------------: | :---------------------: | :---------------------: |
-| **Signification**  | « 0 ou 1 fois »  | « 0 ou plusieurs fois »  | « 1 ou plusieurs fois »  |
+|:------------------:|:---------------:|:-----------------------:|:-----------------------:|
+| **Signification**  | « 0 ou 1 fois » | « 0 ou plusieurs fois » | « 1 ou plusieurs fois » |
 
-- `jolie?` matche `joli` et `jolie`
+- `pl?eur` matche `peur` et `pleure`
 - `coup?s` matche `cous` et `coups`, mais pas `coupa`
 - `jolie*` matche `joli`, `jolie`, `joliee`, `jolieee`…
 - `jolie+` matche `jolie`, `joliee`, `jolieee`…
 
 ---
 
-**Exercice** : que reconnaissent les expressions suivantes ?
+**Exercice** : que matchent les expressions suivantes ?
 
-1. `pommes?`
-2. `a?typique`
+1. `a?typique`
+2. `pomm?es`
 3. `lo*l`
 4. `loo*l`
-5. `lo+l`
+5. `lol+`
 
 (Tester vos réponses dans un éditeur)
 
-# Caractères spéciaux
+# Caractères spéci·aux
 
-| **Caractère** |                **Sens**                |              **Exemple**               |
-| :-----------: | :------------------------------------: | :------------------------------------: |
-|      `.`      |        n'importe quel caractère        |    `p.re` : `pare`, `pire`, `père`…    |
-|      `^`      |             début de ligne             |         `^Je` (début de ligne)         |
-|      `$`      |              fin de ligne              |     `informatique$` (fin de ligne)     |
-|     `\b`      | frontière de mot (début ou fin de mot) | `\bjour` : `journée` mais pas `ajouré` |
-|     `\n`      |             saut de ligne              |     `a\n` : `a` puis saut de ligne     |
-|     `\t`      |               tabulation               |      `a\t` : `a` puis tabulation       |
+| **Caractère** |         **Sens**         |           **Exemple**            |
+|:-------------:|:------------------------:|:--------------------------------:|
+|      `.`      | n'importe quel caractère | `p.re` : `pare`, `pire`, `père`… |
+|      `^`      |      début de ligne      |      `^Je` (début de ligne)      |
+|      `$`      |       fin de ligne       |  `informatique$` (fin de ligne)  |
+|     `\n`      |      saut de ligne       |  `a\n` : `a` puis saut de ligne  |
+|     `\t`      |        tabulation        |   `a\t` : `a` puis tabulation    |
 
 ---
 
 **Exercices** : à quoi correspondent ces expressions ?
 
 1. `Nom\tPrénom`
-2. `\bcap\b`
-3. `\bcap`
+2. `cap$`
+3. `^cap`
 4. `premier paragraphe\ndeuxième paragraphe`
 
 ## Déspécialisation
 
 On a vu un certain nombre de métacaractères (les caractères avec une signification spéciale).
 
-Pour les reconnaître littéralement (les déspécialiser), il faut les faire précéder d'un anti-slash
+Pour les matcher littéralement (les « déspécialiser »), il faut les faire précéder d'un anti-slash
 `\` :
 
-- `\^machin` : reconnaît `^machin`
-- `3\.0` reconnaît `3.0` mais pas `310`
+- `\^machin` : matche `^machin`
+- `3\.0` matche `3.0`, mais pas `310`
 - Pareil pour `$`, `[`, `]`, `(`, `)`, `*`, `+`, `?`, `{`, `}`
 
 Et pour représenter un anti-slash ? Pareil
 
-- `machin\\bidule` reconnaît `machin\bidule`
-
+- `machin\\truc` matche `machin\truc`
 
 # Les opérateurs
 
 ## Alternatives
 
-Le *pipe* indique une alternative :
+La barre droite `|` indique une alternative :
 
-- `machin|truc` reconnaît `machin` et `truc`.
-- `je|tu|nous` reconnaît `je`, `tu` et `nous`.
-- `je|tu|[nv]ous` reconnaît `je`, `tu`, `nous` et `vous`.
+- `machin|truc` matche `machin` et `truc`.
+- `je|tu|nous` matche `je`, `tu` et `nous`.
+- `je|tu|[nv]ous` matche `je`, `tu`, `nous` et `vous`.
 
 ---
 
-On les utilise le plus souvent avec des parenthèses
+On les utilise le plus souvent avec des parenthèses pour contrôler sa portée
 
-- `(m|r)aison` reconnaît `maison` et `raison`.
-- `(il|elle|iel)s?` reconnaît `il`, `elle`, `iel` et leurs versions plurielles.
+- `(m|r)aison` matche `maison` et `raison`.
+- `(il|elle|iel)s?` matche `il`, `elle`, `iel` et leurs versions plurielles.
 
 ## Ensembles de caractères
 
-Les crochets indiquent un ensemble de caractères à reconnaître :
+Les crochets indiquent un ensemble de caractères à matcher :
 
-- `[ab]` reconnaît une lettre : `a` ou `b`
-- Avec un tiret : `[a-c]` reconnaît les lettres de `a` à `c`
-- `[a-z]` reconnaît les lettres de l’alphabet en minuscules
-- `[a-zA-Z]` reconnaît aussi les majuscules*
+- `[ab]` matche un caractère qui est soit `a` soit `b`
+- Avec un tiret : `[a-c]` matche les lettres de `a` à `c`
+- `[a-z]` matche les lettres de l’alphabet en minuscules
+- `[a-zA-Z]` matche aussi les majuscules*
 
 ---
 
 **Exercice** :
 
-Que reconnaît :
+Que match :
 
 1. `[ab][ab]`
 2. `[MmRr]aison`
 
-Écrire une expression régulière qui reconnaît exclusivement :
+Écrire une expression régulière qui matche exclusivement :
 
-1. `moi`, `toi` et `soi` .
+1. `moi`, `toi` et `soi`.
 2. `ci`, `si`, `ce` et `se`.
 3. Les nombres à deux chiffres.
 
@@ -224,38 +227,38 @@ Que reconnaît :
 
 Avec un circonflexe au début : négation de l'ensemble
 
-- [^0-9] reconnaît tout sauf des chiffres
-- [^A-Z] reconnaît tout sauf des majuscules sans diacritiques
+- [^0-9] match tout sauf des chiffres
+- [^A-Z] match tout sauf des majuscules sans diacritiques
 
 ---
 
-On peut les combiner avec les quantificateurs : 
+On peut les combiner avec les quantificateurs :
 
-- `[aeiouy]+` reconnaît une suite de voyelles : `a`, `aa`, `ae`, `iey`…
-- `[^<]*` reconnaît une suite de caractères différents de `<`
+- `[aeiouy]+` matche une suite de voyelles : `a`, `aa`, `ae`, `iey`…
+- `[^<]*` matche une suite de caractères différents de `<`
 
 ## Groupes
 
 Les parenthèses permettent de construire des groupes
 
-- `(ab)+` reconnaît une suite de `ab` : `ab`, `abab`, `ababab`…
-- `([ab]c)+` reconnaît `ac`, `bc`, `acac`, `acbc`, `bcac`…
-- `([aeiouy][^aeiouy])+` reconnait une suite de couples voyelle-consonne.
+- `(ab)+` matche une suite de `ab` : `ab`, `abab`, `ababab`…
+- `([ab]c)+` matche `ac`, `bc`, `acac`, `acbc`, `bcac`…
+- `([aeiouy][^aeiouy])+` matche une suite de couples voyelle-consonne.
 
 ---
 
-**Exercice** : que reconnaissent les expressions suivantes ?
+**Exercice** : que matchent les expressions suivantes ?
 
-1. vert(es)?
-2. (anti|pro)nucléaire
-3. Wiki[a-z]+
-4. Wiki[a-z]*
+1. `vert(es)?`
+2. `(anti|pro)nucléaire`
+3. `Wiki[a-z]+`
+4. `Wiki[a-z]*`
 
 # Exercices
 
 Dans le fichier `clg.txt` :
 
-1. Combien trouvez vous de match pour chacun des regex suivantes ? Que signifient-elles ?
+1. Combien trouvez-vous de match pour chacun des regex suivantes ? Que signifient-elles ?
    1. Recherchez `^.évolution`.
    2. Recherchez `r?évolution`
 2. Combien y a-t-il de mots…
@@ -270,60 +273,85 @@ Dans le fichier `clg.txt` :
 
 Les accolades indiquent un intervalle de répétitions :
 
-- `lo{1,3}ng` reconnaît long, loong et looong
-- `lo{3,}` reconnaît looong, loooong, etc.
-- `lo{3}ng` ne reconnaît que looong
+- `lo{1,3}ng` matche long, loong et looong
+- `lo{3,}` matche looong, loooong, etc.
+- `lo{3}ng` ne matche que looong
 
 Exercice : écrire une expression régulière qui reconnaît exclusivement  `lool`, `loool` et `looool`.
 
 ## Classes de caractères
 
-| **Classe** |               **Signification**               |   **Équivalent ASCII**    |
-| :--------: | :-------------------------------------------: | :-----------------------: |
-|    `\d`    |                  un chiffre                   |          `[0-9]`          |
-|    `\D`    |             tout sauf un chiffre              |         `[^0-9]`          |
-|    `\w`    |      les caractères alphanumériques et _      | `[a-zA-Z0-9âàéèêëôûüù_]`  |
-|    `\W`    | tout sauf les caractères alphanumériques et _ | `[^a-zA-Z0-9âàéèêëôûüù_]` |
-|    `\s`    |                  une espace                   |   espace + `\t` + `\n`…   |
-|    `\S`    |             tout sauf une espace              |             …             |
+
+| **Classe** |               **Signification**               |          **Équivalent ASCII**          |
+|:----------:|:---------------------------------------------:|:--------------------------------------:|
+|    `\d`    |                  un chiffre                   |                `[0-9]`                 |
+|    `\D`    |             tout sauf un chiffre              |                `[^0-9]`                |
+|    `\w`    |      les caractères alphanumériques et _      |        `[a-zA-Z0-9âàéèêëôûüù_]`        |
+|    `\W`    | tout sauf les caractères alphanumériques et _ |       `[^a-zA-Z0-9âàéèêëôûüù_]`        |
+|    `\s`    |                  une espace                   |          espace, `\t`, `\n`…           |
+|    `\S`    |             tout sauf une espace              |                   …                    |
+|    `\b`    |    frontière de mot (début ou fin de mot)     | `\bjour` : `journée` mais pas `ajouré` |
 
 **Notes** :
 
 - En général `\X` reconnaît le contraire de `\x`
-- Le sens de `\w` et `\s` peut varier suivant les moteurs de regex
+- Le sens de `\w`, `\s` et `\b` peut varier suivant les moteurs de regex, suivant leur support
+  d'Unicode. En particulier ils marchent mal dans VSCode.
+
+## Propriétés Unicode
+
+| **Classe** |     **Signification**     |
+|:----------:|:-------------------------:|
+|  `\p{L}`   |        une lettre         |
+|  `\P{L}`   |   tout sauf une lettre    |
+|  `\p{P}`   |      Une ponctuation      |
+|  `\P{P}`   | tout sauf une ponctuation |
+|  `\p{Lu}`  |   une lettre majuscule    |
+|  `\p{Ll}`  |   une lettre minuscule    |
+
+Voir les détails sur
+[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape)
+et [la liste](https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-4/#G134153) des
+propriétés du type « catégories générales » (≈ classes de caractères) du consortium Unicode.
 
 # Exercices
 
-Faire les quatre premiers niveaux sur : <https://alf.nu/RegexGolf>
+Faire les niveaux suivants sur <https://alf.nu/RegexGolf>
 
-1. Warmup
-2. Anchors
-3. It never ends
-4. Ranges
+- *Warmup*
+- *Anchors*
+- *Ranges*
+
+---
+
+Faire le tutoriel et les 5 premiers puzzles de <https://regexcrossword.com>
 
 # Pour s’entraîner
 
-- Tester ses regex en ligne : <https://regex101.com>
-- Exercices : <https://alf.nu/RegexGolf>
-- Mots croisés de regex : <https://regexcrossword.com>
+- Tuto interactif : <https://regexlearn.com/learn/regex101>
+- Cours et exos : <http://regextutorials.com>
 
 # Compléments
 
+## RegEx et automates
+
+Au tableau ! Voir aussi <https://cyberzhg.github.io/toolbox/nfa2dfa>
+
 ## Stratégie de reconnaissance
 
-- Par principe, un quantificateur est **glouton** (*greedy*) : il reconnaît le maximum de caractères
+- Par principe, un quantificateur est **glouton** (*greedy*) : il matche le maximum de caractères
   possibles.
-- En ajoutant `?` après un quantificateur, on le rend *lazy* : il reconnait le minimum de
+- En ajoutant `?` après un quantificateur, on le rend *lazy* : il matche le minimum de
   caractères.
 
 Par exemple, si l'entrée est `AHHHHHHHHH` :
 
-- `AH+` reconnaît la plus longue suite de caractères : `AHHHHHHHHH`
-- `AH+?` reconnaît la plus petite suite de caractères : `AH`
+- `AH+` matche la plus longue suite de caractères : `AHHHHHHHHH`
+- `AH+?` matche la plus petite suite de caractères : `AH`
 
 ## Références
 
-On peut utiliser des références numérotées pour rappeller le contenu d'un groupe :
+On peut utiliser des références numérotées pour rappeler le contenu d'un groupe :
 
 `(spam|egg), sausage and \1` reconnaît :
 

@@ -16,7 +16,6 @@ Exercices expressions régulières
 
 Consignes pour le rendu :
 
-- Exercices individuels à rendre au plus tard le 05/02/2023 à 19h.
 - Vos réponses sont à rendre en texte brut (txt ou Markdown) ou en PDF **uniquement**.
 - Le nom de fichier doit être de la forme `<Prénom>_<Nom>-regex-4L4SC02P.<extension>`, par exemple
   si William Labov rend un fichier PDF, le nom du fichier sera `William_Labov-regex-4L4SC02P.pdf`.
@@ -26,7 +25,7 @@ Consignes pour le rendu :
 
 *Répondre aux questions, en donnant le cas échéant les expressions régulières utilisées.*
 
-## Père Duchesne
+## CLG
 
 Dans le fichier [Cours de linguistique générale](clg.txt) :
 
@@ -39,15 +38,63 @@ Dans le fichier [Cours de linguistique générale](clg.txt) :
 
 *Si plusieurs expressions régulières conviennent, répondre avec la plus courte que vous trouvez.*
 
-1. Trouver une expression régulière qui ne capture que les mots qui commencent par `b` (majuscule ou
-   minuscule) de la phrase `Le boa dans le baobab de Bob`.
-2. Trouver une expression régulière qui ne capture que les noms (sans leur déterminant) dans
-   l'exemple suivant : `L'action et la réaction et la réactivité`.
-3. Pour l'expression régulière `^[^^]`
-   1. Trouver une chaîne de caractères qui ne correspond pas à l'expression régulière
-   2. Trouver une chaîne de caractères qui correspond à l'expression régulière
-4. Pour l'expression régulière `^[^$]+$`/
-   1. Trouver une chaîne de caractères qui ne correspond pas à l'expression régulière
-   2. Trouver une chaîne de caractères qui correspond à l'expression régulière
-5. Comment reconnaître une adresse électronique ? Ex : `prenom.nom@domaine.net` (on ne considèrera
-   que les extensions de domaine `.com`, `.fr` et `.net`).
+### Ensembles
+
+Pour chacune des questions suivantes, écrire une expression régulière qui matche au moins une
+sous-chaîne de chaque exemple positif, mais aucun des exemples négatifs.
+
+1\.
+
+**Positifs**
+
+- pit
+- spot
+- spate
+- slap two
+- respite
+
+**Négatifs**
+
+- pt
+- Pot
+- peat
+- part
+
+2\.
+
+**Positifs**
+
+- rap them
+- tapeth
+- apth
+- wrap/try
+- sap tray
+- 87ap9th
+- apothecary
+
+**Négatifs**
+
+- aleht
+- happy them
+- tarpth
+- Apt
+- peth
+- tarreth
+- ddapdg
+- apples
+
+### Génération
+
+Pour chacune des questions suivantes, écrire trois chaînes de caractères qui matchent l'expression
+régulière proposée.
+
+1. `^a(ab)*a$`
+2. `^ab+c?`
+3. `^a.[bc]+`
+4. `^[a-z]+[\.\?!]$`
+5. `^<[^>]+>$`
+
+### Formats
+
+1. Écrire une expression régulière qui matche toutes les heures au format `heures:minutes:secondes`,
+mais uniquement celles qui peuvent exister (pas `55:31:122` par exemple).
