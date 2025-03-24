@@ -74,6 +74,13 @@ college*]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-college.html).
   ([pdf]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.pdf))
   - [`clg.txt`]({{site.url}}{{site.baseurl}}/slides/03-recherche/clg.txt)
 
+### 2025-03-10 : Expressions régulières 2
+
+- [Slides
+  regex]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.pdf))
+  - [`beroul.txt`]({{site.url}}{{site.baseurl}}/slides/03-recherche/beroul.txt)
+
 ## Licences
 
 [![CC BY Licence

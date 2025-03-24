@@ -161,8 +161,9 @@ Ils portent sur l’élément qui précède et indiquent une répétition
 
 1. `Nom\tPrénom`
 2. `cap$`
-3. `^cap`
-4. `premier paragraphe\ndeuxième paragraphe`
+3. `br.n`
+4. `^cap`
+5. `premier paragraphe\ndeuxième paragraphe`
 
 ## Déspécialisation
 
@@ -171,9 +172,9 @@ On a vu un certain nombre de métacaractères (les caractères avec une signific
 Pour les matcher littéralement (les « déspécialiser »), il faut les faire précéder d'un anti-slash
 `\` :
 
-- `\^machin` : matche `^machin`
 - `3\.0` matche `3.0`, mais pas `310`
-- Pareil pour `$`, `[`, `]`, `(`, `)`, `*`, `+`, `?`, `{`, `}`
+- `price: \$5` : matche `price: $5`
+- Pareil pour `^`, `[`, `]`, `(`, `)`, `*`, `+`, `?`, `{`, `}`
 
 Et pour représenter un anti-slash ? Pareil
 
@@ -200,8 +201,8 @@ On les utilise le plus souvent avec des parenthèses pour contrôler sa portée
 
 Les crochets indiquent un ensemble de caractères à matcher :
 
-- `[ab]` matche un caractère qui est soit `a` soit `b`
-- Avec un tiret : `[a-c]` matche les lettres de `a` à `c`
+- `[abc]` matche un caractère qui est soit `a`, soit `b`, soit `c`
+- Avec un tiret : `[a-r]` matche les lettres de `a` à `r`
 - `[a-z]` matche les lettres de l’alphabet en minuscules
 - `[a-zA-Z]` matche aussi les majuscules*
 
@@ -209,7 +210,7 @@ Les crochets indiquent un ensemble de caractères à matcher :
 
 **Exercice** :
 
-Que match :
+Que matchent :
 
 1. `[ab][ab]`
 2. `[MmRr]aison`
@@ -226,15 +227,16 @@ Que match :
 
 Avec un circonflexe au début : négation de l'ensemble
 
-- [^0-9] match tout sauf des chiffres
-- [^A-Z] match tout sauf des majuscules sans diacritiques
+- `[^abc]` matche tout sauf `a`, `b` et `c`
+- `[^0-9]` matche tout sauf des chiffres
+- `[^A-Z]` matche tout sauf des majuscules sans diacritiques
 
 ---
 
 On peut les combiner avec les quantificateurs :
 
 - `[aeiouy]+` matche une suite de voyelles : `a`, `aa`, `ae`, `iey`…
-- `[^<]*` matche une suite de caractères différents de `<`
+- `[^abc]*` matche une suite de caractères différents de `a`, `b` et `c`.
 
 ## Groupes
 
@@ -242,7 +244,7 @@ Les parenthèses permettent de construire des groupes
 
 - `(ab)+` matche une suite de `ab` : `ab`, `abab`, `ababab`…
 - `([ab]c)+` matche `ac`, `bc`, `acac`, `acbc`, `bcac`…
-- `([aeiouy][^aeiouy])+` matche une suite de couples voyelle-consonne.
+- `([aeiouy][^aeiouy])+` matche une suite de couples voyelle—(non-voyelle).
 
 ---
 
@@ -253,18 +255,14 @@ Les parenthèses permettent de construire des groupes
 3. `Wiki[a-z]+`
 4. `Wiki[a-z]*`
 
-# Exercices
+## Exercice
 
-Dans le fichier `clg.txt` :
+Dans le fichier `clg.txt`, combien trouvez-vous de matchs pour chacun des expressions régulières
+suivantes ? Que signifient-elles ?
 
-1. Combien trouvez-vous de match pour chacun des regex suivantes ? Que signifient-elles ?
-   1. Recherchez `^.évolution`.
-   2. Recherchez `r?évolution`
-2. Combien y a-t-il de mots…
-   1. de 3 lettres finissant par `r` ?
-   2. de 4 lettres au plus commençant par `r` ?
-   3. commençant par `a` et finissant par `er` ?
-   4. finissant par `er` en fin de ligne ?
+1. `.évolution`.
+2. `[a-zA-Z]évolution`
+3. `[^rR]évolution`
 
 # Raccourcis
 
@@ -314,6 +312,15 @@ et [la liste](https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-4
 propriétés du type « catégories générales » (≈ classes de caractères) du consortium Unicode.
 
 # Exercices
+
+Dans `clg.txt, combien y-a-t-il de mots :
+
+1. De 3 lettres finissant par `r` ?
+2. De 4 lettres au plus commençant par `r` ?
+3. Commençant par `a` et finissant par `er` ?
+4. Finissant par `er` en fin de ligne ?
+
+---
 
 Faire les niveaux suivants sur <https://alf.nu/RegexGolf>
 
