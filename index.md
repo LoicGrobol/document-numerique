@@ -67,6 +67,8 @@ layout: default
 À **rendre** pour la prochaine fois : [exercice *community
 college*]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-college.html).
 
+- [Correction exercice collège communautaire]({{site.url}}{{site.baseurl}}/06-css/correction-college.html)
+
 ### 2025-03-10 : Expressions régulières
 
 - [Slides
