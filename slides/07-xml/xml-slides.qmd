@@ -240,6 +240,18 @@ structurées. :
 - Base de données sémantiques : RDF
 - Flux d'actualité : [RSS](slides/07-xml/rss.xml)
 
+---
+
+Le cas le plus simple, qui va être celui de la plupart de nos exemples dans ce cours est l'utilisation pour représenter des bases de données sous forme de listes d'items ayant tous la même structure.
+
+. . .
+
+Attention, ça marche bien pour des bases de taille modeste contenant des données complexes, pas forcément pour d'autres cas (où on se tournera plutôt vers des bases de données relationnelles.)
+
+. . .
+
+(Pour ça, rendez-vous en master TAL :-)
+
 # Structure d'un document XML
 
 Un document XML est composé de plusieurs parties :
@@ -385,9 +397,8 @@ ou `-`, `.`, et `_`.
 
 ## Attributs
 
-Les attributs caractérisent un élément. Ce sont des couples
-`nom="valeur"` ou `nom='valeur'`. Ils sont placés dans la balise
-ouvrante.
+Les attributs caractérisent un élément. Comme en HTML, ce sont des couples `nom="valeur"` ou
+`nom='valeur'`. Ils sont placés dans la balise ouvrante.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -403,10 +414,9 @@ ouvrante.
 
 ## Entités
 
-Certains caractères sont interdits dans le contenu des éléments.
-Comme il est interdit de les employer, XML propose une
-représentation appelée référence d’entité ou entité pour simplifier.
-On retrouve le même concept en HTML.
+Comme en HTML, certains caractères sont interdits dans le contenu des éléments. Comme il est
+interdit de les employer, XML propose une représentation appelée référence d’entité ou entité pour
+simplifier.
 
 | Caractère |  Entité  |
 | :-------: | :------: |
