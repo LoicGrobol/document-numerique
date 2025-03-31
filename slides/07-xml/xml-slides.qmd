@@ -1,9 +1,8 @@
 ---
 title: "Décrire et manipuler un document numérique"
-subtitle: "Cours 6 : XML"
-date: 2024-02-26
+subtitle: "Cours 8 : XML"
 author:
-  - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
+  - "L. Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
 format:
   revealjs:
