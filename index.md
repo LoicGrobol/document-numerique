@@ -90,7 +90,8 @@ college*]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-college.html).
   ([pdf]({{site.url}}{{site.baseurl}}/slides/07-xml/xml-slides.pdf))
 
 À **rendre** pour la prochaine fois : [exercice
-XML]({{site.url}}{{site.baseurl}}/slides/07-xml/exercices-xml.html).
+XML]({{site.url}}{{site.baseurl}}/slides/07-xml/exercices-xml.html). Rendre un fichier zip contenant
+les 8 fichiers XML.
 
 ## Licences
 
