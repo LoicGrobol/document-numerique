@@ -1,8 +1,7 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Exercices XML"
-author: Loïc Grobol
-date: 2022-03-14
+author: L. Grobol
 lang: "fr"
 output:
   pdf_document:

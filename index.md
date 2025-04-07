@@ -93,6 +93,14 @@ college*]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-college.html).
 XML]({{site.url}}{{site.baseurl}}/slides/07-xml/exercices-xml.html). Rendre un fichier zip contenant
 les 8 fichiers XML.
 
+### 2025-04-07 : DTD
+
+- [Slides
+  DTD]({{site.url}}{{site.baseurl}}/slides/08-dtd/dtd-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/08-dtd/dtd-slides.pdf))
+- Exercice : reprendre les fichiers XML des exercices précédents et leur ajouter une DTD qui
+  correspond au format que vous avez imaginé.
+
 ## Licences
 
 [![CC BY Licence

@@ -1,9 +1,8 @@
 ---
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 7 : DTD et modélisation"
-date: 2024-03-04
 author:
-  - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
+  - "L. Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
 format:
   revealjs:
@@ -114,7 +113,7 @@ Dans ce cours, on se limitera aux DTD, plus anciennes et plus simples.
 # DTD
 
 Une *Document Type Definitions* est une liste de règles définies au début d’un document XML pour
-permettre sa validation pendant sa lecture. Elle est déclarée par un élément spécial `DOCTYPE` juste
+permettre sa validation pendant sa lecture. Elle est déclarée par une *directive* `DOCTYPE` juste
 après le prologue et avant la racine :
 
 ```xml
@@ -126,7 +125,7 @@ après le prologue et avant la racine :
 </itineraire>
 ```
 
-Attention : la syntaxe n'est pas la même que celle du contenu du XML
+Attention : la syntaxe n'est pas la même que celle du contenu du XML. C'est une directive, pas un élément.
 
 ## DTD interne ou externe
 
@@ -199,7 +198,7 @@ Ce sont des règles qui définissent :
 
 ---
 
-Le nom présent après le mot-clé `DOCTYPE` indique la racine du
+Le nom présent après le mot-clé `DOCTYPE` indique la **racine** du
 document. C’est un élément qui est défini dans la DTD.
 
 ```xml
