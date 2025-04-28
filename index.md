@@ -20,6 +20,7 @@ layout: default
 
 ## Liens
 
+- [**Partiel**]({{site.url}}{{site.baseurl}}/2025/exam)
 - Prendre rendez-vous pour des *office hours* en visio :
   [mon calendrier](https://calendar.app.google/N9oW2c9BzhXsWrrv9)
 - [Espace Cours en Ligne](https://coursenligne.parisnanterre.fr/course/view.php?id=8006)
@@ -100,6 +101,10 @@ les 8 fichiers XML.
   ([pdf]({{site.url}}{{site.baseurl}}/slides/08-dtd/dtd-slides.pdf))
 - Exercice : reprendre les fichiers XML des exercices précédents et leur ajouter une DTD qui
   correspond au format que vous avez imaginé.
+
+### 2025-04-28 : Partiel
+
+- [Sujet]({{site.url}}{{site.baseurl}}/2025/exam)
 
 ## Licences
 

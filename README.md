@@ -8,7 +8,6 @@ Décrire et manipuler un document numérique
 Contenus pour le cours « Décrire et manipuler un document numérique » de la L2 SDL, parcours LCN,
 Université Paris Nanterre.
 
-
 - [Site du cours](https://loicgrobol.github.io/document-numerique/)
 - [Dépôt GitHub](https://github.com/LoicGrobol/document-numerique)
 
@@ -51,7 +50,7 @@ Regenerate:
 
 ```bash
 mise activate
-Rscript build_slides.sh
+sh build_slides.sh
 bundle exec jekyll build
 bundle exec jekyll serve
 ```
