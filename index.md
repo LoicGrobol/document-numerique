@@ -14,7 +14,7 @@ layout: default
 - **Quoi** « Décrire et manipuler un document numérique » 4L4SC02P
 - **Où** Salle M209, bâtiment Éphémère 1, Université Paris Nanterre, 200 avenue de la République,
   Nanterre
-- **Quand** 12 séances, les lundis de 13:20 à 15:20, du 19/01 au 13/04
+- **Quand** 12 séances, les lundis de 13:30 à 15:30
   - Voir le calendrier de l'université pour les dates de vacances.
 - **Contact** L. Grobol [`<lgrobol@parisnanterre.fr>`](mailto:lgrobol@parisnanterre.fr)
 

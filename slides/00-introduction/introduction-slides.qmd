@@ -21,7 +21,7 @@ lang: "fr"
 
 # Bonjour
 
-- Loïc Grobol (il/iel) [<lgrobol@parisnanterre.fr>](mailto:lgrobol@parisnanterre.fr)
+- L. Grobol (il/iel) [<lgrobol@parisnanterre.fr>](mailto:lgrobol@parisnanterre.fr)
 - PHILLIA / MoDyCo (Bâtiment Rémond, 4ème, bureau 403C)
 - *Office hours*, etc.: voir <https://lgrobol.bzh/teaching>
 - **N'hésitez pas à m'écrire**
@@ -33,7 +33,7 @@ lang: "fr"
 - **Quoi** « Décrire et manipuler un document numérique » 4L4SC02P
 - **Où** Salle M209, bâtiment Éphémère 1, Université Paris Nanterre, 200 avenue de la République,
   Nanterre
-- **Quand** 12 séances, les lundis de 13:20 à 15:20, du 20/01 au 14/04
+- **Quand** 12 séances, les lundis de 13:30 à 15:30
   - Voir le calendrier de l'université pour les dates de vacances.
 
 → Travail sur machine préférable, amener si possible un PC portable
