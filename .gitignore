@@ -14,3 +14,5 @@ _site
 renv
 .Rprofile
 /.quarto/
+
+**/*.quarto_ipynb

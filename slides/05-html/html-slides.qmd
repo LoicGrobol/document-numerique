@@ -2,7 +2,7 @@
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 4 : HTML"
 author:
-  - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
+  - "L. Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
 format:
   revealjs:
@@ -49,14 +49,73 @@ _**H**yper**t**ext **M**arkup **L**anguage_
 
 ---
 
-## Entraînement
+## Page web, site web, etc.
 
-### Créer une page
+On a plusieurs notions à démêler :
 
-1. Copiez-collez le code précédent dans un fichier texte en utilisant l'éditeur de votre choix (le bloc notes si vous n'avez rien d'autre).
-2. Sauvegarder votre fichier texte sous le nom `hello.html` (ou un autre nom qui vous ferait plaisir).
-3. Ouvrez votre fichier dans votre navigateur préféré (Firefox, donc).
-4. Émerveillez-vous.
+- **Page web** Un document écrit en HTML affichable dans un navigateur
+- **Site web** Un *ensemble* de pages web regroupées en une seule ressource, reliées entre elles par
+  des liens et en général accompagnées de ressources média (images, sons, vidéos…).
+- **Internet** Un réseau mondial d'ordinateurs connectés par des liaisons réseaux
+- **Serveur web** Un ordinateur relié à Internet qui héberge un site web.
+- **Moteur de recherche** Un site web qui aide à trouver d'autres pages web, comme Google, Bing, Yahoo ou DuckDuckGo.
+
+
+# Un premier site web
+
+<small>Cette partie s'inspire librement du tutoriel [Démarrer avec le
+web](https://developer.mozilla.org/fr/docs/Learn_web_development) de MDN</small>
+
+---
+
+## Installer un éditeur de texte
+
+Si vous travaillez sur votre propre machine, [installez
+vscode](https://code.visualstudio.com/download). Sinon tout devrait pouvoir de faire avec la version
+en ligne [vscode.dev](https://vscode.dev/) (c'est juste un peu moins agréable).
+
+Si vous préférez utiliser une autre éditeur de texte ou environnement de développement, ça ne pose
+aucun problème. Assurez-vous juste qu'il s'agit bien d'un *éditeur de texte* et non d'un logiciel
+de *traitement de texte*.
+
+---
+
+## Créer des fichiers textes
+
+Les fichiers textes (qui ne contiennent qu'une suite de caractères) vont être notre focus ici et on
+va avoir besoin d'en créer plusieurs.
+
+1. Ouvrez votre explorateur de fichiers, allez dans le dossier où vous stockez vos documents de
+cours (ou n'importe où qui vous fait plaisir) et créez un dossier nommé `site`.
+2. Dans ce dossier, créez un fichier nommé `hello.txt`
+  - Attention : il vous faudra peut-être configurer votre système pour qu'il affiche correctement
+  les extensions
+3. Ouvrez votre dossier `site` dans vscode, et écrivez `Hello, world!` dans `hello.txt`.
+
+---
+
+## Créer une page web
+
+```html
+<html>
+  <head>
+    <title>Le titre de la page</title>
+  </head>
+  <body>
+    <h1>Un titre de niveau 1</h1>
+    <section>
+      <p>Bonjour, tout le <a href="https://fr.wikipedia.org/wiki/Hello_world">monde</a></p>
+    </section>
+  </body>
+</html>
+```
+
+---
+
+
+1. Copiez-collez le code précédent dans un fichier texte et sauvegardez-le sous le nom `hello.html`
+2. Ouvrez votre fichier dans votre navigateur préféré (Firefox, donc).
+3. Émerveillez-vous.
 
 ---
 
@@ -64,7 +123,7 @@ _**H**yper**t**ext **M**arkup **L**anguage_
 
 1. Reprenez votre fichier `hello.html`
 2. Modifiez-le pour que le titre de la page soit votre nom.
-3. Modidifiez-le encore : remplacer le paragraphe de texte par un paragraphe qui vous décrit en
+3. Modifiez-le encore : remplacer le paragraphe de texte par un paragraphe qui vous décrit en
 trois phrases et qui contient un lien vers la page Wikipédia de votre lieu de naissance (ou de la
 ville la plus proche qui a une page Wikipédia).
 4. Sauvegardez le résultat sous le nom `moi.html`
@@ -96,13 +155,11 @@ html
 
 Elles le séparent en en-tête (`<head>`) et contenu (`<body>`)
 
-- Dans `<head>`, les éléments (comme `<title>`) indiquent des métadonnées.
-- Dans `<body>`, ils ont plusieurs rôles, [entre autres](https://html.spec.whatwg.org/multipage/indices.html#element-content-categories) :
-  - Décrire une structure hiérarchique (`<section>`, `<p>`…)
-  - Indiquer un titre (`<h1>`, `<h2>`…)
-  - Enrichir le texte éléments (`<a>`…)
-
-<small>Approximations très grossières.</small>
+- Dans `<head>`, les éléments (comme `<title>`) indiquent des métadonnées. - Dans `<body>`, ils ont
+plusieurs rôles, [entre
+  autres](https://html.spec.whatwg.org/multipage/indices.html#element-content-categories) : -
+  Décrire une structure hiérarchique (`<section>`, `<p>`…) - Indiquer un titre (`<h1>`, `<h2>`…) -
+  Enrichir le texte éléments (`<a>`…)
 
 ---
 
@@ -116,7 +173,13 @@ En principe, l'information donnée est purement **sémantique** : on ne code p
 
 # TODO
 
-Suivre le tutoriel [Introduction à
-HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML) sur MDN jusqu'à
-« Déboguer de l'HTML ». Il est partiellement interactif, assurez vous de bien tout lire avec
-attention, de faire tous les exercices et de venir vers moi si quelque chose coince.
+Dans le tutoriel [Introduction à
+HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML), suivre les modules
+« Commencer avec le HTML », « Qu'avez-vous dans la tête ? Métadonnées en HTML », « Titres et
+paragraphes » et « Création d'hyperliens » puis « Testez vos compétences : les liens ». Vous devez
+lire le texte et faire les exercices interactifs, et me poser des questions si quelque chose n'est
+pas clair.
+
+Je vous encourage à suivre autant que possible de ce tutoriel, il est long, mais assez complet. Si
+vous arrivez au bout en ayant tout compris, vous aurez l'essentiel de ce qu'il vous faut pour
+comprendre HTML.

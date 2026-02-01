@@ -2,7 +2,7 @@
 title: "Décrire et manipuler un document numérique"
 subtitle: "Cours 2 : Encodage et représentation des caractères"
 author:
-  - "Loïc Grobol `<lgrobol@parisnanterre.fr>`"
+  - "L. Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
 format:
   pdf:
@@ -296,8 +296,7 @@ Au tableau !
 
 ### Points de codes et représentations concrètes
 
-On ajoute un niveau de représentation : le **point de code**, un nombre, souvent noté en
-hexadécimal, qui correspond à la position d'un caractère dans la table Unicode mais n'est pas
+On ajoute un niveau de représentation : le **point de code**, un nombre, souvent noté en hexadécimal, qui correspond à la position d'un caractère dans la table Unicode mais n'est pas
 nécessairement sa représentation concrète sur la machine.
 
 Ainsi le caractère « Я », « *CYRILLIC CAPITAL LETTER YA* » correspond au point de code U+042F
@@ -305,7 +304,7 @@ Ainsi le caractère « Я », « *CYRILLIC CAPITAL LETTER YA* » corresp
 
 ---
 
-Pour voir les représentations concrètes, on peut ouvrir les fichier textes dans un éditeur
+Pour voir les représentations concrètes, on peut ouvrir les fichiers textes dans un éditeur
 hexadécimal comme <https://hexed.it>.
 
 ---
