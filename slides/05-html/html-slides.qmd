@@ -155,11 +155,12 @@ html
 
 Elles le séparent en en-tête (`<head>`) et contenu (`<body>`)
 
-- Dans `<head>`, les éléments (comme `<title>`) indiquent des métadonnées. - Dans `<body>`, ils ont
-plusieurs rôles, [entre
-  autres](https://html.spec.whatwg.org/multipage/indices.html#element-content-categories) : -
-  Décrire une structure hiérarchique (`<section>`, `<p>`…) - Indiquer un titre (`<h1>`, `<h2>`…) -
-  Enrichir le texte éléments (`<a>`…)
+- Dans `<head>`, les éléments (comme `<title>`) indiquent des métadonnées.
+- Dans `<body>`, ils ont plusieurs rôles, [entre
+  autres](https://html.spec.whatwg.org/multipage/indices.html#element-content-categories) :
+  - Décrire une structure hiérarchique (`<section>`, `<p>`…)
+  - Indiquer un titre (`<h1>`, `<h2>`…)
+  - Enrichir le texte éléments (`<a>`…)
 
 ---
 
@@ -175,7 +176,7 @@ En principe, l'information donnée est purement **sémantique** : on ne code p
 
 Dans le tutoriel [Introduction à
 HTML](https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML), suivre les modules
-« Commencer avec le HTML », « Qu'avez-vous dans la tête ? Métadonnées en HTML », « Titres et
+« Commencer avec le HTML », « Qu'avez-vous dans la tête ? Métadonnées en HTML », « Titres et
 paragraphes » et « Création d'hyperliens » puis « Testez vos compétences : les liens ». Vous devez
 lire le texte et faire les exercices interactifs, et me poser des questions si quelque chose n'est
 pas clair.
