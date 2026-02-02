@@ -171,6 +171,56 @@ Les balises peuvent aussi contenir des métadonnées, comme la cible d'un lien�
 
 En principe, l'information donnée est purement **sémantique** : on ne code pas la mise en forme.
 
+# La suite
+
+## Valider un fichier HTML
+
+Copiez-collez votre fichier dans le [validateur du
+W3C](https://validator.w3.org/#validate_by_input). Que constatez-vous ?
+
+...
+
+Le validateur donne normalement au moins deux avertissements :
+
+- Aucune langue n'est précisée
+- La `<section>` ne contient pas de titre (qui ici devrait être un `<h2>` puisqu'on a seulement un `<h1>`)
+
+---
+
+Le validateur donne aussi [un
+lien](https://www.w3.org/International/questions/qa-html-language-declarations) vers de la
+documentation, qui n'est pas forcément la plus agréable à lire.
+
+## Apprendre et se documenter
+
+Le W3C est une organisation qui propose divers standards pour le web, et notamment pour le format
+HTML. Elle publie de la documentation *technique*, plutôt à l'usage des développeureuses de
+navigateurs etc.
+
+Pour *apprendre*, je vous recommande plutôt d'aller chercher sur
+[MDN](https://developer.mozilla.org/fr/), qui est prévu pour être plus pédagogique et est au moins
+partiellement traduit en français.
+
+Allez sur MDN et cherchez « section » pour trouver le problème signalé par le W3C
+
+---
+
+On trouve
+
+> Pour récapituler, chaque <section> doit être identifiée, généralement en incluant un titre
+> (élément h1 à h6) comme enfant de l'élément <section>, autant que possible.
+
+et un exemple
+
+```html
+<section>
+  <h2>Mon super titre</h2>
+  <p>Beaucoup de contenu génial</p>
+</section>
+```
+
+Complétez `moi.html` en tenant compte de cette information.
+
 # TODO
 
 Dans le tutoriel [Introduction à

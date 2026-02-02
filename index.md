@@ -57,11 +57,13 @@ layout: default
 
 **À rendre** pour la prochaine fois : une page web sous forme d'un fichier HTML. Il doit contenir un
 header bien formé (langue, titre, déclaration d'encodage au minimum), un titre général, une section
-avec un paragraphe, un lien, une liste et une image. Si vous n'avez pas d'idées pour le contenu,
-faites une bio comme pour un réseau social et lister trois choses que vous aimez.
+avec un paragraphe, un lien, une liste (par exemple `<ul>`) et une image. Si vous n'avez pas d'idées
+pour le contenu, faites une bio comme pour un réseau social et lister trois choses que vous aimez.
 
 Votre fichier doit passer au [validateur du W3C](https://validator.w3.org/#validate_by_input).
 Déposez le sur l'espace Cours en Ligne.
+
+**Vous devez utiliser MDN pour vous documenter sur ces éléments.**
 
 ## Licences
 
