@@ -191,7 +191,7 @@ Le validateur donne aussi [un
 lien](https://www.w3.org/International/questions/qa-html-language-declarations) vers de la
 documentation, qui n'est pas forcément la plus agréable à lire.
 
-## Apprendre et se documenter
+## Apprendre et se documenter
 
 Le W3C est une organisation qui propose divers standards pour le web, et notamment pour le format
 HTML. Elle publie de la documentation *technique*, plutôt à l'usage des développeureuses de
