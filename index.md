@@ -55,6 +55,14 @@ layout: default
   HMTL]({{site.url}}{{site.baseurl}}/slides/05-html/html-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/05-html/html-slides.pdf))
 
+**À rendre** pour la prochaine fois : une page web sous forme d'un fichier HTML. Il doit contenir un
+header bien formé (langue, titre, déclaration d'encodage au minimum), un titre général, une section
+avec un paragraphe, un lien, une liste et une image. Si vous n'avez pas d'idées pour le contenu,
+faites une bio comme pour un réseau social et lister trois choses que vous aimez.
+
+Votre fichier doit passer au [validateur du W3C](https://validator.w3.org/#validate_by_input).
+Déposez le sur l'espace Cours en Ligne.
+
 ## Licences
 
 [![CC BY Licence

@@ -34,6 +34,7 @@ _**H**yper**t**ext **M**arkup **L**anguage_
 ---
 
 ```html
+<!doctype html>
 <html>
   <head>
     <title>Le titre de la page</title>
@@ -59,7 +60,6 @@ On a plusieurs notions à démêler :
 - **Internet** Un réseau mondial d'ordinateurs connectés par des liaisons réseaux
 - **Serveur web** Un ordinateur relié à Internet qui héberge un site web.
 - **Moteur de recherche** Un site web qui aide à trouver d'autres pages web, comme Google, Bing, Yahoo ou DuckDuckGo.
-
 
 # Un premier site web
 
@@ -97,6 +97,7 @@ cours (ou n'importe où qui vous fait plaisir) et créez un dossier nommé `site
 ## Créer une page web
 
 ```html
+<!doctype html>
 <html>
   <head>
     <title>Le titre de la page</title>
@@ -111,7 +112,6 @@ cours (ou n'importe où qui vous fait plaisir) et créez un dossier nommé `site
 ```
 
 ---
-
 
 1. Copiez-collez le code précédent dans un fichier texte et sauvegardez-le sous le nom `hello.html`
 2. Ouvrez votre fichier dans votre navigateur préféré (Firefox, donc).
@@ -128,7 +128,6 @@ trois phrases et qui contient un lien vers la page Wikipédia de votre lieu de n
 ville la plus proche qui a une page Wikipédia).
 4. Sauvegardez le résultat sous le nom `moi.html`
 5. Ouvrez ce nouveau fichier dans un navigateur, et autocongratulez-vous si tout a bien marché.
-
 
 ## Balises
 
