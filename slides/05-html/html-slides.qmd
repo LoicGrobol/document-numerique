@@ -178,12 +178,12 @@ En principe, l'information donnée est purement **sémantique** : on ne code p
 Copiez-collez votre fichier dans le [validateur du
 W3C](https://validator.w3.org/#validate_by_input). Que constatez-vous ?
 
-...
-
+::: {.fragment}
 Le validateur donne normalement au moins deux avertissements :
 
 - Aucune langue n'est précisée
 - La `<section>` ne contient pas de titre (qui ici devrait être un `<h2>` puisqu'on a seulement un `<h1>`)
+:::
 
 ---
 
