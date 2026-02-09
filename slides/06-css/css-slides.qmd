@@ -21,6 +21,47 @@ lang: "fr"
 
 # CSS
 
+## Style
+
+### Outils de développement
+
+Ensemble !
+
+### Inline
+
+Reprenez votre page web de la séance précédente et ajouter le code suivant juste avant `</head>`,
+puis rouvrez votre page dans un navigateur :
+
+```css
+<style>
+  h1 {
+    color: blue;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+
+  p {
+    color: red;
+  }
+</style>
+```
+
+---
+
+1. Changez la couleur du fond des paragraphes pour les mettre en bleu.
+2. Retirez la bordure noire du titre.
+
+### Feuille de style
+
+1. Copiez-coller le contenu de l'élément style dans un fichier texte nommé `mon_super_style.css`,
+   dans le même dossier que votre fichier html.
+2. Dans le fichier html, supprimez l'élément `<style>…</style>`.
+3. Ajoutez juste avant `</head>`, l'élément suivant : `<link rel="stylesheet" href="mon_super_style.css" />`.
+4. Ouvrez le fichier HTML dans votre navigateur.
+5. En modifiant le fichier css, mettez le titre en blanc sur fond noir.
+
+## CSS
+
 _**C**ascading **S**tyle **S**heets_
 
 - Créé en 1994 par Håkon Wium Lie, dans la même équipe que Tim Berners-Lee
@@ -42,8 +83,9 @@ On ne fait plus trop ça aujourd'hui, et le sens de « cascade » a évolué
 
 ```css
 body {
-  max-width: 800px;
   margin: 0 auto;
+  max-width: 800px;
+  background: red;
 }
 
 .sender-column {
@@ -100,7 +142,7 @@ ou de leur attribut `id` :
 ### Règles
 
 Le reste du bloc, qui est compris entre deux accolades `{` et `}` se compose d'une liste d'options,
-ou *règles*, chacune sous la forme suivante
+ou *règles*, chacune sous la forme suivante :
 
 ```css
 propriété: valeur;
@@ -146,14 +188,16 @@ sont équivalents, mais on préfère la deuxième solution, par souci de lisibil
 
 # TODO
 
-Suivre les tutoriels suivants sur [MDN](https://developer.mozilla.org/fr/docs/Learn/CSS) :
+Suivre les tutoriels suivants sur MDN :
 
-- [Introduction aux CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps) (partiellement
-  interactif)
-  - La partie « CSS, comment ça marche ? » est facultative.
-- [Introduction au style de texte](https://developer.mozilla.org/fr/docs/Learn/CSS/Styling_text)
-- Les tutoriels [Blocs de base en
-  CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks) et [La mise en page avec
-  CSS](https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout) sont facultatifs (car un peu
-  long), mais sont tout à fait à votre portée, n'hésitez pas à aller y fouiller pour améliorer votre
-  rendu pour la prochaine séance.
+- [Comment CSS est
+  structuré](https://developer.mozilla.org/fr/docs/Learn_web_development/Core/Styling_basics/Getting_starteds)
+  (partiellement interactif)
+- [Mettre en forme une page de
+  bibliographie](https://developer.mozilla.org/fr/docs/Learn_web_development/Core/Styling_basics/Styling_a_bio_page)
+- [Sélecteurs de base](https://developer.mozilla.org/fr/docs/Learn_web_development/Core/Styling_basics/Basic_selectors)
+- [Combinateurs](https://developer.mozilla.org/fr/docs/Learn_web_development/Core/Styling_basics/Combinators)
+- [Introduction au style de texte](https://developer.mozilla.org/fr/docs/Learn/CSS/Styling_text) -
+
+Les autres tutoriels sont facultatifs (car un peu long), mais sont tout à fait à votre portée,
+n'hésitez pas à aller y fouiller à l'avenir.

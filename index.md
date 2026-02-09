@@ -61,7 +61,16 @@ avec un paragraphe, un lien, une liste (par exemple `<ul>`) et une image. Si vou
 pour le contenu, faites une bio comme pour un réseau social et lister trois choses que vous aimez.
 
 Votre fichier doit passer au [validateur du W3C](https://validator.w3.org/#validate_by_input).
-Déposez le sur l'espace Cours en Ligne.
+Déposez-le sur l'espace Cours en Ligne.
+
+### 2025-02-03 : Hexadécimal, Unicode et CSS
+
+- [Slides
+  Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.pdf))
+- [Slides
+  CSS]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.pdf))
 
 **Vous devez utiliser MDN pour vous documenter sur ces éléments.**
 
