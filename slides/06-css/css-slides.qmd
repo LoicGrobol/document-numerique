@@ -21,11 +21,17 @@ lang: "fr"
 
 # CSS
 
+---
+
 ## Style
+
+---
 
 ### Outils de développement
 
 Ensemble !
+
+---
 
 ### Inline
 
@@ -50,6 +56,8 @@ puis rouvrez votre page dans un navigateur :
 
 1. Changez la couleur du fond des paragraphes pour les mettre en bleu.
 2. Retirez la bordure noire du titre.
+
+---
 
 ### Feuille de style
 
