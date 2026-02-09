@@ -49,7 +49,7 @@ layout: default
   Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.pdf))
 
-### 2025-02-01 : HTML
+### 2026-02-02 : HTML
 
 - [Slides
   HMTL]({{site.url}}{{site.baseurl}}/slides/05-html/html-slides.html)
@@ -63,7 +63,7 @@ pour le contenu, faites une bio comme pour un réseau social et lister trois cho
 Votre fichier doit passer au [validateur du W3C](https://validator.w3.org/#validate_by_input).
 Déposez-le sur l'espace Cours en Ligne.
 
-### 2025-02-03 : Hexadécimal, Unicode et CSS
+### 2026-02-09 : Hexadécimal, Unicode et CSS
 
 - [Slides
   Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
