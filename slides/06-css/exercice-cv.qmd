@@ -16,8 +16,8 @@ format:
 ## Consignes
 
 - Exercices individuels.
-- Vous devrez rendre **un fichier zip** contenant un fichier HTML, un fichier CSS et des captures
-  d'écran au format PNG.
+- Vous devrez rendre **un fichier zip** contenant deux fichiers HTML, un fichier CSS, une image
+  et une capture d'écran au format PNG.
 - Le nom de fichier doit être de la forme `<Prénom>_<Nom>-cv-4L4SC02P.zip`, par exemple pour William
   Labov, le nom du fichier sera `William_Labov-cv-4L4SC02P.zip`.
 - Dépôt sur Cours en Ligne.
@@ -136,4 +136,7 @@ Exercice 2 : Une feuille de style CSS pour rendre le CV plus joli !
 ### HTML seul
 
 ![Capture d'écran de la page web de la partie 1](assets-exercice/cv.png)
+
+### Avec CSS
+
 ![Capture d'écran de la page web de la partie 2](assets-exercice/cv2.png)
