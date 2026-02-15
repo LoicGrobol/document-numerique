@@ -1,0 +1,35 @@
+body {
+    max-width: 50em;
+    margin: auto;
+}
+
+header {
+    background: #E8EFF7;
+    border-bottom: 10px solid rgb(111, 0, 255);
+    border-top: 10px solid rgb(111, 0, 255);
+    text-align: center;
+}
+
+#portrait{
+    width: 15%;
+}
+
+article, section {
+    border-bottom: 10px solid rgb(111, 0, 255);
+    border-top: 10px solid rgb(111, 0, 255);
+    margin-top: 2em;
+}
+
+h2 {
+    background: #E8EFF7;
+    font-weight: bold;
+    margin-top: 0px;
+    padding: 10px;
+}
+
+.annee {
+    display: block;
+    float: left;
+    font-weight: bold;
+    width: 100px;
+}

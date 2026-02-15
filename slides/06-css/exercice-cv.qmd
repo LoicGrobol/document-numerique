@@ -84,30 +84,29 @@ Exercice 2 : Une feuille de style CSS pour rendre le CV plus joli !
     l’apparence de la page en annexe. Pour cette partie, les seules modifications que vous devez
     faire dans `cv2.html` sont l'ajout d'attributs `id` et `class` sur certains éléments.
 
-1. Centrez le contenu de la page en ajoutant des propriétés au sélecteur `body`: la largeur
-   (`width`) doit être de `70%` (donc `width: 70%;`), et la marge gauche de 15%
-   (`margin-left:15%;`).
-1. Centrer le texte de l'en-tête en ajoutant la propriété `text-align: center;` au sélecteur
-   `header`.
+1. Centrez le contenu de la page en ajoutant des propriétés au sélecteur `body`: la largeur maximale
+   (`max-width`) doit être de `50em` (donc `max-width: 50em;`), et la propriété `margin` doit valoir
+   `auto` (`margin: auto;`). `header`.
 1. Mettre en forme l'en-tête :
+    1. Centrer le texte en ajoutant la propriété `text-align: center;` au sélecteur
     1. Les barres sont obtenues grâce aux propriétés `border-top` et `border-bottom` pour le
        sélecteur `header`, qui doivent avoir la valeur auxquelles sera affectée la valeur
        `10px solid rgb(111, 0, 255)`. Remplacez `rgb(111, 0, 255)` par
        [votre couleur préférée](https://en.wikipedia.org/wiki/List_of_colors_by_shade).
-    1. La couleur de fond est déterminée par la propriété `background` (ici, on a choisi `#E8EFF7`).
-
-1. L’image est alignée à droite (`float: right`) et sa largeur (`width`) est `15%` (de l'élément
-   parent, donc ici le `<header`>). Pour appliquer ces propriétés à cette image et uniquement cette
-   image, ajoutez un attribut `id="portrait` à l'élément `<img>` et utilisez le sélecteur CSS
-   `#portrait`
+    1. La couleur de fond est déterminée par la propriété `background` (ici, on a choisi `#E8EFF7`,
+       mais vous devriez probablement en choisir une plus agréable).
+    1. La largeur (`width`) de l'image est `15%` (de l'élément parent, donc ici le `<header>`). Pour
+       appliquer cette propriété à cette image et uniquement cette image, ajoutez un attribut
+       `id="portrait` à l'élément `<img>` et utilisez le sélecteur CSS `#portrait`
 1. Modifier le fichier CSS pour afficher les barres de début et de fin de chaque partie du CV
-   (sélecteur `article`) à l’aide des propriétés `border-top` et `border-bottom`. Les bordures sont
-   les mêmes que celles l'en-tête général. Chaque article est séparé de ce qui précède par une marge
-   de `2em` (donc `margin-top: 2em;`).
+   (sélecteur `article, section`) à l’aide des propriétés `border-top` et `border-bottom`. Les
+   bordures sont les mêmes que celles l'en-tête général. Chaque article est séparé de ce qui précède
+   par une marge de `2em` (donc `margin-top: 2em;`).
 1. Mettre en forme le titre de chaque partie du CV (sélecteur `article h2`) :
     1. La couleur du titre est `#385CA8`
     1. Le texte du titre est en gras.
     1. La couleur de fond se poursuit de `10px` au-delà du titre (propriété `padding`).
+    1. Les titres n'ont pas de marge supérieure `margin-top: 0px;`.
 1. Mettre en forme la partie « Formation » :
     1. Ajoutez la classe `annee` aux `<span>`s qui marquent les années :
        `<span class="annee">2021-2022</span>` par exemple.
@@ -125,8 +124,16 @@ Exercice 2 : Une feuille de style CSS pour rendre le CV plus joli !
 1. Prendre une copie d’écran montrant la page du navigateur avec le CV, les outils et les
    changements effectués.
 
+## La suite
+
+1. Changer le style de la liste des langues.
+1. Changer le style du pied de page (`<footer>`).
+1. Si vous en avez envie, ajoutez ce qui vous plaît dans ce CV pour le rendre plus joli. Attention à
+   ne rien en _retirer_ pour que je puisse vérifier que vous avez bien suivi les instructions
+
 ## Annexe : exemples
 
 ### HTML seul
 
 ![Capture d'écran de la page web de la partie 1](assets-exercice/cv.png)
+![Capture d'écran de la page web de la partie 2](assets-exercice/cv2.png)
