@@ -1,0 +1,132 @@
+---
+title: "Décrire et manipuler un document numérique"
+subtitle: "Exercice Réaliser un CV en HTML+CSS"
+author: L. Grobol
+lang: "fr"
+format:
+    html: {}
+    pdf:
+        "pdf-engine": "lualatex"
+---
+
+<!-- LTeX: language=fr -->
+
+# Exercice Réaliser un CV en HTML+CSS
+
+## Consignes
+
+- Exercices individuels.
+- Vous devrez rendre **un fichier zip** contenant un fichier HTML, un fichier CSS et des captures
+  d'écran au format PNG.
+- Le nom de fichier doit être de la forme `<Prénom>_<Nom>-cv-4L4SC02P.zip`, par exemple pour William
+  Labov, le nom du fichier sera `William_Labov-cv-4L4SC02P.zip`.
+- Dépôt sur Cours en Ligne.
+
+Vos fichiers HTML et CSS doivent être conformes. Vérifiez avec les validateurs du W3C :
+<http://validator.w3.org/> (HTML) et <https://jigsaw.w3.org/css-validator/> (CSS). Les messages de
+type « Info » ne sont pas des erreurs et n'affectent pas la conformité.
+
+**Attention** :
+
+- N'hésitez pas à vous servir des exercices des séances précédentes.
+- Vous **devez** aller chercher sur [MDN](https://developer.mozilla.org/fr/) la documentation et les
+  exemples pour les notions qui vous posent problème.
+
+## Partie 1 : HTML seul
+
+Dans cet exercice, nous allons rédiger une page HTML nommée `cv.html`. Sans CSS pour changer son
+apparence, elle aura l'allure de la page donnée en annexe (ou quelque chose d'approchant suivant le
+style par défaut de votre navigateur)
+
+1. Créer un fichier vierge `cv.html` puis ajouter le minimum d’instructions pour que ce soit une
+   page conforme au standard HTML.
+1. Faire en sorte que le titre s’affichant dans la barre du navigateur soit votre nom suivi de
+   « CV » (par exemple pour Wiliam Labov, ce serait « William Labov : CV »).
+1. En-tête :
+    1. Ajouter votre nom comme un titre de niveau 1
+    1. Télécharger [le fichier du portrait](slides/06-css/assets-exercice/portrait.jpg) et le placer
+       dans le même répertoire que votre page. Puis insérer l’image dans la page Web avec un élément
+       `<img>`. N'oubliez pas de lui donner une description en utilisant l'attribut `alt`. Par
+       exemple `alt="Un portrait de l'autrice de ce CV"`. (Vous pouvez mettre une autre image, mais
+       assurez-vous qu'elle fait une taille raisonnable. Celle par défaut fait 200×250 pixels)
+    1. Encadrer tout l’entête du CV (nom et portrait) dans un élément `<header>`.
+
+1. Identité :
+    1. Ajouter « Identité » comme un titre de niveau deux, puis votre âge et votre profession comme
+       des éléments de liste non-ordonnée.
+    2. Ajouter sous forme de liste de description `<dl>` votre adresse, votre email et un lien vers
+       <https://example.com>. Le lien sur l’adresse électronique pointe vers elle-même, à l’aide
+       d’un lien de type `mailto:`.
+    3. Enfin, encadrer les éléments que vous venez de créer dans un élément `<section>`.
+
+1. Formation
+    1. Ajouter la partie « Formation » en utilisant un élément `<article>` 
+    1. Utilisez un titre de niveau deux pour son en-tête.
+    1. Chacune des formations sera contenue dans un élément `<p>` dédié et les années seront mises
+       dans des éléments `<span>` (sans plus d'attributs pour l'instant, ils nous serviront dans la
+       partie suivante).
+1. Ajouter la partie « Langues » comme un `<article>` avec un titre de niveau deux. La liste des
+   langues sera une liste de descriptions `<dl>`.
+1. Ajouter la partie « Motivation » comme un `<article>` avec un titre de niveau deux comprenant un
+   paragraphe. Vous pouvez garder la phrase d'exemple ou la changer pour ce qui vous plaît.
+1. Ajouter la phrase de pied de page, en utilisant une balise `<footer>.`
+
+## Partie 2 : du CSS pour avoir du style
+
+Exercice 2 : Une feuille de style CSS pour rendre le CV plus joli !
+
+1. Faites une copie de votre fichier de la partie précédente et nommez-la `cv.html`. Créez un
+   fichier vide `cv.css`.
+1. Ajouter à `cv2.html` un lien vers la feuille de style, en ajoutant dans l’entête HTML (`<head>`)
+   la balise `<link rel="stylesheet" type="text/css" media="screen" href="cv.css" />`.
+
+    Dans le reste de cet exercice, nous allons remplir la feuille de style `cv.css` pour obtenir
+    l’apparence de la page en annexe. Pour cette partie, les seules modifications que vous devez
+    faire dans `cv2.html` sont l'ajout d'attributs `id` et `class` sur certains éléments.
+
+1. Centrez le contenu de la page en ajoutant des propriétés au sélecteur `body`: la largeur
+   (`width`) doit être de `70%` (donc `width: 70%;`), et la marge gauche de 15%
+   (`margin-left:15%;`).
+1. Centrer le texte de l'en-tête en ajoutant la propriété `text-align: center;` au sélecteur
+   `header`.
+1. Mettre en forme l'en-tête :
+    1. Les barres sont obtenues grâce aux propriétés `border-top` et `border-bottom` pour le
+       sélecteur `header`, qui doivent avoir la valeur auxquelles sera affectée la valeur
+       `10px solid rgb(111, 0, 255)`. Remplacez `rgb(111, 0, 255)` par
+       [votre couleur préférée](https://en.wikipedia.org/wiki/List_of_colors_by_shade).
+    1. La couleur de fond est déterminée par la propriété `background` (ici, on a choisi `#E8EFF7`).
+
+1. L’image est alignée à droite (`float: right`) et sa largeur (`width`) est `15%` (de l'élément
+   parent, donc ici le `<header`>). Pour appliquer ces propriétés à cette image et uniquement cette
+   image, ajoutez un attribut `id="portrait` à l'élément `<img>` et utilisez le sélecteur CSS
+   `#portrait`
+1. Modifier le fichier CSS pour afficher les barres de début et de fin de chaque partie du CV
+   (sélecteur `article`) à l’aide des propriétés `border-top` et `border-bottom`. Les bordures sont
+   les mêmes que celles l'en-tête général. Chaque article est séparé de ce qui précède par une marge
+   de `2em` (donc `margin-top: 2em;`).
+1. Mettre en forme le titre de chaque partie du CV (sélecteur `article h2`) :
+    1. La couleur du titre est `#385CA8`
+    1. Le texte du titre est en gras.
+    1. La couleur de fond se poursuit de `10px` au-delà du titre (propriété `padding`).
+1. Mettre en forme la partie « Formation » :
+    1. Ajoutez la classe `annee` aux `<span>`s qui marquent les années :
+       `<span class="annee">2021-2022</span>` par exemple.
+    1. Mettez les années en gras (`font-weight: bold;`) en utilisant le sélecteur de classe
+       `.annee`.
+    1. Donnez aux `<span>` des années une largeur de 100 pixels, et ajoutez-leur les propriétés
+       `display: block;` et `float: left;`.
+
+## Partie 3 : utiliser les outils de développement
+
+1. Utiliser les Outils de développement web de votre navigateur.
+1. Sélectionner le pied de page dans le code HTML. Modifier, dans le navigateur, la taille des
+   caractères pour qu’elle soit `x-small`.
+1. Changez la largeur (`4px`) et la couleur des lignes encadrant le pied de page.
+1. Prendre une copie d’écran montrant la page du navigateur avec le CV, les outils et les
+   changements effectués.
+
+## Annexe : exemples
+
+### HTML seul
+
+![Capture d'écran de la page web de la partie 1](assets-exercice/cv.png)
