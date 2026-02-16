@@ -49,7 +49,7 @@ style par défaut de votre navigateur)
        `<img>`. N'oubliez pas de lui donner une description en utilisant l'attribut `alt`. Par
        exemple `alt="Un portrait de l'autrice de ce CV"`. (Vous pouvez mettre une autre image, mais
        assurez-vous qu'elle fait une taille raisonnable. Celle par défaut fait 200×250 pixels)
-    1. Encadrer tout l’entête du CV (nom et portrait) dans un élément `<header>`.
+    1. Placer tout l’entête du CV (nom et portrait) dans un élément `<header>`.
 
 1. Identité :
     1. Ajouter « Identité » comme un titre de niveau deux, puis votre âge et votre profession comme
