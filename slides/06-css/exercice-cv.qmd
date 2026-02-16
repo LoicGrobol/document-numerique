@@ -73,9 +73,7 @@ style par défaut de votre navigateur)
 
 ## Partie 2 : du CSS pour avoir du style
 
-Exercice 2 : Une feuille de style CSS pour rendre le CV plus joli !
-
-1. Faites une copie de votre fichier de la partie précédente et nommez-la `cv.html`. Créez un
+1. Faites une copie de votre fichier de la partie précédente et nommez-la `cv2.html`. Créez un
    fichier vide `cv.css`.
 1. Ajouter à `cv2.html` un lien vers la feuille de style, en ajoutant dans l’entête HTML (`<head>`)
    la balise `<link rel="stylesheet" type="text/css" media="screen" href="cv.css" />`.
