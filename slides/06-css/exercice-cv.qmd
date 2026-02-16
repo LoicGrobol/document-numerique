@@ -44,7 +44,7 @@ style par défaut de votre navigateur)
    « CV » (par exemple pour Wiliam Labov, ce serait « William Labov : CV »).
 1. En-tête :
     1. Ajouter votre nom comme un titre de niveau 1
-    1. Télécharger [le fichier du portrait](slides/06-css/assets-exercice/portrait.jpg) et le placer
+    1. Télécharger [le fichier du portrait](assets-exercice/portrait.jpg) et le placer
        dans le même répertoire que votre page. Puis insérer l’image dans la page Web avec un élément
        `<img>`. N'oubliez pas de lui donner une description en utilisant l'attribut `alt`. Par
        exemple `alt="Un portrait de l'autrice de ce CV"`. (Vous pouvez mettre une autre image, mais
