@@ -76,8 +76,8 @@ Déposez-le sur l'espace Cours en Ligne.
 
 ### 2026-02-16 : Faire un CV en HTML+CSS
 
-- [TP]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.html)
-  ([pdf]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.pdf))
+- [TP]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-cv.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-cv.pdf))
   - À rendre le 27/03/2026 au plus tard via Cours en Ligne
 
 ## Licences
