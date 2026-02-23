@@ -84,8 +84,8 @@ style par défaut de votre navigateur)
 
 1. Centrez le contenu de la page en ajoutant des propriétés au sélecteur `body`: la largeur maximale
    (`max-width`) doit être de `50em` (donc `max-width: 50em;`), et la propriété `margin` doit valoir
-   `auto` (`margin: auto;`). `header`.
-1. Mettre en forme l'en-tête :
+   `auto` (`margin: auto;`).
+1. Mettre en forme l'en-tête (sélecteur `header`) :
     1. Centrer le texte en ajoutant la propriété `text-align: center;` au sélecteur
     1. Les barres sont obtenues grâce aux propriétés `border-top` et `border-bottom` pour le
        sélecteur `header`, qui doivent avoir la valeur auxquelles sera affectée la valeur
