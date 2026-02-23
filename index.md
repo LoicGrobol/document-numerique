@@ -7,7 +7,7 @@ layout: default
 
 ## Nouvelles
 
-- **2026-01-18** Premier cours de cette session le lundi 19 janvier 2026. *Be there and beware!*
+- **2026-01-18** Premier cours de cette session le lundi 19 janvier 2026. _Be there and beware!_
 
 ## Infos pratiques
 
@@ -20,39 +20,34 @@ layout: default
 
 ## Liens
 
-- Prendre rendez-vous pour des *office hours* en visio :
+- Prendre rendez-vous pour des _office hours_ en visio :
   [mon calendrier](https://calendar.app.google/N9oW2c9BzhXsWrrv9)
 - [Espace Cours en Ligne](https://coursenligne.parisnanterre.fr/course/view.php?id=8347)
   - Inscription libre avec la clé `lovelace`
   - Attention, cet espace ne sert qu'aux dépôts de devoirs.
 - [Page du cours de l'an dernier]({{site.url}}{{site.baseurl}}/2025)
-- [Le dépôt Github du cours](https://github.com/{{site.repository}}) contient toutes
-  les sources permettant de générer le matériel du cours.
+- [Le dépôt Github du cours](https://github.com/{{site.repository}}) contient toutes les sources
+  permettant de générer le matériel du cours.
 
 ## Séances
 
 ### 2026-01-19 : Introduction et stockage de l'information
 
-- [Slides
-  Introduction]({{site.url}}{{site.baseurl}}/slides/00-introduction/introduction-slides.html)
+- [Slides Introduction]({{site.url}}{{site.baseurl}}/slides/00-introduction/introduction-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/00-introduction/introduction-slides.pdf))
-- [Slides
-  Stockage de l'information]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.html)
+- [Slides Stockage de l'information]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.pdf))
 
 ### 2026-01-26 : Représentation de l'information
 
-- [Slides
-  Stockage de l'information]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.html)
+- [Slides Stockage de l'information]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/01-stockage/stockage-slides.pdf))
-- [Slides
-  Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
+- [Slides Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.pdf))
 
 ### 2026-02-02 : HTML
 
-- [Slides
-  HMTL]({{site.url}}{{site.baseurl}}/slides/05-html/html-slides.html)
+- [Slides HMTL]({{site.url}}{{site.baseurl}}/slides/05-html/html-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/05-html/html-slides.pdf))
 
 **À rendre** pour la prochaine fois : une page web sous forme d'un fichier HTML. Il doit contenir un
@@ -65,11 +60,9 @@ Déposez-le sur l'espace Cours en Ligne.
 
 ### 2026-02-09 : Hexadécimal, Unicode et CSS
 
-- [Slides
-  Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
+- [Slides Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.pdf))
-- [Slides
-  CSS]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.html)
+- [Slides CSS]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/06-css/css-slides.pdf))
 
 **Vous devez utiliser MDN pour vous documenter sur ces éléments.**
@@ -78,7 +71,14 @@ Déposez-le sur l'espace Cours en Ligne.
 
 - [TP]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-cv.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-cv.pdf))
+    - À rendre le 27/03/2026 au plus tard via Cours en Ligne
+
+### 2026-02-16 : Faire un CV en HTML+CSS, la suite
+
+- [TP]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-cv.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-cv.pdf))
   - À rendre le 27/03/2026 au plus tard via Cours en Ligne
+- Si vous avez terminé : [Blockly Games : le labyrinthe](https://blockly.games/maze?lang=fr)
 
 ## Licences
 
@@ -88,12 +88,12 @@ badge](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons
 Copyright © 2026 L. Grobol [\<lgrobol@tuta.com\>](mailto:lgrobol@tuta.com)
 
 Sauf indication contraire, les fichiers présents dans ce dépôt sont distribués selon les termes de
-la licence [Creative Commons Attribution 4.0
-International](https://creativecommons.org/licenses/by/4.0/). Voir [le README](README.md#Licences)
-pour plus de détails.
+la licence
+[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/). Voir
+[le README](README.md#Licences) pour plus de détails.
 
- Un résumé simplifié de cette licence est disponible à
- <https://creativecommons.org/licenses/by/4.0/>.
+Un résumé simplifié de cette licence est disponible à
+<https://creativecommons.org/licenses/by/4.0/>.
 
- Le texte intégral de cette licence est disponible à
- <https://creativecommons.org/licenses/by/4.0/legalcode>
+Le texte intégral de cette licence est disponible à
+<https://creativecommons.org/licenses/by/4.0/legalcode>
