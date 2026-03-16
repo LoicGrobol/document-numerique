@@ -58,7 +58,7 @@ pour le contenu, faites une bio comme pour un réseau social et lister trois cho
 Votre fichier doit passer au [validateur du W3C](https://validator.w3.org/#validate_by_input).
 Déposez-le sur l'espace Cours en Ligne.
 
-### 2026-02-09 : Hexadécimal, Unicode et CSS
+### 2026-02-09 : Unicode et CSS
 
 - [Slides Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
   ([pdf]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.pdf))
@@ -79,6 +79,18 @@ Déposez-le sur l'espace Cours en Ligne.
   ([pdf]({{site.url}}{{site.baseurl}}/slides/06-css/exercice-cv.pdf))
   - À rendre le 27/03/2026 au plus tard via Cours en Ligne
 - Si vous avez terminé : [Blockly Games : le labyrinthe](https://blockly.games/maze?lang=fr)
+
+### 2026-03-09 : Hexadécimal et Unicode
+
+- [Slides Encodage]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/02-encodages/encodages-slides.pdf))
+
+### 2026-03-16 : Expresssions régulières
+
+- [Slides
+  regex]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.pdf))
+  - [`clg.txt`]({{site.url}}{{site.baseurl}}/slides/03-recherche/clg.txt)
 
 ## Licences
 

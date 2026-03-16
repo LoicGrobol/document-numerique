@@ -1,6 +1,6 @@
 ---
 title: "Décrire et manipuler un document numérique"
-subtitle: "Cours 3 : Techniques de recherche avancées"
+subtitle: "Techniques de recherche avancées"
 author:
   - "L. Grobol `<lgrobol@parisnanterre.fr>`"
 institute: Université Paris Nanterre
@@ -74,6 +74,23 @@ Exemple : [`une colère
 *`](https://books.google.com/ngrams/graph?content=une+col%C3%A8re+%2A&year_start=1800&year_end=2019&corpus=30&smoothing=3&direct_url=t2%3B%2Cune%20col%C3%A8re%20%2A%3B%2Cc0%3B%2Cs0%3B%3Bune%20col%C3%A8re%20qui%3B%2Cc0%3B%3Bune%20col%C3%A8re%20noire%3B%2Cc0%3B%3Bune%20col%C3%A8re%20terrible%3B%2Cc0%3B%3Bune%20col%C3%A8re%20de%3B%2Cc0%3B%3Bune%20col%C3%A8re%20%C3%A9pouvantable%3B%2Cc0%3B%3Bune%20col%C3%A8re%20sourde%3B%2Cc0%3B%3Bune%20col%C3%A8re%20violente%3B%2Cc0%3B%3Bune%20col%C3%A8re%20froide%3B%2Cc0%3B%3Bune%20col%C3%A8re%20et%3B%2Cc0%3B%3Bune%20col%C3%A8re%20concentr%C3%A9e%3B%2Cc0)
 donne les fréquences de trigrammes dont les deux premiers mots sont « une » et « colère »
 
+# Rechercher dans des fichiers
+
+1. Récupérez le fichier [`clg.txt`](./clg.txt)
+1. Ouvrez-le avec l'éditeur de votre choix (Clic-droit sur le fichier + ouvrir avec)
+1. Accéder à la fonction de recherche (en général
+   <kbd>ctrl</kbd>+<kbd>F</kbd>/<kbd>R</kbd>/<kbd>H</kbd>).
+
+## Compter
+
+Dans le CLG, combien de fois apparaissent les mots :
+
+- `langue`
+- `phonème`
+- `européenne`
+
+Est-ce que vous remarquez quelque chose ?
+
 # Expressions régulières
 
 Expressions régulières = ER = RegEx
@@ -88,37 +105,23 @@ Expressions régulières = ER = RegEx
   - Adresses
   - Structures linguistiques
 
----
-
-Outils :
-
-- IDE: [VSCode](https://code.visualstudio.com/), éventuellement dans sa version [en ligne](https://vscode.dev/).
-- Éditeur de texte brut : Notepad++ (Windows), Kate/Gedit (Linux), CotEditor (Mac)…
-- Test en ligne : <https://regex101.com/>, <https://pythex.org/>
-
-Possible, mais moins pratique pour ce cours :
-
-- Traitement de texte : Google Drive, Word, Writer, Pages…
-- Langage de programmation : Java, Perl, Python, PHP…
-
 ## Dans un éditeur de texte
 
-1. Récupérez le fichier [`clg.txt`](./clg.txt)
-2. Ouvrez-le avec l'éditeur de votre choix (Clic-droit sur le fichier + ouvrir avec)
-3. Accéder à la fonction de recherche (en général
+1. Dans votre éditeur de texte
+1. Accéder à la fonction de recherche (en général
    <kbd>ctrl</kbd>+<kbd>F</kbd>/<kbd>R</kbd>/<kbd>H</kbd>).
    - Cochez « expression régulière » (ou `.*`) et « respecter la casse » (ou `Aa`)
 
 ## Principe général
 
 - Règle générale : par défaut chaque caractère d'une expression correspond (*match*) à ce caractère :
-  - `France 2` match `France 2`, mais pas `France2` ni `France 3`
+  - Chercher `France 2` vous donne `France 2`, mais pas `France2` ni `France 3`
   - (en mode `Aa`) `madeleine` match `madeleine`, mais pas `Madeleine`
 - Cas particuliers : les **métacaractères**
   - Quantificateurs
   - Opérateurs
   - Caractères spéciaux
-  - Classes de caractères
+  - Classes de caractères / propriétés unicode
 
 # Les quantificateurs
 
@@ -135,7 +138,7 @@ Ils portent sur l’élément qui précède et indiquent une répétition
 
 ---
 
-**Exercice** : que matchent les expressions suivantes ?
+**Exercice** : à quelles chaînes de caractères correspondent les expressions suivantes ?
 
 1. `a?typique`
 2. `pomm?es`
@@ -244,7 +247,7 @@ Les parenthèses permettent de construire des groupes
 
 - `(ab)+` matche une suite de `ab` : `ab`, `abab`, `ababab`…
 - `([ab]c)+` matche `ac`, `bc`, `acac`, `acbc`, `bcac`…
-- `([aeiouy][^aeiouy])+` matche une suite de couples voyelle—(non-voyelle).
+- `([aeiouy][^aeiouy])+` matche une suite de couples voyelle/non-voyelle.
 
 ---
 
@@ -283,8 +286,6 @@ Exercice : écrire une expression régulière qui reconnaît exclusivement  `l
 |:----------:|:---------------------------------------------:|:--------------------------------------:|
 |    `\d`    |                  un chiffre                   |                `[0-9]`                 |
 |    `\D`    |             tout sauf un chiffre              |                `[^0-9]`                |
-|    `\w`    |      les caractères alphanumériques et _      |        `[a-zA-Z0-9âàéèêëôûüù_]`        |
-|    `\W`    | tout sauf les caractères alphanumériques et _ |       `[^a-zA-Z0-9âàéèêëôûüù_]`        |
 |    `\s`    |                  une espace                   |          espace, `\t`, `\n`…           |
 |    `\S`    |             tout sauf une espace              |                   …                    |
 |    `\b`    |    frontière de mot (début ou fin de mot)     | `\bjour` : `journée` mais pas `ajouré` |
@@ -292,7 +293,7 @@ Exercice : écrire une expression régulière qui reconnaît exclusivement  `l
 **Notes** :
 
 - En général `\X` reconnaît le contraire de `\x`
-- Le sens de `\w`, `\s` et `\b` peut varier suivant les moteurs de regex, suivant leur support
+-  Le sens de certains de ces racourcis peut varier suivant les moteurs de regex, suivant leur support
   d'Unicode. En particulier ils marchent mal dans VSCode.
 
 ## Propriétés Unicode
