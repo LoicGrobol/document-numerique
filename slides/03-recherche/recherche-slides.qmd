@@ -132,9 +132,9 @@ Ils portent sur l’élément qui précède et indiquent une répétition
 |:------------------:|:---------------:|:-----------------------:|:-----------------------:|
 | **Signification**  | « 0 ou 1 fois » | « 0 ou plusieurs fois » | « 1 ou plusieurs fois » |
 
-- `pl?eur` matche `peur` et `pleure`
+- `pl?eur` matche `peur` et `pleur`
 - `coup?s` matche `cous` et `coups`, mais pas `coupa`
-- `jolie*` matche `joli`, `jolie`, `joliee`, `jolieee`…
+- `joli*e` matche `jole`, `jolie`, `joliie`, `joliiie`…
 - `jolie+` matche `jolie`, `joliee`, `jolieee`…
 
 ---
@@ -153,11 +153,11 @@ Ils portent sur l’élément qui précède et indiquent une répétition
 
 | **Caractère** |         **Sens**         |           **Exemple**            |
 |:-------------:|:------------------------:|:--------------------------------:|
-|      `.`      | n'importe quel caractère | `p.re` : `pare`, `pire`, `père`… |
-|      `^`      |      début de ligne      |      `^Je` (début de ligne)      |
-|      `$`      |       fin de ligne       |  `informatique$` (fin de ligne)  |
-|     `\n`      |      saut de ligne       |  `a\n` : `a` puis saut de ligne  |
-|     `\t`      |        tabulation        |   `a\t` : `a` puis tabulation    |
+|      `.`      | n'importe quel caractère | `p.re` : `pare`, `p1re`, `père`, `p)re`,… |
+|      `^`      |      début de ligne      |      `^Je`          |
+|      `$`      |       fin de ligne       |  `informatique$`  |
+|     `\n`      |      saut de ligne       |  `a\nb`  |
+|     `\t`      |        tabulation        |   `a\tu`    |
 
 ---
 
@@ -167,7 +167,7 @@ Ils portent sur l’élément qui précède et indiquent une répétition
 2. `cap$`
 3. `br.n`
 4. `^cap`
-5. `premier paragraphe\ndeuxième paragraphe`
+5. `cap-\npable`
 
 ## Déspécialisation
 
@@ -192,11 +192,10 @@ La barre droite `|` indique une alternative :
 
 - `machin|truc` matche `machin` et `truc`.
 - `je|tu|nous` matche `je`, `tu` et `nous`.
-- `je|tu|[nv]ous` matche `je`, `tu`, `nous` et `vous`.
 
 ---
 
-On les utilise le plus souvent avec des parenthèses pour contrôler sa portée
+On les utilise le plus souvent avec des parenthèses pour contrôler leur portée
 
 - `(m|r)aison` matche `maison` et `raison`.
 - `(il|elle|iel)s?` matche `il`, `elle`, `iel` et leurs versions plurielles.
