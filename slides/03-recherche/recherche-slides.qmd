@@ -74,7 +74,8 @@ Exemple : [`une colère
 *`](https://books.google.com/ngrams/graph?content=une+col%C3%A8re+%2A&year_start=1800&year_end=2019&corpus=30&smoothing=3&direct_url=t2%3B%2Cune%20col%C3%A8re%20%2A%3B%2Cc0%3B%2Cs0%3B%3Bune%20col%C3%A8re%20qui%3B%2Cc0%3B%3Bune%20col%C3%A8re%20noire%3B%2Cc0%3B%3Bune%20col%C3%A8re%20terrible%3B%2Cc0%3B%3Bune%20col%C3%A8re%20de%3B%2Cc0%3B%3Bune%20col%C3%A8re%20%C3%A9pouvantable%3B%2Cc0%3B%3Bune%20col%C3%A8re%20sourde%3B%2Cc0%3B%3Bune%20col%C3%A8re%20violente%3B%2Cc0%3B%3Bune%20col%C3%A8re%20froide%3B%2Cc0%3B%3Bune%20col%C3%A8re%20et%3B%2Cc0%3B%3Bune%20col%C3%A8re%20concentr%C3%A9e%3B%2Cc0)
 donne les fréquences de trigrammes dont les deux premiers mots sont « une » et « colère »
 
-# Rechercher dans des fichiers
+
+# Rechercher dans des fichiers
 
 1. Récupérez le fichier [`clg.txt`](./clg.txt)
 1. Ouvrez-le avec l'éditeur de votre choix (Clic-droit sur le fichier + ouvrir avec)
