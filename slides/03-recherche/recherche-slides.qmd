@@ -316,18 +316,11 @@ propriétés du type « catégories générales » (≈ classes de caractèr
 
 Dans `clg.txt, combien y-a-t-il de mots :
 
+1. Finissant par `er` en fin de ligne ?
+1. Finissant par `er` ?
 1. De 3 lettres finissant par `r` ?
-2. De 4 lettres au plus commençant par `r` ?
-3. Commençant par `a` et finissant par `er` ?
-4. Finissant par `er` en fin de ligne ?
-
----
-
-Faire les niveaux suivants sur <https://alf.nu/RegexGolf>
-
-- *Warmup*
-- *Anchors*
-- *Ranges*
+1. De 4 lettres au plus commençant par `r` ?
+1. Commençant par `a` et finissant par `er` ?
 
 ---
 
@@ -365,3 +358,11 @@ On peut utiliser des références numérotées pour rappeler le contenu d'un gro
 - `spam, sausage and spam`
 - `egg, sausage and egg`
 - Mais pas `egg, sausage and spam`
+
+## RegEx golf!
+
+Faire les niveaux suivants sur <https://alf.nu/RegexGolf>
+
+- *Warmup*
+- *Anchors*
+- *Ranges*
