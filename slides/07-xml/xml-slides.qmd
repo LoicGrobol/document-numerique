@@ -72,12 +72,15 @@ On peut le faire en HTML comme ceci, pour un résultat qui ressemble à peu prè
 <h1>Acte II, Scène 2</h1>
 <p><b>DON RODRIGUE</b> À moi Comte, deux mots.</p>
 <p><b>LE COMTE</b> Parle</p>
-<p><b>DON RODRIGUE</b> Ôte-moi d'un doute. <br>
-                       Connais-tu bien Don Diègue ?</p>
+<p><b>DON RODRIGUE</b>
+  Ôte-moi d'un doute. <br>
+  Connais-tu bien Don Diègue ?
+</p>
 <p><b>LE COMTE</b> Oui.</p>
-<p><b>DON RODRIGUE</b> Parlons bas, écoute.<br>
-                       Sais-tu que ce vieillard fut la même vertu,<br>
-                       La vaillance et l'honneur de son temps ? Le sais-tu ?</p>
+<p><b>DON RODRIGUE</b>
+  Parlons bas, écoute.<br>
+  …
+</p>
 ```
 
 Est-ce que vous voyez le problème ?
@@ -100,10 +103,6 @@ class="speaker">` ou autres, mais c'est assez peu pratique.
 Ce qui serait bien en fait, ça serait de pouvoir créer nos propres balises selon le document qu'on
 veut représenter !
 
-. . .
-
-*Enter XML*
-
 # XML
 
 Le format XML est une réponse au problème ci-dessus : comment représenter des données structurées
@@ -115,7 +114,7 @@ Le format XML est une réponse au problème ci-dessus : comment représenter d
 . . .
 
 Historiquement, cette idée n'est pas venue après HTML, même si c'est une façon pratique d'y penser.
-En réalité les deux format se sont essentiellement développés conjointement, avec des interactions
+En réalité les deux formats se sont essentiellement développés conjointement, avec des interactions
 assez complexes.
 
 ## Exemples
@@ -384,6 +383,12 @@ qui sont plus ou moins tolérées en HTML :
 
 En XML, cela crée des erreurs « document mal formé ».
 
+## Validation
+
+On peut d'ailleurs vérifier tout de suite que ça ne marche pas en utilisant un *validateur
+comme <https://www.truugo.com/xml_validator/> ou l'[extension XML de
+vscode](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml).
+
 ## Noms des éléments
 
 Les noms des éléments peuvent employer de nombreux caractères Unicode (correspondant au codage
@@ -448,7 +453,7 @@ Voici un exemple d’emploi d’entités :
 On peut placer des commentaires à peu près partout dans un document XML. La syntaxe est identique à
 celle d’un fichier HTML. Un commentaire peut d’étendre sur plusieurs lignes. La seule contrainte est
 de ne pas pouvoir employer les caractères `--` dans le commentaire, même s’ils ne sont pas suivis de
-`>`
+`>`.
 
 ```xml
 <!-- voici un commentaire -->

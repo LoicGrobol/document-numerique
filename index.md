@@ -99,6 +99,16 @@ Déposez-le sur l'espace Cours en Ligne.
   ([pdf]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.pdf))
   - [`clg.txt`]({{site.url}}{{site.baseurl}}/slides/03-recherche/clg.txt)
 
+### 2025-03-31 : XML
+
+- [Slides
+  XML]({{site.url}}{{site.baseurl}}/slides/07-xml/xml-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/07-xml/xml-slides.pdf))
+
+À **rendre** pour la prochaine fois : [exercice
+XML]({{site.url}}{{site.baseurl}}/slides/07-xml/exercices-xml.html). Rendre un fichier zip contenant
+les fichiers XML.
+
 ## Licences
 
 [![CC BY Licence

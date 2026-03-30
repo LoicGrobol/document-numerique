@@ -31,15 +31,19 @@ Fichiers :
 # 2. Modélisation
 
 Créer des documents XML qui permettront de structurer les (toutes petites) bases de données
-suivantes. Essayer de leur donner une structure aussi simple et lisible que possible.
+suivantes. Essayer de leur donner une structure aussi simple, régulière et lisible que possible.
 
-1\. Bibliographie :
+## 1. Bibliographie
 
-- Notre-Dame de Paris (1831) – roman historique - Victor Hugo
-- Candide (1759) – conte philosophique – Voltaire
-- Andromaque (1667) – théâtre – Jean Racine
+On veut pouvoir représenter les informations suivantes : titre, année de publication, genre et auteurice(s).
+
+- Frankenstein; or, The Modern Prometheus (1918) – roman fantastique – Mary Shelley
+- Les Méprisés, grand roman de mœurs parisiennes (1882) – roman – Louise Michel et Jean Guêtré
+- Aṣṭādhyāyī (-400) – grammaire - Pāṇini
 
 2\. Fruits
+
+Les informations à représenter sont : produit, origine, quantité (comprenant valeur et unité) et prix.
 
 - Bananes (Antilles françaises) – 500g – 1.69€
 - Mandarines (Espagne) – 750g – 3.49€
@@ -47,12 +51,8 @@ suivantes. Essayer de leur donner une structure aussi simple et lisible que poss
 
 3\. Carnet d’adresses :
 
-- Thierry Petit – Médecin – 5 rue du Grand Docteur – 03 98 44 89 30
-- Anne LeBrun – Propriétaire – 18 avenue de la Résidence – 05 55 66 55 50
-- Kevin Dillot – Coursier – 6 rue de la Course – 07 32 23 70 22
+Les informations à représenter sont : nom, profession et coordonnées (comprenant adresse, email et numéro de téléphone).
 
-4\. Programme TV :
-
-- TF1 – Mon poussin – Cinéma – 1h55min (21h05-23h)
-- France 2 – L’embarras du choix – Cinéma – 1h35min (21h05-22h40)
-- France 3 – Grantchester – Série TV – 50 min (21h05-21h55)
+- Soazig Bras – Médecin – 5 rue du Grand Docteur - `soaz@tuta.com` – 03 98 44 89 30
+- Anne le Brun – Propriétaire – 18 avenue de la Résidence - `arctos@you.me` – 05 55 66 55 50
+- Kevin Dillot – Coursier – 6 rue de la Course – `serieuxetresponsable@codeberg.page` 07 32 23 70 22
