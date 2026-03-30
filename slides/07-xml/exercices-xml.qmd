@@ -17,8 +17,6 @@ pourquoi et proposer une correction.
 
 - Ce sont des fichiers textes tout à fait normaux, qui s'ouvrent dans n'importe quel éditeur de
   texte (voir les cours précédents)
-- Les ouvrir avec un navigateur (voir cours Internet) devrait vous permettre de repérer les
-  documents mal formés, pour trouver les erreurs, il va falloir rechercher avec attention.
 
 Fichiers :
 
@@ -41,7 +39,7 @@ On veut pouvoir représenter les informations suivantes : titre, année de pub
 - Les Méprisés, grand roman de mœurs parisiennes (1882) – roman – Louise Michel et Jean Guêtré
 - Aṣṭādhyāyī (-400) – grammaire - Pāṇini
 
-2\. Fruits
+## 2. Fruits
 
 Les informations à représenter sont : produit, origine, quantité (comprenant valeur et unité) et prix.
 
@@ -49,7 +47,7 @@ Les informations à représenter sont : produit, origine, quantité (comprenan
 - Mandarines (Espagne) – 750g – 3.49€
 - Kiwis (Italie) – 1kg – 2.49€
 
-3\. Carnet d’adresses :
+## 3. Carnet d’adresses
 
 Les informations à représenter sont : nom, profession et coordonnées (comprenant adresse, email et numéro de téléphone).
 
