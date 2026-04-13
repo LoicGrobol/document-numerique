@@ -109,6 +109,14 @@ Déposez-le sur l'espace Cours en Ligne.
 XML]({{site.url}}{{site.baseurl}}/slides/07-xml/exercices-xml.html). Rendre un fichier zip contenant
 les fichiers XML.
 
+### 2026-04-13 : DTD
+
+- [Slides
+  DTD]({{site.url}}{{site.baseurl}}/slides/08-dtd/dtd-slides.html)
+  ([pdf]({{site.url}}{{site.baseurl}}/slides/08-dtd/dtd-slides.pdf))
+- Exercice : reprendre les fichiers XML des exercices précédents et leur ajouter une DTD qui
+  correspond au format que vous avez imaginé.
+
 ## Licences
 
 [![CC BY Licence

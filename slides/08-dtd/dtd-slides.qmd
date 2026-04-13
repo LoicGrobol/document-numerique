@@ -1,12 +1,12 @@
 ---
-title: "Décrire et manipuler un document numérique"
-subtitle: "Cours 7 : DTD et modélisation"
+title: Décrire et manipuler un document numérique
+subtitle: 'Cours 7 : DTD et modélisation'
 author:
-  - "L. Grobol `<lgrobol@parisnanterre.fr>`"
+  - L. Grobol `<lgrobol@parisnanterre.fr>`
 institute: Université Paris Nanterre
 format:
   revealjs:
-    css: "../reveal_slides_style.css"
+    css: ../reveal_slides_style.css
     theme: white
     highlight: pygments
     center: true
@@ -15,8 +15,8 @@ format:
       progress: true
     self-contained: true
   pdf:
-    "pdf-engine": "lualatex"
-lang: "fr"
+    pdf-engine: lualatex
+lang: fr
 ---
 
 # Document bien formé
@@ -27,10 +27,10 @@ On a vu que XML était à la fois plus souple et plus strict que HTML
 - Plus strict : la syntaxe est moins permissive.
   - Ou plutôt : les interpréteurs n'essaient pas de deviner en cas d'erreur de syntaxe.
 
-<small>Ce cours est inspiré entre autres des transparents [XML et données
-internet](https://perso.univ-rennes1.fr/pierre.nerzic/XML) de Pierre Nerzic</small>
+<small>Ce cours est inspiré entre autres des transparents
+[XML et données internet](https://perso.univ-rennes1.fr/pierre.nerzic/XML) de Pierre Nerzic</small>
 
----
+______________________________________________________________________
 
 Les règles de syntaxe qu'on a vu dans le cours précédent définissent le fait d'être **bien formé** :
 
@@ -42,10 +42,10 @@ Les règles de syntaxe qu'on a vu dans le cours précédent définissent le fait
 - Les valeurs d'attribut XML sont entre simple `'` ou double `"` quotes.
 - Les entités sont utilisées pour les caractères spéciaux.
 
----
+______________________________________________________________________
 
-Pour avoir une définition complète, mais très, très formelle : voir [la
-spécification](https://www.w3.org/TR/REC-xml/).
+Pour avoir une définition complète, mais très, très formelle : voir
+[la spécification](https://www.w3.org/TR/REC-xml/).
 
 # Document valide
 
@@ -67,7 +67,7 @@ suivante :
 </bibliography>
 ```
 
----
+______________________________________________________________________
 
 Si on lui donne l'entrée suivante, qu'en faire ?
 
@@ -84,7 +84,7 @@ Le document est bien formé, mais il ne correspond pas aux attentes : il n'est
 
 (Le terme n'est pas très heureux)
 
----
+______________________________________________________________________
 
 On dit qu'un document est valide s'il est conforme à une spécification qui décrit
 
@@ -92,15 +92,15 @@ On dit qu'un document est valide s'il est conforme à une spécification qui dé
 - Les attributs autorisés pour chaque type d'élément.
 - Les usages autorisés pour les éléments, et notamment les structures.
 
----
+______________________________________________________________________
 
 Il existe plusieurs standard pour décrire une telle spécification : DTD, XML Schemas, RelaxNG,
 Schematron…
 
-Ces langages modélisent des règles de validité plus
-ou moins précises et d’une manière plus ou moins lisible.
+Ces langages modélisent des règles de validité plus ou moins précises et d’une manière plus ou moins
+lisible.
 
----
+______________________________________________________________________
 
 **Valider** un fichier XML, c'est le comparer à cette spécification à l'aide d'un outil qui indique
 
@@ -125,7 +125,8 @@ après le prologue et avant la racine :
 </itineraire>
 ```
 
-Attention : la syntaxe n'est pas la même que celle du contenu du XML. C'est une directive, pas un élément.
+Attention : la syntaxe n'est pas la même que celle du contenu du XML. C'est une directive, pas un
+élément.
 
 ## DTD interne ou externe
 
@@ -141,18 +142,18 @@ Une DTD peut être
 
 - **Externe**, dans un autre fichier, signalé par `SYSTEM` suivi de l’URL du fichier :
 
-   ```dtd
-   <!DOCTYPE itineraire SYSTEM "itineraire.dtd">
-   ```
+  ```dtd
+  <!DOCTYPE itineraire SYSTEM "itineraire.dtd">
+  ```
 
----
+______________________________________________________________________
 
 - **Mixte**, il y a à la fois un fichier et des définitions locales :
 
-   ```dtd
-   <!DOCTYPE itineraire SYSTEM "itineraire.dtd" [
-   ...
-   ]>
+  ```dtd
+  <!DOCTYPE itineraire SYSTEM "itineraire.dtd" [
+  ...
+  ]>
   ```
 
 Une DTD externe peut être utilisée pour plusieurs fichiers XML, c'est donc ce qu'on utilise pour la
@@ -160,9 +161,8 @@ plupart des applications.
 
 ## Fichiers *standalone*
 
-Vous trouverez parfois un attribut `standalone` valant `"yes"` ou `"no"`
-dans les prologues XML. Il est optionnel et présent uniquement
-quand il y a une DTD interne.
+Vous trouverez parfois un attribut `standalone` valant `"yes"` ou `"no"` dans les prologues XML. Il
+est optionnel et présent uniquement quand il y a une DTD interne.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
@@ -171,14 +171,14 @@ quand il y a une DTD interne.
 - `"no"` (par défaut) : la DTD interne fournit les valeurs par défaut et les entités et il peut y
   avoir des définitions externes (`SYSTEM`).
 - `"yes`" : la DTD interne ne sert que pour la validation et ne peut pas employer d’entités ou de
-  règles externes. Le document XML et avec sa DTD interne est totalement indépendant.
+  règles externes. Le document XML avec sa DTD interne est totalement indépendant.
 
 ## Validateurs
 
 De nombreux outils de validation existent, souvent associés à des éditeurs XML. Dans le cadre de ce
-cours, on peut utiliser l'[extension XML de
-vscode](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml) ou se contenter d'un
-validateur simple comme <https://www.truugo.com/xml_validator/>.
+cours, on peut utiliser
+l'[extension XML de vscode](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml)
+ou se contenter d'un validateur simple comme <https://www.truugo.com/xml_validator/>.
 
 # Structure d'une DTD
 
@@ -196,10 +196,10 @@ Ce sont des règles qui définissent :
 - Des éléments (`ELEMENT`) : leur nom et le contenu autorisé,
 - Des attributs (`ATTLIST`) : leur nom et options.
 
----
+______________________________________________________________________
 
-Le nom présent après le mot-clé `DOCTYPE` indique la **racine** du
-document. C’est un élément qui est défini dans la DTD.
+Le nom présent après le mot-clé `DOCTYPE` indique la **racine** du document. C’est un élément qui
+est défini dans la DTD.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
@@ -230,7 +230,7 @@ La définition du contenu peut prendre différentes formes :
 - (`#PCDATA`) : signifie que l’élément ne contient que du texte,
 - (définitions de sous-éléments) : spécifie les sous-éléments qui peuvent être employés.
 
----
+______________________________________________________________________
 
 Voici un exemple d’éléments simples :
 
@@ -251,46 +251,43 @@ Voici un exemple d’éléments simples :
 </itineraire>
 ```
 
----
+______________________________________________________________________
 
-On peut restreindre les sous-éléments autorisés en donnant une liste ordonnée
-dans laquelle chaque sous-élément peut être suivi d’un quantificateur parmi `*`,
-`+` et `?` pour indiquer des répétitions, comme dans les expressions régulières.
+On peut restreindre les sous-éléments autorisés en donnant une liste ordonnée dans laquelle chaque
+sous-élément peut être suivi d’un quantificateur parmi `*`, `+` et `?` pour indiquer des
+répétitions, comme dans les expressions régulières.
 
----
+______________________________________________________________________
 
 ```dtd
 <!ELEMENT itineraire (boucle?, etape+, variante*)>
 ```
 
-Se lit ainsi : l’élément `<boucle>` est en option, il doit être suivi d'au moins un
-`<etape>` puis de zéro ou plus `<variante>`.
+Se lit ainsi : l’élément `<boucle>` est en option, il doit être suivi d'au moins un `<etape>` puis
+de zéro ou plus `<variante>`.
 
----
+______________________________________________________________________
 
-La liste peut aussi contenir des alternatives notées `( contenu1
-| contenu2 | … )` :
+La liste peut aussi contenir des alternatives notées `( contenu1 | contenu2 | … )` :
 
 ```dtd
 <!ELEMENT informations (topoguide | carte)>
 ```
 
-signifie que l’élément `<information>` peut contenir soit un enfant
-`<topoguide>`, soit un enfant `<carte>.`
+signifie que l’élément `<information>` peut contenir soit un enfant `<topoguide>`, soit un enfant
+`<carte>.`
 
----
+______________________________________________________________________
 
-On peut grouper plusieurs séquences avec des parenthèses pour
-spécifier ce qu’on désire :
+On peut grouper plusieurs séquences avec des parenthèses pour spécifier ce qu’on désire :
 
 ```dtd
 <!ELEMENT personne (titre?, (nom,prenom+) | (prenom+,nom))>
 ```
 
----
+______________________________________________________________________
 
-On peut aussi indiquer que l'élément peut
-contenir du texte ou des sous-éléments :
+On peut aussi indiquer que l'élément peut contenir du texte ou des sous-éléments :
 
 ```dtd
 <!ELEMENT etape (#PCDATA | waypoint)* >
@@ -314,7 +311,7 @@ On décrit un attribut avec une règle de la forme `<!ATTLIST elem attr type val
   - `#IMPLIED` qu’il est optionnel,
   - Si on fournit une chaîne `"…"`, c’est la valeur par défaut.
 
----
+______________________________________________________________________
 
 ```dtd
 <!ELEMENT waypoint EMPTY>
@@ -326,27 +323,25 @@ On décrit un attribut avec une règle de la forme `<!ATTLIST elem attr type val
   source (gps|utilisateur|carte) "carte">
 ```
 
----
+______________________________________________________________________
 
 ### Types d'attributs
 
 Il y a plusieurs types possibles, voici les plus utiles :
 
 - `CDATA` l’attribut peut prendre n’importe quelle valeur texte. Ne pas confondre avec `#PCDATA`.
-- `(mot1|mot2|...)` Cela force l’attribut à avoir l’une des valeurs de
-  l’énumération.
+- `(mot1|mot2|...)` Cela force l’attribut à avoir l’une des valeurs de l’énumération.
 - `ID` l’attribut est un **identifiant** XML
   - Sa valeur doit être une chaîne (pas un nombre) unique parmi tous les autres attributs de type ID
-  du document.
+    du document.
   - Il ne peut y avoir qu'un seul attribut de type `ID` par élément.
 - `IDREF` l’attribut doit être égal, dans le document XML, à l’identifiant d’un autre élément.
 
 ## Entités
 
-Les entités sont des symboles qui représentent des morceaux d’arbre
-XML ou des textes.
+Les entités sont des symboles qui représentent des morceaux d’arbre XML ou des textes.
 
----
+______________________________________________________________________
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
@@ -364,7 +359,7 @@ XML ou des textes.
 </itineraire>
 ```
 
----
+______________________________________________________________________
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
@@ -382,7 +377,7 @@ XML ou des textes.
 </itineraire>
 ```
 
----
+______________________________________________________________________
 
 **Attention** une entité ne peut remplacer que du XML bien formé et complet ! Ceci n'est pas
 valide :
