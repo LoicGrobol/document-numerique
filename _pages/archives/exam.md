@@ -73,14 +73,14 @@ toutes les chaînes marquées ✅ ci-dessous et aucune des chaînes marquées �
 4\. Lister les erreurs dans le fichier HTML suivant et proposer une correction
 
 ```text
-<DOCTYPE html>
+<DOCTYPE html />
 <head>
-  <meta charset="utf-8">
-  <h1>Ma page test</h1>
+  <meta charset="utf8">
+  <h1>Ma page test</h2>
 </head>
 <body>
   <title>Ma page test</title>
-  ≺img src="http://example.com/example.jpg" /≻
+  ≺img src="http://example.com/example.jpg' /≻
   <p>Ceci est une démonstration de fichier HTML.
   <p>Elle inclut une image.
 <body>
