@@ -96,8 +96,8 @@ l'arrière-plan n'est pas coloré, mais où l'élément est entouré d'une bordu
 
 ```text
 span.highlight {
-  font-size: normal;
-  background: black;
+  font-size: normal;
+  background: black;
 }
 ```
 
