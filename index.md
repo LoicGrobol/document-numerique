@@ -117,6 +117,10 @@ les fichiers XML.
 - Exercice : reprendre les fichiers XML des exercices précédents et leur ajouter une DTD qui
   correspond au format que vous avez imaginé.
 
+### 2026-04-19 : Partiel
+
+- [Sujet](%7B%7Bsite.url%7D%7D%7B%7Bsite.baseurl%7D%7D/2026/exam)
+
 ## Licences
 
 [![CC BY Licence
