@@ -99,7 +99,7 @@ Déposez-le sur l'espace Cours en Ligne.
   ([pdf]({{site.url}}{{site.baseurl}}/slides/03-recherche/recherche-slides.pdf))
   - [`clg.txt`]({{site.url}}{{site.baseurl}}/slides/03-recherche/clg.txt)
 
-### 2025-03-31 : XML
+### 2026-03-31 : XML
 
 - [Slides
   XML]({{site.url}}{{site.baseurl}}/slides/07-xml/xml-slides.html)
